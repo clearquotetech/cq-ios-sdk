@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.dependency 'IQKeyboardManagerSwift', '6.3.0'
   s.dependency 'Fuse'
   s.dependency 'AnyCodable-FlightSchool'
-  s.dependency 'TensorFlowLiteTaskVision'
+  s.dependency 'TensorFlowLiteSwift', '2.3.0'
 end
