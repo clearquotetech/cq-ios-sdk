@@ -1,22 +1,25 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClearQuoteSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ClearQuoteSDK
 import AVFoundation
 import AVKit
+import Accelerate
 import AnyCodable
 import CoreGraphics
+import CoreImage
 import CoreText
+import CoreVideo
 import DeveloperToolsSupport
 import DropDown
 import Foundation
 import Fuse
 import IQKeyboardManagerSwift
 import Kingfisher
+import SQLite
 import SVGKit
 import Swift
 import SwiftUI
-import TensorFlowLiteTaskVision
+import TensorFlowLite
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -36,6 +39,9 @@ public protocol ClearQuoteSDKDelegate {
   public func getCurrentUserName() -> Swift.String?
   public func getCurrentSDKKey() -> Swift.String
   public func getCurrentSDKVersion() -> Swift.String
+  public func CheckSpeedTest(completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func getV3VehicleDetailsByLicencePlateNumber(_ licencePlatno: Swift.String) -> [ClearQuoteSDK.CQSDKMakeModel]
+  public func getOverlayImageModel(bodystyle: Swift.String, index: Swift.Int) -> ClearQuoteSDK.CQSDKOverlayModel?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUIButton : UIKit.UIButton {
@@ -144,7 +150,6 @@ public enum CQSDKColors : Swift.String {
   case cq_sdk_disabled_color
   case cq_sdk_divider_color
   case cq_sdk_input_field_label_text_color
-  case cq_sdk_primary_color
   case cq_sdk_text_color
   case cq_sdk_white
   case cq_sdk_image_bg_color
@@ -167,11 +172,16 @@ extension UIKit.UIActivityIndicatorView {
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func setDefaultDialogCornerRadius()
 }
+public struct CQSDKOverlayModel {
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUILabel : UIKit.UILabel {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func setText(txt: Swift.String, isMandatory: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) public func setStyle(_ style: ClearQuoteSDK.CQSDKTextStyle, labelColor: ClearQuoteSDK.CQSDKColors? = nil)
   @_Concurrency.MainActor(unsafe) public func setCornerRadius(_ radius: CoreFoundation.CGFloat)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQIconButton : UIKit.UIButton {
   @objc deinit
 }
 public protocol CQSDKAppBarViewDelegate {
@@ -205,6 +215,32 @@ public struct CQSDKClientAttrs : Swift.Encodable {
 public struct CQSDKUserFlowParams : Swift.Encodable {
   public init(isOffline: Swift.Bool? = nil, skipInputPage: Swift.Bool? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CQSDKMakeModel {
+  public var _id: Swift.String
+  public var make: Swift.String
+  public var model: Swift.String
+  public var bodystyle: Swift.String
+  public var cq_bodystyle: Swift.String
+  public var licenseplateno: Swift.String?
+  public var vin: Swift.String?
+  public var vehicleId: Swift.String?
+  public var vehicleUnitNo: Swift.String?
+  public var rAno: Swift.String?
+  public var sequenceno: Swift.String?
+  public var tripStatus: Swift.String?
+  public var fleetNo: Swift.String?
+  public var rentalStatus: Swift.String?
+  public var Contracttype: Swift.String?
+  public var year: Swift.String?
+  public var fuelIn: Swift.String?
+  public var cuOdo: Swift.String?
+  public var status: Swift.String?
+  public var nskm: Swift.String?
+  public var VehicleStatus: Swift.String?
+  public var customerInfo: Swift.String?
+  public var vehicleVersion: Swift.String?
+  public var fueltype: Swift.String?
 }
 public struct SVGImgProcessor : Kingfisher.ImageProcessor {
   public var identifier: Swift.String
