@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ClearQuoteSDK"
-    s.version      = "0.0.2"
+    s.version      = "0.0.5"
     s.summary      = "ClearQuoteSDK: ClearQuoteSDK"
     s.description  = "A more detailed description of ClearQuoteSDK"
     s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk.git"
@@ -20,4 +20,5 @@ Pod::Spec.new do |s|
   s.dependency 'AnyCodable-FlightSchool'
   s.dependency 'TensorFlowLiteSwift', '2.3.0'
   s.dependency 'SQLite.swift'
+  s.dependency 'ReachabilitySwift'
 end
