@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zDqT2JEDAyyF3cxEabpqE2UeBG0=
+		NnqAZgNrwl7ReOqm2KDsTFGCsKE=
 		</data>
 		<key>CQSDKAppBarView.nib</key>
 		<data>
@@ -162,19 +162,35 @@
 		</data>
 		<key>CQSDKGuidedFlow.storyboardc/Y6W-OH-hqX-view-QVe-wV-8qP.nib</key>
 		<data>
-		o94d1BzdRa5sPHVloaJjNI9rU6s=
+		qASm2N2Fng7CxkxST1U2vE4pb6A=
 		</data>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
 		<data>
-		5z52wDjtB2sC3kFRv8tzz7lqaf4=
+		36yZ7rTf/efTs8cPg42PRIcfZEk=
 		</data>
 		<key>CQSDKInputField.nib</key>
 		<data>
 		Yrdl5+sF/H5Odah4bU9ES5rm1Co=
 		</data>
+		<key>CQSDKInspection.storyboardc/Info.plist</key>
+		<data>
+		q2gnj04gwGKtzhGa40Z3qTFKjbk=
+		</data>
+		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsNavigationController.nib</key>
+		<data>
+		Y1zkYRgi8OftDFn/h83I7exLTS8=
+		</data>
+		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsViewController.nib</key>
+		<data>
+		KFc2X9Udd9rEJITOWrQloIb4uEM=
+		</data>
+		<key>CQSDKInspection.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<data>
+		5iDwlUeyXVniL9/ZvdZayapwFQY=
+		</data>
 		<key>CQSDKMain.storyboardc/72C-AD-ltI-view-Yzg-2q-Zgv.nib</key>
 		<data>
-		Y8FsP7DQLkDc4rm98gJzhs3dPWY=
+		17WlPwFppqCaNNGGx1Q8cZUDZSY=
 		</data>
 		<key>CQSDKMain.storyboardc/7QN-KD-zsk-view-Z1V-xa-pQN.nib</key>
 		<data>
@@ -230,7 +246,7 @@
 		</data>
 		<key>CQSDKUploads.storyboardc/4uN-ag-VdO-view-tNI-8A-ZrY.nib</key>
 		<data>
-		/reQi2ErESbUaeR22KTpsymlFto=
+		TDb3+05b1ccCwfyycNMJ0AEL5Es=
 		</data>
 		<key>CQSDKUploads.storyboardc/CQSDKUploadsPageViewController.nib</key>
 		<data>
@@ -242,7 +258,7 @@
 		</data>
 		<key>CQSDKUploadsPageCollectionViewCell.nib</key>
 		<data>
-		8HYvLXa4XouB1r0PFe92xPHKOAQ=
+		h87Ta/7xid5bk9kDUXlUnis05IQ=
 		</data>
 		<key>CQSDKUploadsPageTableViewCell.nib</key>
 		<data>
@@ -270,19 +286,19 @@
 		</data>
 		<key>Headers/ClearQuoteSDK-Swift.h</key>
 		<data>
-		S4soyQihU1zmgiWDl3c70LZogJ0=
+		xhgoOmV6xeecdBOzwDpdVx5PBqM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9YxF3SNCqyYYn3rCdJeHl3T1pTI=
+		EpZtiHjo/iiAEcqBcdWP7lvaj1U=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sWNhBjpS0a+3VYlvx7p6PYXGHII=
+		0DJ+QmCrxZPxzou85EoG9z6oZoM=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aKLjkZdF23ET72RwgjlkLebuKac=
+		/KbD1IwQc8ycBKSk0rNzHXHYBZs=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -290,11 +306,11 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aKLjkZdF23ET72RwgjlkLebuKac=
+		/KbD1IwQc8ycBKSk0rNzHXHYBZs=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		s5VWT7WHnJ58ckRKPW/Vt8dckRI=
+		Ir+yZ9L6EJcL7LPikhDcrNs4Sqc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -316,6 +332,10 @@
 		<data>
 		5bZvesiYJfi8v8aIu+e1Qw7nLlI=
 		</data>
+		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>
+		<data>
+		sC9bFv+Wyzs9DLvsVfUokOQLJSA=
+		</data>
 		<key>vanmodelmetadata_new_fp16_Jan2024.tflite</key>
 		<data>
 		YwdAjOByORJyrHVhpnxxSwqKqfQ=
@@ -327,7 +347,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			76ipv8EejTtEzdcLHUK2uHRyZCO8Hr2GGDUIPIbwjrk=
+			ZqAaLeXMGavUPUV/34IEQvfUaUytABEAA+X20QpYgmY=
 			</data>
 		</dict>
 		<key>CQSDKAppBarView.nib</key>
@@ -600,14 +620,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWQzgn6P9T/9vSZbqB5i+wG8Qe8v63Sov7uKZ5Zoe8s=
+			dKWTKunjaw3tsXf7fZLwzQsMcQJ0JH5ueeA5oWFXdAc=
 			</data>
 		</dict>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BTbUDOpvDKJ9YgFMFWBi32KhR2cMBkl54WZqJZK8yTA=
+			6zFLoYkpOZRJetjLjICBYN1OaKj5QrNZ5xcNl8/DHxw=
 			</data>
 		</dict>
 		<key>CQSDKInputField.nib</key>
@@ -617,11 +637,39 @@
 			VUEySG4U+ai2eVYwQiIr202fSKE8Ruc9tG0oej3al2w=
 			</data>
 		</dict>
+		<key>CQSDKInspection.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1t5l1nQwmkebuvH23vDFJYz1J/EeN/CeBWdQ+e9xEDY=
+			</data>
+		</dict>
+		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsNavigationController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YlKxlhI26eJ3DieQ05PaanZx/58avSKPHdqm86Rem5I=
+			</data>
+		</dict>
+		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0+gIbTbAFz6fk9j4teznNxOEcrEC3HAYmniJl8LziqY=
+			</data>
+		</dict>
+		<key>CQSDKInspection.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7EcvMO+H2x+RL6aXhlIg6b9ar6TuBOHFeGkpFmv9JkE=
+			</data>
+		</dict>
 		<key>CQSDKMain.storyboardc/72C-AD-ltI-view-Yzg-2q-Zgv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8QmCjr2wfUeqwH+PJHwcpELJkelDPsr94TdiWg6X554=
+			55V7vV8H95Ew6IYceKNPtQ0uKpJO5ThxQf7IqE+InWU=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/7QN-KD-zsk-view-Z1V-xa-pQN.nib</key>
@@ -719,7 +767,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ssNykfvR3RuxB2emDb2N1re+CzUSRJez35JXksatrz8=
+			SAsD3aqQ/rfKkKnqrG2wsQJpO3ZxVqeY6LqnjrgVYVE=
 			</data>
 		</dict>
 		<key>CQSDKUploads.storyboardc/CQSDKUploadsPageViewController.nib</key>
@@ -740,7 +788,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fsz7l9xLPjRzE5g4htD9xA4mjx/rII8a5vcqyN4LtlQ=
+			pBUCQfwxxBttRFOAlgj1iRPFexcBQNqA4tcaSHdCVhw=
 			</data>
 		</dict>
 		<key>CQSDKUploadsPageTableViewCell.nib</key>
@@ -789,21 +837,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6CHKZKP1p6QxrJJItWTFmX/Xkj1XmP9suDGzDn7Y43w=
+			BcIKzzbxVMThMuN4NFK1KVXtnHz46U036d531SIh+tw=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5vDSqrT/OuV0ibNkos9y+GHSYECyCi5iWe5w+bZgYtE=
+			10rlZlF0o6TQ5r6JxOetoJ28MxCwbGHyB2NFN1sYEBc=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2fds94lNbQhQKgeDG9/GtLr6ES+fUQueDmTnb2GoDRg=
+			4Emxb3SXjatPPQlPMYXDbJ8D0csu2JH3P8NrXEAFAqY=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -817,14 +865,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2fds94lNbQhQKgeDG9/GtLr6ES+fUQueDmTnb2GoDRg=
+			4Emxb3SXjatPPQlPMYXDbJ8D0csu2JH3P8NrXEAFAqY=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/RPeS+r8iTQBul0WZXxqlhUpdjTLK56ryUNf1KnF5xA=
+			+41RcP9ZpMdw3WLZLkQa3oMdL6ufIwrGqHW12RstJRA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -860,6 +908,13 @@
 			<key>hash2</key>
 			<data>
 			1UWu97Pqaqdpvpa+hCCGNOy1rJ1sylzsEeTOPfeOdAs=
+			</data>
+		</dict>
+		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+08Q3p26e+56nLYpe4l9CYtoNvwmUVEdkhualOYxtFY=
 			</data>
 		</dict>
 		<key>vanmodelmetadata_new_fp16_Jan2024.tflite</key>

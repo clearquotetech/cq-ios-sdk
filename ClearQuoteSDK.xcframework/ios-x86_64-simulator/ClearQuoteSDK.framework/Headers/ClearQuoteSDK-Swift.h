@@ -331,6 +331,33 @@ SWIFT_CLASS("_TtC13ClearQuoteSDK15CQSDKInputField")
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class NSBundle;
+
+SWIFT_CLASS("_TtC13ClearQuoteSDK31CQSDKInputPageOneViewController")
+@interface CQSDKInputPageOneViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC13ClearQuoteSDK38CQSDKQuoteCreationParentViewController")
+@interface CQSDKQuoteCreationParentViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
 
 SWIFT_CLASS("_TtC13ClearQuoteSDK13CQSDKUIButton")
 @interface CQSDKUIButton : UIButton
@@ -351,6 +378,9 @@ SWIFT_CLASS("_TtC13ClearQuoteSDK21CQSDKUIOutlinedButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
+
+
+
 
 
 

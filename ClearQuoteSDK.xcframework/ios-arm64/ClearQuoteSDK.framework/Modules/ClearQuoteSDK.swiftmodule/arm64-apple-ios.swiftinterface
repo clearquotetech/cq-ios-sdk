@@ -15,33 +15,50 @@ import Foundation
 import Fuse
 import IQKeyboardManagerSwift
 import Kingfisher
+import Reachability
 import SQLite
 import SVGKit
+import Sentry
 import Swift
 import SwiftUI
 import TensorFlowLite
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol ClearQuoteSDKDelegate {
-  func inspectionCompletionStatus(identifier: Swift.String, message: Swift.String, code: Swift.Int)
+  func inspectionCompletionStatus(identifier: Swift.String, message: Swift.String, code: Swift.Int, isOffline: Swift.Bool, serverQuoteId: Swift.String?, serverInspectionId: Swift.String?)
 }
 @_hasMissingDesignatedInitializers public class ClearQuote {
   public static let shared: ClearQuoteSDK.ClearQuote
   public var versionInQuoteDetails: (Swift.String)
-  public func initSDK(baseVC: UIKit.UIViewController, key: Swift.String, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
+  public var isOffline: Swift.Bool
+  public var clientAttrs: ClearQuoteSDK.CQSDKClientAttrs
+  public var clearQuoteSdkDelegate: (any ClearQuoteSDK.ClearQuoteSDKDelegate)?
+  public func initSDKNoBaseVc(key: Swift.String, region: Swift.String? = nil, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
+  public func initSDK(baseVC: UIKit.UIViewController, key: Swift.String, region: Swift.String? = nil, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
+  public func isClientAttrsEqual(previousClientAttrs: ClearQuoteSDK.CQSDKClientAttrs?, latestClientAttrs: ClearQuoteSDK.CQSDKClientAttrs?) -> Swift.Bool
   public func startInspection(baseVC: UIKit.UIViewController, clearQuoteSdkDelegate: any ClearQuoteSDK.ClearQuoteSDKDelegate, clientAttrs: ClearQuoteSDK.CQSDKClientAttrs? = nil, inputDetails: ClearQuoteSDK.CQSDKInputDetails? = nil, userFlowParams: ClearQuoteSDK.CQSDKUserFlowParams? = nil, result: @escaping (_ inspectionStarted: Swift.Bool, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
   public func isCQSDKInitialized() -> Swift.Bool
   public func checkRegistrationNumberExistsInFleetList(regNumber: Swift.String, completion: @escaping (_ isLPValid: Swift.Bool?, _ msg: Swift.String, _ tripDetailsApiResponse: ClearQuoteSDK.CQSDKV3Vehicle?) -> Swift.Void)
   public func logout()
+  public func getQuoteCreationController(hideTopBar: Swift.Bool = true) -> ClearQuoteSDK.CQSDKQuoteCreationParentViewController?
   public func getCurrentDealerCode() -> Swift.String?
   public func getCurrentUserName() -> Swift.String?
   public func getCurrentSDKKey() -> Swift.String
   public func getCurrentSDKVersion() -> Swift.String
+  public func getCurrentClientAttrsUserName() -> Swift.String?
+  public func getCurrentClientAttrsDealer() -> Swift.String?
+  public func getCurrentClientAttrsDealerIdentifier() -> Swift.String?
+  public func getCurrentClientAttrsClientUniqueId() -> Swift.String?
   public func CheckSpeedTest(completion: @escaping (Swift.Bool) -> Swift.Void)
   public func getV3VehicleDetailsByLicencePlateNumber(_ licencePlatno: Swift.String) -> [ClearQuoteSDK.CQSDKMakeModel]
+  public func startReachabilityNotifier()
+  public func stopReachabilityNotifier()
   public func getOverlayImageModel(bodystyle: Swift.String, index: Swift.Int) -> ClearQuoteSDK.CQSDKOverlayModel?
+  public func initiateOfflineInspectionsSync()
+  public func showQuoteDetails(inspectionId: Swift.String, baseVC: UIKit.UIViewController, onClose: (() -> Swift.Void)? = nil)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUIButton : UIKit.UIButton {
@@ -85,8 +102,8 @@ public enum CQSDKTextStyle {
   }
 }
 public struct CQSDKV3Vehicle : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct CQSDKCustomerInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -135,6 +152,12 @@ extension ClearQuoteSDK.CQSDKNibLoadable where Self : UIKit.UIView {
     get
   }
   public func setupFromNib()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputPageOneViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 public enum CQSDKToastDuration : Swift.Double {
   case short
@@ -208,9 +231,11 @@ public struct CQSDKCustomerDetails {
 public struct CQSDKVehicleDetails {
   public init(regNumber: Swift.String? = nil, make: Swift.String? = nil, model: Swift.String? = nil, bodyStyle: Swift.String? = nil, fuelType: Swift.String? = nil, variant: Swift.String? = nil)
 }
-public struct CQSDKClientAttrs : Swift.Encodable {
+public struct CQSDKClientAttrs : Swift.Codable, Swift.Equatable {
   public init(userName: Swift.String? = nil, dealer: Swift.String? = nil, dealerIdentifier: Swift.String? = nil, client_unique_id: Swift.String? = nil)
+  public static func == (a: ClearQuoteSDK.CQSDKClientAttrs, b: ClearQuoteSDK.CQSDKClientAttrs) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CQSDKUserFlowParams : Swift.Encodable {
   public init(isOffline: Swift.Bool? = nil, skipInputPage: Swift.Bool? = nil)
@@ -245,6 +270,16 @@ public struct CQSDKMakeModel {
 public struct SVGImgProcessor : Kingfisher.ImageProcessor {
   public var identifier: Swift.String
   public func process(item: Kingfisher.ImageProcessItem, options: Kingfisher.KingfisherParsedOptionsInfo) -> Kingfisher.KFCrossPlatformImage?
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKQuoteCreationParentViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ClearQuoteSDK.CQSDKQuoteCreationParentViewController : ClearQuoteSDK.CQSDKAppBarViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func onTappedCross()
+  @_Concurrency.MainActor(unsafe) public func onTappedHamburger()
 }
 public let ClearQuoteIdentifier: Swift.String
 public enum CQSDKInspectionCompletionStatus {
