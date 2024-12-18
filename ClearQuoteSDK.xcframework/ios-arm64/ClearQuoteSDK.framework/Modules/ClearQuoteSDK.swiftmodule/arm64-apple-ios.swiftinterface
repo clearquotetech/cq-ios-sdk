@@ -57,6 +57,7 @@ public protocol ClearQuoteSDKDelegate {
   public func startReachabilityNotifier()
   public func stopReachabilityNotifier()
   public func getOverlayImageModel(bodystyle: Swift.String, index: Swift.Int) -> ClearQuoteSDK.CQSDKOverlayModel?
+  public func initiateOfflineInspectionsSync()
   public func showQuoteDetails(inspectionId: Swift.String, baseVC: UIKit.UIViewController, onClose: (() -> Swift.Void)? = nil)
   @objc deinit
 }

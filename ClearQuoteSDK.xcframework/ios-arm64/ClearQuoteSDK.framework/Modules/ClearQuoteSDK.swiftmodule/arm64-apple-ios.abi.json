@@ -1414,6 +1414,27 @@
           },
           {
             "kind": "Function",
+            "name": "initiateOfflineInspectionsSync",
+            "printedName": "initiateOfflineInspectionsSync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13ClearQuoteSDK0aB0C30initiateOfflineInspectionsSyncyyF",
+            "mangledName": "$s13ClearQuoteSDK0aB0C30initiateOfflineInspectionsSyncyyF",
+            "moduleName": "ClearQuoteSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "showQuoteDetails",
             "printedName": "showQuoteDetails(inspectionId:baseVC:onClose:)",
             "children": [
