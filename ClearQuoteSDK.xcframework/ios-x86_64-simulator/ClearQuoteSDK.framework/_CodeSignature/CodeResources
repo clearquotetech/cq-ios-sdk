@@ -10,7 +10,7 @@
 		</data>
 		<key>CQSDKAppBarView.nib</key>
 		<data>
-		UfFm0MauRJGcJf7FUmofPJD1spA=
+		KVlCev6u67lIM7Z43eegySHqFqM=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/5im-bZ-flX-view-uvb-pJ-t1W.nib</key>
 		<data>
@@ -286,7 +286,7 @@
 		</data>
 		<key>Headers/ClearQuoteSDK-Swift.h</key>
 		<data>
-		xhgoOmV6xeecdBOzwDpdVx5PBqM=
+		F4jrvn0EKjv5rqSDQmWriasroFc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -294,11 +294,11 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0DJ+QmCrxZPxzou85EoG9z6oZoM=
+		Ic3JXsRCG4puD2mWR0di03jPblI=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/KbD1IwQc8ycBKSk0rNzHXHYBZs=
+		KZl1RnEYfNwhkr4y598aqPU6C5s=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -306,11 +306,11 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/KbD1IwQc8ycBKSk0rNzHXHYBZs=
+		KZl1RnEYfNwhkr4y598aqPU6C5s=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ir+yZ9L6EJcL7LPikhDcrNs4Sqc=
+		BdkWBB/KLMbo6G4mACMzNWfb7Js=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -331,6 +331,30 @@
 		<key>Sample_image.jpg</key>
 		<data>
 		5bZvesiYJfi8v8aIu+e1Qw7nLlI=
+		</data>
+		<key>de-de.json</key>
+		<data>
+		Es0DkwCGLOJWn49nIrMoVeZryGw=
+		</data>
+		<key>en-us.json</key>
+		<data>
+		KV/gPU6shwDpL5bUiDCL02RENbw=
+		</data>
+		<key>es-es.json</key>
+		<data>
+		Mv74zDYgkWpUjzhOnB1TpgdR8tg=
+		</data>
+		<key>fr-mr.json</key>
+		<data>
+		d+ciQ1TQY9LbJIc6EYWcyEwGQK0=
+		</data>
+		<key>it-IT.json</key>
+		<data>
+		yc9cjYXtHQP+7K/LQwdD0OxlPIo=
+		</data>
+		<key>ro-ro.json</key>
+		<data>
+		6AWk3pY1x2uA7e1lgTftNHhlSEM=
 		</data>
 		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>
 		<data>
@@ -354,7 +378,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1fBEpXqp6j13PYuNEDmr9sPCh/3QHei8NtnGV8JnkME=
+			8Sgdu0Z5160PYTGI1m1y89jtdWm+0NkDaYz3Soa5GYY=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/5im-bZ-flX-view-uvb-pJ-t1W.nib</key>
@@ -837,21 +861,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BcIKzzbxVMThMuN4NFK1KVXtnHz46U036d531SIh+tw=
+			U5KWE1ydmNnxfZyO5imKJRsBx4NMNKDUdgqPZzh3+hk=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			10rlZlF0o6TQ5r6JxOetoJ28MxCwbGHyB2NFN1sYEBc=
+			bsqNK8V9TI4BoHT1YTQYlRcu7LFq7R0CBxf2PJA07Bw=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Emxb3SXjatPPQlPMYXDbJ8D0csu2JH3P8NrXEAFAqY=
+			zSEDkKiO0B1cTdTUjxOxdNUlmhBuISilDsYsiq3gOFs=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -865,14 +889,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Emxb3SXjatPPQlPMYXDbJ8D0csu2JH3P8NrXEAFAqY=
+			zSEDkKiO0B1cTdTUjxOxdNUlmhBuISilDsYsiq3gOFs=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+41RcP9ZpMdw3WLZLkQa3oMdL6ufIwrGqHW12RstJRA=
+			4Vu58esX4oWsOmQxCF4agdpQJ5cL57PDxQwqC4vtYwE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -908,6 +932,48 @@
 			<key>hash2</key>
 			<data>
 			1UWu97Pqaqdpvpa+hCCGNOy1rJ1sylzsEeTOPfeOdAs=
+			</data>
+		</dict>
+		<key>de-de.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Nh0qzxI12XrYMHSWUEdfXjlGUsJ+H8pJkg/MSTdUO1I=
+			</data>
+		</dict>
+		<key>en-us.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yim7Tt2RbkwjHMDT+GvfJ8To/8huetnWs3VIdX+rbmU=
+			</data>
+		</dict>
+		<key>es-es.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KmPA26GhTZIEo1FibBMLeREd6NtEC6VScfM/8fLRWbM=
+			</data>
+		</dict>
+		<key>fr-mr.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1tZG2wUA3YHDPy0hWDH1lFoBfwqLmLBIhQrCKwvzBDo=
+			</data>
+		</dict>
+		<key>it-IT.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4awTrGOKkDjHQnULCm5f0lQo15iJQRa/80HeDOZ3sOM=
+			</data>
+		</dict>
+		<key>ro-ro.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			st6ZUCzrLm5BBk/YRP9MOIK2QCGw9k0VVXRYBx0bhq8=
 			</data>
 		</dict>
 		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>

@@ -301,7 +301,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSString;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC13ClearQuoteSDK20CQBaseViewController")
+@interface CQBaseViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13ClearQuoteSDK12CQIconButton")
 @interface CQIconButton : UIButton
@@ -318,7 +328,6 @@ SWIFT_CLASS("_TtC13ClearQuoteSDK15CQSDKAppBarView")
 @end
 
 @class UITextField;
-@class NSString;
 
 SWIFT_CLASS("_TtC13ClearQuoteSDK15CQSDKInputField")
 @interface CQSDKInputField : UIView <UITextFieldDelegate>
@@ -327,14 +336,14 @@ SWIFT_CLASS("_TtC13ClearQuoteSDK15CQSDKInputField")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)awakeFromNib;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class NSBundle;
 
 SWIFT_CLASS("_TtC13ClearQuoteSDK31CQSDKInputPageOneViewController")
-@interface CQSDKInputPageOneViewController : UIViewController
+@interface CQSDKInputPageOneViewController : CQBaseViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

@@ -61,6 +61,32 @@ public protocol ClearQuoteSDKDelegate {
   public func showQuoteDetails(inspectionId: Swift.String, baseVC: UIKit.UIViewController, onClose: (() -> Swift.Void)? = nil)
   @objc deinit
 }
+extension ClearQuoteSDK.ClearQuote {
+  public func getAllLanguages() -> [ClearQuoteSDK.CQLanguages]
+  public func setLanguage(_ languageId: Swift.String)
+  public func getLanguage() -> ClearQuoteSDK.CQLanguages
+}
+public enum CQLanguages : Swift.String {
+  case english
+  case spanish
+  case german
+  case french
+  case italian
+  case romanian
+  public var displayValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Swift.String {
+  public var CQLocalized: Swift.String {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUIButton : UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public func setText(txt: Swift.String)
   @_Concurrency.MainActor(unsafe) public func disable()
@@ -109,6 +135,13 @@ public struct CQSDKCustomerInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CQBaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func updateLocalizedText()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputField : UIKit.UIView, UIKit.UITextFieldDelegate, ClearQuoteSDK.CQSDKNibLoadable {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ipField: UIKit.UITextField!
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -129,7 +162,7 @@ public struct CQSDKCustomerInfo : Swift.Codable {
   @_Concurrency.MainActor(unsafe) public func setAfterTextChanges(onAfterTextChangesTemp: @escaping (Swift.String) -> ())
   @_Concurrency.MainActor(unsafe) public func clearError(msg: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) public func showError(msg: Swift.String? = nil, onlyErrorIcon: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func setAsDropdown(onSelectionChanged: @escaping () -> (), isStrictDropdown: Swift.Bool = false, showDropdownIcon: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func setAsDropdown(onSelectionChanged: @escaping (Swift.Int, Swift.String) -> (), isStrictDropdown: Swift.Bool = false, showDropdownIcon: Swift.Bool = false, isDirectionDown: Swift.Bool = true)
   @_Concurrency.MainActor(unsafe) public func setDropdownItems(items: [Swift.String])
   @_Concurrency.MainActor(unsafe) public func showDropdown()
   @_Concurrency.MainActor(unsafe) public func setAddItemButtonInDropdown(onClickBtnAddItemTemp: @escaping () -> (), btnText: Swift.String)
@@ -137,6 +170,7 @@ public struct CQSDKCustomerInfo : Swift.Codable {
   @_Concurrency.MainActor(unsafe) public func setLeftIcon(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromLeft: Swift.Int = 10)
   @_Concurrency.MainActor(unsafe) public func setRightIcon(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromRight: Swift.Int = 10)
   @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
   @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @objc deinit
@@ -153,8 +187,9 @@ extension ClearQuoteSDK.CQSDKNibLoadable where Self : UIKit.UIView {
   }
   public func setupFromNib()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputPageOneViewController : UIKit.UIViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputPageOneViewController : ClearQuoteSDK.CQBaseViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override public func updateLocalizedText()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -210,6 +245,7 @@ public struct CQSDKOverlayModel {
 public protocol CQSDKAppBarViewDelegate {
   func onTappedCross()
   func onTappedHamburger()
+  func onTappedLanguage()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKAppBarView : UIKit.UIView, ClearQuoteSDK.CQSDKNibLoadable {
   @_Concurrency.MainActor(unsafe) public var delegate: (any ClearQuoteSDK.CQSDKAppBarViewDelegate)?
@@ -280,11 +316,15 @@ public struct SVGImgProcessor : Kingfisher.ImageProcessor {
 extension ClearQuoteSDK.CQSDKQuoteCreationParentViewController : ClearQuoteSDK.CQSDKAppBarViewDelegate {
   @_Concurrency.MainActor(unsafe) public func onTappedCross()
   @_Concurrency.MainActor(unsafe) public func onTappedHamburger()
+  @_Concurrency.MainActor(unsafe) public func onTappedLanguage()
 }
 public let ClearQuoteIdentifier: Swift.String
 public enum CQSDKInspectionCompletionStatus {
 }
 public let buttonCornerRadius: Swift.Double
+extension ClearQuoteSDK.CQLanguages : Swift.Equatable {}
+extension ClearQuoteSDK.CQLanguages : Swift.Hashable {}
+extension ClearQuoteSDK.CQLanguages : Swift.RawRepresentable {}
 extension ClearQuoteSDK.CQSDKTextStyle : Swift.Equatable {}
 extension ClearQuoteSDK.CQSDKTextStyle : Swift.Hashable {}
 extension ClearQuoteSDK.CQSDKToastDuration : Swift.Equatable {}

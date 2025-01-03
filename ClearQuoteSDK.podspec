@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ClearQuoteSDK"
-    s.version      = "0.0.5"
+    s.version      = "0.0.6"
     s.summary      = "ClearQuoteSDK: ClearQuoteSDK"
     s.description  = "A more detailed description of ClearQuoteSDK"
     s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk.git"
