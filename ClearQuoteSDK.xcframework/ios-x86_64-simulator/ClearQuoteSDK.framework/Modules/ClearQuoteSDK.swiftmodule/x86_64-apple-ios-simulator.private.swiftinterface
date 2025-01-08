@@ -43,7 +43,7 @@ public protocol ClearQuoteSDKDelegate {
   public func isCQSDKInitialized() -> Swift.Bool
   public func checkRegistrationNumberExistsInFleetList(regNumber: Swift.String, completion: @escaping (_ isLPValid: Swift.Bool?, _ msg: Swift.String, _ tripDetailsApiResponse: ClearQuoteSDK.CQSDKV3Vehicle?) -> Swift.Void)
   public func logout()
-  public func getQuoteCreationController(hideTopBar: Swift.Bool = true) -> ClearQuoteSDK.CQSDKQuoteCreationParentViewController?
+  public func getQuoteCreationController(hideTopBar: Swift.Bool = true) -> UIKit.UIViewController?
   public func getCurrentDealerCode() -> Swift.String?
   public func getCurrentUserName() -> Swift.String?
   public func getCurrentSDKKey() -> Swift.String
@@ -52,7 +52,6 @@ public protocol ClearQuoteSDKDelegate {
   public func getCurrentClientAttrsDealer() -> Swift.String?
   public func getCurrentClientAttrsDealerIdentifier() -> Swift.String?
   public func getCurrentClientAttrsClientUniqueId() -> Swift.String?
-  public func CheckSpeedTest(completion: @escaping (Swift.Bool) -> Swift.Void)
   public func getV3VehicleDetailsByLicencePlateNumber(_ licencePlatno: Swift.String) -> [ClearQuoteSDK.CQSDKMakeModel]
   public func startReachabilityNotifier()
   public func stopReachabilityNotifier()
@@ -306,17 +305,6 @@ public struct CQSDKMakeModel {
 public struct SVGImgProcessor : Kingfisher.ImageProcessor {
   public var identifier: Swift.String
   public func process(item: Kingfisher.ImageProcessItem, options: Kingfisher.KingfisherParsedOptionsInfo) -> Kingfisher.KFCrossPlatformImage?
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKQuoteCreationParentViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension ClearQuoteSDK.CQSDKQuoteCreationParentViewController : ClearQuoteSDK.CQSDKAppBarViewDelegate {
-  @_Concurrency.MainActor(unsafe) public func onTappedCross()
-  @_Concurrency.MainActor(unsafe) public func onTappedHamburger()
-  @_Concurrency.MainActor(unsafe) public func onTappedLanguage()
 }
 public let ClearQuoteIdentifier: Swift.String
 public enum CQSDKInspectionCompletionStatus {

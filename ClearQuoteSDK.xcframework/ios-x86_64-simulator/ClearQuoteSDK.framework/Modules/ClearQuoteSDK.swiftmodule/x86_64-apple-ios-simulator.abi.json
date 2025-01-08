@@ -1011,13 +1011,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ClearQuoteSDK.CQSDKQuoteCreationParentViewController?",
+                "printedName": "UIKit.UIViewController?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CQSDKQuoteCreationParentViewController",
-                    "printedName": "ClearQuoteSDK.CQSDKQuoteCreationParentViewController",
-                    "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController"
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1031,8 +1031,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK0aB0C03getB18CreationController10hideTopBarAA010CQSDKQuotee10ParentViewF0CSgSb_tF",
-            "mangledName": "$s13ClearQuoteSDK0aB0C03getB18CreationController10hideTopBarAA010CQSDKQuotee10ParentViewF0CSgSb_tF",
+            "usr": "s:13ClearQuoteSDK0aB0C03getB18CreationController10hideTopBarSo06UIViewF0CSgSb_tF",
+            "mangledName": "$s13ClearQuoteSDK0aB0C03getB18CreationController10hideTopBarSo06UIViewF0CSgSb_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
               "AccessControl"
@@ -1249,44 +1249,6 @@
             "declKind": "Func",
             "usr": "s:13ClearQuoteSDK0aB0C021getCurrentClientAttrsF8UniqueIdSSSgyF",
             "mangledName": "$s13ClearQuoteSDK0aB0C021getCurrentClientAttrsF8UniqueIdSSSgyF",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "CheckSpeedTest",
-            "printedName": "CheckSpeedTest(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK0aB0C14CheckSpeedTest10completionyySbc_tF",
-            "mangledName": "$s13ClearQuoteSDK0aB0C14CheckSpeedTest10completionyySbc_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
               "AccessControl"
@@ -11682,290 +11644,6 @@
         "moduleName": "ClearQuoteSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "CQSDKQuoteCreationParentViewController",
-        "printedName": "CQSDKQuoteCreationParentViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController(im)viewDidLoad",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC11viewDidLoadyyF",
-            "moduleName": "ClearQuoteSDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CQSDKQuoteCreationParentViewController",
-                "printedName": "ClearQuoteSDK.CQSDKQuoteCreationParentViewController",
-                "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "ClearQuoteSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ClearQuoteSDK.CQSDKQuoteCreationParentViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CQSDKQuoteCreationParentViewController",
-                    "printedName": "ClearQuoteSDK.CQSDKQuoteCreationParentViewController",
-                    "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController(im)initWithCoder:",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "ClearQuoteSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "onTappedCross",
-            "printedName": "onTappedCross()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC13onTappedCrossyyF",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC13onTappedCrossyyF",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onTappedHamburger",
-            "printedName": "onTappedHamburger()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC17onTappedHamburgeryyF",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC17onTappedHamburgeryyF",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onTappedLanguage",
-            "printedName": "onTappedLanguage()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC16onTappedLanguageyyF",
-            "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC16onTappedLanguageyyF",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@ClearQuoteSDK@objc(cs)CQSDKQuoteCreationParentViewController",
-        "mangledName": "$s13ClearQuoteSDK38CQSDKQuoteCreationParentViewControllerC",
-        "moduleName": "ClearQuoteSDK",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIViewController",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "CQSDKAppBarViewDelegate",
-            "printedName": "CQSDKAppBarViewDelegate",
-            "usr": "s:13ClearQuoteSDK23CQSDKAppBarViewDelegateP",
-            "mangledName": "$s13ClearQuoteSDK23CQSDKAppBarViewDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -13178,7 +12856,7 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/ClearQuoteSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 68078,
+      "offset": 68155,
       "length": 4,
       "value": "true"
     },
@@ -15068,35 +14746,35 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1049,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1225,
+      "offset": 1277,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1360,
+      "offset": 1412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1476,
       "length": 4,
       "value": "\"10\""
     },
@@ -15487,29 +15165,22 @@
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1693,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1769,
+      "offset": 1796,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2011,
+      "offset": 2038,
       "length": 36,
       "value": "\"org.tensorflow.lite.inferencequeue\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2088,
+      "offset": 2115,
       "length": 5,
       "value": "false"
     },
@@ -16405,28 +16076,28 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 548,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 815,
+      "offset": 808,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 951,
+      "offset": 944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1249,
+      "offset": 1242,
       "length": 5,
       "value": "false"
     },
