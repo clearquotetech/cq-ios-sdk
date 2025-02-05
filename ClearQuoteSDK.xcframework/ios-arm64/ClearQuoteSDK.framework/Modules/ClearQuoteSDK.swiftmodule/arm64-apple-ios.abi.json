@@ -3657,6 +3657,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -12856,7 +12866,7 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/ClearQuoteSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 68155,
+      "offset": 57039,
       "length": 4,
       "value": "true"
     },
@@ -14333,6 +14343,13 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "StringLiteral",
+      "offset": 1012,
+      "length": 58,
+      "value": "\"Sufficient data not available to create an offline quote\""
+    },
+    {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
+      "kind": "StringLiteral",
       "offset": 212,
       "length": 42,
       "value": "\"Empty Registration Number is not allowed\""
@@ -14416,43 +14433,50 @@
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1012,
+      "length": 58,
+      "value": "\"Sufficient data not available to create an offline quote\""
+    },
+    {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1025,
+      "offset": 1131,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1160,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1025,
+      "offset": 1131,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1160,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1025,
+      "offset": 1131,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1160,
       "length": 3,
       "value": "500"
     },
@@ -14588,160 +14612,6 @@
       "offset": 197,
       "length": 11,
       "value": "\"video\/mp4\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 210,
-      "length": 18,
-      "value": "\"SDK key is empty\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 258,
-      "length": 21,
-      "value": "\"Invalid user region\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 303,
-      "length": 9,
-      "value": "\"Success\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 334,
-      "length": 20,
-      "value": "\"SDK Internal Error\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 390,
-      "length": 27,
-      "value": "\"CQ SDK is not initialized\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 210,
-      "length": 18,
-      "value": "\"SDK key is empty\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 258,
-      "length": 21,
-      "value": "\"Invalid user region\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 303,
-      "length": 9,
-      "value": "\"Success\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 334,
-      "length": 20,
-      "value": "\"SDK Internal Error\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "StringLiteral",
-      "offset": 390,
-      "length": 27,
-      "value": "\"CQ SDK is not initialized\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 508,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 539,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 508,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 539,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 475,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 508,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 539,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInitializationResponses.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 3,
-      "value": "500"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
@@ -14917,13 +14787,6 @@
       "offset": 258,
       "length": 23,
       "value": "\"dd MM yyyy hh mm ss a\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKDateTimeFormatter.swift",
-      "kind": "StringLiteral",
-      "offset": 302,
-      "length": 26,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss'Z'\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKAddV3VehicleApiPayload.swift",
@@ -15474,7 +15337,7 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/CQSDKNetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11217,
+      "offset": 11358,
       "length": 5,
       "value": "false"
     },

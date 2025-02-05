@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NnqAZgNrwl7ReOqm2KDsTFGCsKE=
+		6UD0tO6BRaQUmHdtp1UwohJU/b4=
 		</data>
 		<key>CQSDKAppBarView.nib</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XHJjatMz1XM+MiTJow9cWEQpO0M=
+		bh+x9U77H5SKxz6SDWwKHsj7D/w=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jJfaaa8EGzn8byMez66WPFXzZKU=
+		Df8R11RbChfQ4mZFUh6NoYLS1P8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -371,7 +371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZqAaLeXMGavUPUV/34IEQvfUaUytABEAA+X20QpYgmY=
+			3OdqXqV726IYPzcsBDUd6tf8RmR2zHzzV1WzL3k5QBM=
 			</data>
 		</dict>
 		<key>CQSDKAppBarView.nib</key>
@@ -868,7 +868,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhA1DRHQwgwKP7PmAbIQvNBaACk75wC0F9jHeIFOkZw=
+			h0YcHJAvQ5ybmrTNtIoAXjYg8W3NJyAfd+zPdgQMHXg=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -896,7 +896,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5keO68gC4WgTi0fAGXgwcRSfUrSB0+fVfr1mqVwtw3g=
+			vlla2Dj39VfQjVoMeIiUC/jJ8Nz8a7zaArkFcjvDr3o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
