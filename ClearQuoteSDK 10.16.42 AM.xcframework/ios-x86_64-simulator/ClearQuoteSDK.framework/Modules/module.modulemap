@@ -1,4 +1,0 @@
-framework module ClearQuoteSDK {
-  header "ClearQuoteSDK-Swift.h"
-  requires objc
-}
