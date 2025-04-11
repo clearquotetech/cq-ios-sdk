@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ClearQuoteSDK"
-    s.version      = "0.0.8"
+    s.version      = "0.0.9"
     s.summary      = "ClearQuoteSDK: ClearQuoteSDK"
     s.description  = "A more detailed description of ClearQuoteSDK"
     s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk.git"
@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
     s.dependency 'Kingfisher', '7.12.0'
   s.dependency 'DropDown'
   s.dependency 'SVGKit'
-  s.dependency 'IQKeyboardManagerSwift', '6.3.0'
+  s.dependency 'IQKeyboardManagerSwift', '6.5.16'
   s.dependency 'Fuse'
   s.dependency 'AnyCodable-FlightSchool'
   s.dependency 'TensorFlowLiteSwift', '2.3.0'
-  s.dependency 'Sentry', '8.38.0'
+  s.dependency 'Sentry', '8.46.0'
   s.dependency 'SQLite.swift'
   s.dependency 'ReachabilitySwift'
 end
