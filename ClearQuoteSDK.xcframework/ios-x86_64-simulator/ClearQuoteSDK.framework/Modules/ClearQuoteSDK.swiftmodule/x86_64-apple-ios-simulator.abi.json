@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ClearQuoteSDK",
+    "printedName": "ClearQuoteSDK",
     "children": [
       {
         "kind": "Import",
@@ -127,6 +127,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1531,7 +1547,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2002,6 +2034,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2082,6 +2128,7 @@
             "mangledName": "$s13ClearQuoteSDK13CQSDKUIButtonC7setText3txtySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2104,6 +2151,7 @@
             "mangledName": "$s13ClearQuoteSDK13CQSDKUIButtonC7disableyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2125,6 +2173,7 @@
             "mangledName": "$s13ClearQuoteSDK13CQSDKUIButtonC6enableyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2146,6 +2195,7 @@
             "mangledName": "$s13ClearQuoteSDK13CQSDKUIButtonC8leftIconyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2157,6 +2207,7 @@
         "mangledName": "$s13ClearQuoteSDK13CQSDKUIButtonC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2172,6 +2223,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2306,6 +2371,7 @@
             "mangledName": "$s13ClearQuoteSDK21CQSDKUIOutlinedButtonC20setOverlaysCounterUIyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2334,6 +2400,7 @@
             "mangledName": "$s13ClearQuoteSDK21CQSDKUIOutlinedButtonC7setText3txtySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2355,6 +2422,7 @@
             "mangledName": "$s13ClearQuoteSDK21CQSDKUIOutlinedButtonC7disableyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2376,6 +2444,7 @@
             "mangledName": "$s13ClearQuoteSDK21CQSDKUIOutlinedButtonC6enableyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2387,6 +2456,7 @@
         "mangledName": "$s13ClearQuoteSDK21CQSDKUIOutlinedButtonC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2402,6 +2472,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3405,6 +3489,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3500,6 +3598,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3579,6 +3691,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -3701,6 +3827,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -3724,6 +3851,7 @@
             "moduleName": "ClearQuoteSDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3779,6 +3907,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3820,6 +3949,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -3832,6 +3962,7 @@
         "moduleName": "ClearQuoteSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -3844,6 +3975,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4120,8 +4265,9 @@
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ReferenceOwnership",
               "IBOutlet",
@@ -4242,6 +4388,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -4269,6 +4416,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -4291,6 +4439,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC12hidePasswordyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4313,6 +4462,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC12showPasswordyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4334,6 +4484,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC9hideLabelyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4368,6 +4519,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC8setLabel3txt11isMandatoryySS_SbtF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4395,6 +4547,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC14setPlaceholder3txtySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4417,6 +4570,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC13getInputValueSSyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4444,6 +4598,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC8setValue3txtySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4465,6 +4620,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC12disableInputyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4486,6 +4642,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC11enableInputyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4513,6 +4670,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC11setErrorMsg3msgySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4540,6 +4698,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC13setSuccessMsg3msgySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4567,6 +4726,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC15setKeyboardType08keyboardH0ySo010UIKeyboardH0V_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4606,6 +4766,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC22setOnBeforeTextChanges02onhiJ4TempyySSc_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4645,6 +4806,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC19setAfterTextChanges02onghI4TempyySSc_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4681,6 +4843,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC10clearError3msgySSSg_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4724,6 +4887,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC9showError3msg04onlyG4IconySSSg_SbtF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4797,6 +4961,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC13setAsDropdown18onSelectionChanged08isStrictH004showH4Icon0L13DirectionDownyySi_SStc_S3btF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4832,6 +4997,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC16setDropdownItems5itemsySaySSG_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4853,6 +5019,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC12showDropdownyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4897,6 +5064,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC26setAddItemButtonInDropdown010onClickBtngH4Temp7btnTextyyyc_SStF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4935,6 +5103,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC10setOnClick02onH0yyyc_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5008,6 +5177,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC11setLeftIcon7uiImage5onTap5width6height011paddingFromG0ySo7UIImageCSg_yycS3itF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5081,6 +5251,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC12setRightIcon7uiImage5onTap5width6height011paddingFromG0ySo7UIImageCSg_yycS3itF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5111,6 +5282,7 @@
             "objc_name": "textFieldShouldReturn:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -5142,6 +5314,7 @@
             "objc_name": "textFieldShouldBeginEditing:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5171,6 +5344,7 @@
             "objc_name": "textFieldDidEndEditing:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5213,6 +5387,7 @@
             "objc_name": "textField:shouldChangeCharactersInRange:replacementString:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5224,6 +5399,7 @@
         "mangledName": "$s13ClearQuoteSDK15CQSDKInputFieldC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -5243,6 +5419,20 @@
             "printedName": "CQSDKNibLoadable",
             "usr": "s:13ClearQuoteSDK16CQSDKNibLoadableP",
             "mangledName": "$s13ClearQuoteSDK16CQSDKNibLoadableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5552,6 +5742,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -5783,6 +5989,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -5807,6 +6014,7 @@
             "moduleName": "ClearQuoteSDK",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5863,6 +6071,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -5904,6 +6113,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -5915,6 +6125,7 @@
         "mangledName": "$s13ClearQuoteSDK31CQSDKInputPageOneViewControllerC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -5928,6 +6139,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6204,6 +6429,20 @@
         ],
         "enumRawTypeName": "Double",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6947,6 +7186,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7088,6 +7341,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7139,6 +7408,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -7175,6 +7445,7 @@
             "mangledName": "$s13ClearQuoteSDK12CQSDKUILabelC7setText3txt11isMandatoryySS_SbtF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7217,6 +7488,7 @@
             "mangledName": "$s13ClearQuoteSDK12CQSDKUILabelC8setStyle_10labelColoryAA09CQSDKTextF0O_AA11CQSDKColorsOSgtF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7244,6 +7516,7 @@
             "mangledName": "$s13ClearQuoteSDK12CQSDKUILabelC15setCornerRadiusyy12CoreGraphics7CGFloatVF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7255,6 +7528,7 @@
         "mangledName": "$s13ClearQuoteSDK12CQSDKUILabelC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -7269,6 +7543,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7367,6 +7655,7 @@
         "mangledName": "$s13ClearQuoteSDK12CQIconButtonC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -7382,6 +7671,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7570,6 +7873,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -7603,8 +7922,9 @@
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -7709,6 +8029,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -7737,6 +8058,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKAppBarViewC13setDealerLogo3urlySS_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7758,6 +8080,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKAppBarViewC12hideCrossBtnyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7779,6 +8102,7 @@
             "mangledName": "$s13ClearQuoteSDK15CQSDKAppBarViewC16hideHamburgerBtnyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -7790,6 +8114,7 @@
         "mangledName": "$s13ClearQuoteSDK15CQSDKAppBarViewC",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -7809,6 +8134,20 @@
             "printedName": "CQSDKNibLoadable",
             "usr": "s:13ClearQuoteSDK16CQSDKNibLoadableP",
             "mangledName": "$s13ClearQuoteSDK16CQSDKNibLoadableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -8126,6 +8465,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8189,6 +8544,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8284,6 +8655,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8409,6 +8796,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8591,6 +8994,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -8702,6 +9119,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -11393,6 +11824,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -11629,6 +12076,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ImageProcessor",
             "printedName": "ImageProcessor",
             "usr": "s:10Kingfisher14ImageProcessorP",
@@ -11800,6 +12261,22 @@
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -11977,6 +12454,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -12516,12 +13007,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -12616,6 +13101,7 @@
             "mangledName": "$sSo23UIActivityIndicatorViewC13ClearQuoteSDKE05scaleB06factory12CoreGraphics7CGFloatV_tF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -12630,6 +13116,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIActivityIndicatorView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -12645,6 +13132,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12745,6 +13246,7 @@
             "mangledName": "$sSo6UIViewC13ClearQuoteSDKE28setDefaultDialogCornerRadiusyyF",
             "moduleName": "ClearQuoteSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -12759,6 +13261,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -12773,6 +13276,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12913,25 +13430,11 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKRegion.swift",
-      "kind": "StringLiteral",
-      "offset": 149,
-      "length": 7,
-      "value": "\"cquat\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKRegion.swift",
-      "kind": "StringLiteral",
-      "offset": 171,
-      "length": 4,
-      "value": "\"eu\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKRegion.swift",
-      "kind": "StringLiteral",
-      "offset": 192,
-      "length": 6,
-      "value": "\"prod\""
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKAddVehicleDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1793,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKRegion.swift",
@@ -13107,202 +13610,6 @@
       "offset": 1751,
       "length": 44,
       "value": "\"cq_sdk_add_vehicle_bodystyle_preview_coupe\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 171,
-      "length": 19,
-      "value": "\"cq_sdk_error_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 219,
-      "length": 18,
-      "value": "\"cq_sdk_icon_down\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 264,
-      "length": 16,
-      "value": "\"cq_sdk_icon_up\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
-      "length": 18,
-      "value": "\"cq_sdk_back_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 370,
-      "length": 32,
-      "value": "\"cq_sdk_deactivated_camera_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 446,
-      "length": 33,
-      "value": "\"cq_sdk_deactivated_details_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 519,
-      "length": 29,
-      "value": "\"cq_sdk_add_more_images_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 586,
-      "length": 27,
-      "value": "\"cq_sdk_retake_button_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 653,
-      "length": 29,
-      "value": "\"cq_sdk_current_overlay_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 723,
-      "length": 30,
-      "value": "\"cq_sdk_overlay_captured_icon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 782,
-      "length": 18,
-      "value": "\"cq_sdk_radio_off\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 828,
-      "length": 17,
-      "value": "\"cq_sdk_radio_on\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 47,
-      "value": "\"cq_sdk_ip_image_capture_mandatory_and_skipped\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 994,
-      "length": 33,
-      "value": "\"cq_sdk_ip_image_capture_enabled\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1073,
-      "length": 35,
-      "value": "\"cq_sdk_ip_image_capture_mandatory\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1163,
-      "length": 44,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_hatch\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1263,
-      "length": 45,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_pickup\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1363,
-      "length": 44,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_sedan\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1460,
-      "length": 42,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_suv\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1555,
-      "length": 42,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_van\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1652,
-      "length": 44,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_wagon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
-      "kind": "StringLiteral",
-      "offset": 1751,
-      "length": 44,
-      "value": "\"cq_sdk_add_vehicle_bodystyle_preview_coupe\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 163,
-      "length": 7,
-      "value": "\"en-us\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 190,
-      "length": 7,
-      "value": "\"es-es\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 216,
-      "length": 7,
-      "value": "\"de-de\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 7,
-      "value": "\"fr-mr\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 269,
-      "length": 7,
-      "value": "\"it-IT\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 297,
-      "length": 7,
-      "value": "\"ro-ro\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/Others\/CQLocalizationManager.swift",
@@ -13361,6 +13668,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Root\/CQSDKRootNavigationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 231,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
       "kind": "StringLiteral",
       "offset": 876,
@@ -13382,6 +13696,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1647,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/TFLite\/Camera Feed\/CameraFeedManager.swift",
       "kind": "StringLiteral",
       "offset": 2083,
@@ -13394,48 +13715,6 @@
       "offset": 2281,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Helpers\/TFLite\/Camera Feed\/CameraFeedManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1853,
-      "length": 17,
-      "value": "\"ClearQuoteSDK.CameraFeedManager\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
-      "kind": "StringLiteral",
-      "offset": 237,
-      "length": 30,
-      "value": "\"Vehicle exists in fleet list\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
-      "kind": "StringLiteral",
-      "offset": 305,
-      "length": 27,
-      "value": "\"Vehicle not in fleet list\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
-      "kind": "StringLiteral",
-      "offset": 376,
-      "length": 34,
-      "value": "\"Vehicle master v3 is not enabled\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
-      "kind": "StringLiteral",
-      "offset": 444,
-      "length": 27,
-      "value": "\"CQ SDK is not initialized\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
-      "kind": "StringLiteral",
-      "offset": 513,
-      "length": 75,
-      "value": "\"For provided Registration number, Bodystyle is found as null in CQ system\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleInFleetListCheckResult.swift",
@@ -13494,25 +13773,25 @@
       "value": "\"CQSDKPanelCapturedDialogCollectionViewCell\""
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKPanelCapturedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 919,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKAreYouSureWantToExitDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 830,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Controllers\/Base\/CQSDKBaseViewController.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 21,
       "value": "\"CQLanguageDidChange\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKFleetImageType.swift",
-      "kind": "StringLiteral",
-      "offset": 165,
-      "length": 8,
-      "value": "\"before\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKFleetImageType.swift",
-      "kind": "StringLiteral",
-      "offset": 191,
-      "length": 7,
-      "value": "\"after\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKFleetImageType.swift",
@@ -13550,6 +13829,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKIncorrectImageCapturedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 688,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaUploadS3FolderName.swift",
       "kind": "StringLiteral",
       "offset": 182,
@@ -13569,76 +13855,6 @@
       "offset": 261,
       "length": 31,
       "value": "\"nativeAndroidUploadsSpeedTest\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaUploadS3FolderName.swift",
-      "kind": "StringLiteral",
-      "offset": 182,
-      "length": 17,
-      "value": "\"nativeIOSImages\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaUploadS3FolderName.swift",
-      "kind": "StringLiteral",
-      "offset": 217,
-      "length": 17,
-      "value": "\"nativeIOSVideos\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaUploadS3FolderName.swift",
-      "kind": "StringLiteral",
-      "offset": 261,
-      "length": 31,
-      "value": "\"nativeAndroidUploadsSpeedTest\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 155,
-      "length": 7,
-      "value": "\"sedan\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 180,
-      "length": 7,
-      "value": "\"hatch\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 5,
-      "value": "\"suv\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 5,
-      "value": "\"van\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 8,
-      "value": "\"pickup\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 274,
-      "length": 7,
-      "value": "\"wagon\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
-      "kind": "StringLiteral",
-      "offset": 299,
-      "length": 7,
-      "value": "\"coupe\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBodyStyles.swift",
@@ -13723,188 +13939,6 @@
       "offset": 436,
       "length": 25,
       "value": "\"downloadTranslationData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKLNDataItemsDownloadAction.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 18,
-      "value": "\"downloadUserData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKLNDataItemsDownloadAction.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 22,
-      "value": "\"downloadVehiclesData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKLNDataItemsDownloadAction.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
-      "length": 28,
-      "value": "\"downloadLiveDetectionsData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKLNDataItemsDownloadAction.swift",
-      "kind": "StringLiteral",
-      "offset": 374,
-      "length": 26,
-      "value": "\"downloadTFLiteModelsData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKLNDataItemsDownloadAction.swift",
-      "kind": "StringLiteral",
-      "offset": 436,
-      "length": 25,
-      "value": "\"downloadTranslationData\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 170,
-      "length": 22,
-      "value": "\"auth\/users\/sdk\/login\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 10,
-      "value": "\"api\/user\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 28,
-      "value": "\"api\/dealer\/v2\/all\/vehicles\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 332,
-      "length": 28,
-      "value": "\"api\/dealer\/v3\/all\/vehicles\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 381,
-      "length": 35,
-      "value": "\"api\/vehicle\/licenseplateno\/search\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 443,
-      "length": 21,
-      "value": "\"api\/vehiclemasterv3\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 488,
-      "length": 27,
-      "value": "\"api\/live-detection\/config\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 541,
-      "length": 20,
-      "value": "\"api\/v3\/createquote\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 585,
-      "length": 17,
-      "value": "\"api\/createquote\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 627,
-      "length": 18,
-      "value": "\"api\/s3\/signedurl\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 669,
-      "length": 28,
-      "value": "\"api\/analyse\/v2\/segmentbulk\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 728,
-      "length": 35,
-      "value": "\"api\/analyse\/v2\/calculateestimates\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 789,
-      "length": 22,
-      "value": "\"api\/images-status-ui\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 851,
-      "length": 28,
-      "value": "\"api\/analyse\/v2\/deleteimage\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 903,
-      "length": 24,
-      "value": "\"api\/analysis\/detectreg\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 952,
-      "length": 24,
-      "value": "\"api\/analysis\/detectvin\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1001,
-      "length": 24,
-      "value": "\"api\/analysis\/detectodo\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1056,
-      "length": 27,
-      "value": "\"api\/dealer\/v3\/add\/vehicle\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1113,
-      "length": 18,
-      "value": "\"api\/dvla\/details\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1159,
-      "length": 21,
-      "value": "\"api\/lookup\/tfmodels\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1216,
-      "length": 22,
-      "value": "\"api\/exportpdfformat3\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
@@ -14152,6 +14186,13 @@
       "value": "10"
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKInspectionCompletedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 787,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
       "kind": "IntegerLiteral",
       "offset": 190,
@@ -14187,167 +14228,6 @@
       "value": "3"
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 255,
-      "length": 1,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 314,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 223,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 255,
-      "length": 1,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKOfflineDataSyncState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 314,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 212,
-      "length": 42,
-      "value": "\"Empty Registration Number is not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
-      "length": 59,
-      "value": "\"Special characters in Registration Number are not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 389,
-      "length": 27,
-      "value": "\"Empty make is not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 451,
-      "length": 26,
-      "value": "\"Null make is not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 510,
-      "length": 19,
-      "value": "\"UnAcceptable make\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 566,
-      "length": 28,
-      "value": "\"Empty model is not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 630,
-      "length": 27,
-      "value": "\"Null model is not allowed\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 691,
-      "length": 20,
-      "value": "\"UnAcceptable model\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 740,
-      "length": 29,
-      "value": "\"Error in creating the quote\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 809,
-      "length": 31,
-      "value": "\"Error in fetching in overlays\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 874,
-      "length": 27,
-      "value": "\"CQ SDK is not initialized\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 934,
-      "length": 30,
-      "value": "\"Error in inserting the quote\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "StringLiteral",
-      "offset": 1012,
-      "length": 58,
-      "value": "\"Sufficient data not available to create an offline quote\""
-    },
-    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
       "kind": "StringLiteral",
       "offset": 212,
@@ -14453,32 +14333,11 @@
       "value": "500"
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1131,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1131,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStartInspectionResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 3,
-      "value": "500"
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKImageCapturedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 355,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK-Demo\/Library\/Helpers\/Tap.swift",
@@ -14495,27 +14354,6 @@
       "value": "\"CQSDKDemoAppPreferences\""
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK-Demo\/Library\/Enums\/UserDefaultsPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 25,
-      "value": "\"CQSDKDemoAppPreferences\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKQuoteCreationStepperSteps.swift",
-      "kind": "StringLiteral",
-      "offset": 186,
-      "length": 7,
-      "value": "\"input\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKQuoteCreationStepperSteps.swift",
-      "kind": "StringLiteral",
-      "offset": 213,
-      "length": 9,
-      "value": "\"uploads\""
-    },
-    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKQuoteCreationStepperSteps.swift",
       "kind": "StringLiteral",
       "offset": 186,
@@ -14544,20 +14382,6 @@
       "value": "\"vehicleVersionV3\""
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleVersion.swift",
-      "kind": "StringLiteral",
-      "offset": 177,
-      "length": 18,
-      "value": "\"vehicleVersionV2\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKVehicleVersion.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 18,
-      "value": "\"vehicleVersionV3\""
-    },
-    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKQuoteType.swift",
       "kind": "StringLiteral",
       "offset": 149,
@@ -14570,34 +14394,6 @@
       "offset": 174,
       "length": 7,
       "value": "\"fleet\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKQuoteType.swift",
-      "kind": "StringLiteral",
-      "offset": 149,
-      "length": 7,
-      "value": "\"lease\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKQuoteType.swift",
-      "kind": "StringLiteral",
-      "offset": 174,
-      "length": 7,
-      "value": "\"fleet\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaContentType.swift",
-      "kind": "StringLiteral",
-      "offset": 168,
-      "length": 11,
-      "value": "\"image\/jpg\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaContentType.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 11,
-      "value": "\"video\/mp4\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKMediaContentType.swift",
@@ -14672,27 +14468,6 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
       "kind": "StringLiteral",
-      "offset": 149,
-      "length": 30,
-      "value": "\"https:\/\/cquat.clearquote.io\/\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
-      "offset": 194,
-      "length": 33,
-      "value": "\"https:\/\/euserver.clearquote.io\/\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
-      "offset": 244,
-      "length": 31,
-      "value": "\"https:\/\/server.clearquote.in\/\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
       "offset": 324,
       "length": 25,
       "value": "\"https:\/\/cq-uat.web.app\/\""
@@ -14712,25 +14487,11 @@
       "value": "\"https:\/\/app.clearquote.io\/\""
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
-      "offset": 324,
-      "length": 25,
-      "value": "\"https:\/\/cq-uat.web.app\/\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
-      "offset": 364,
-      "length": 27,
-      "value": "\"https:\/\/eu.clearquote.io\/\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKBaseUrl.swift",
-      "kind": "StringLiteral",
-      "offset": 408,
-      "length": 28,
-      "value": "\"https:\/\/app.clearquote.io\/\""
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKImageCaptureCompletedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 782,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Controllers\/CustomDialogs\/CQSDKProgressDialogViewController.swift",
@@ -14738,34 +14499,6 @@
       "offset": 575,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKToastDuration.swift",
-      "kind": "FloatLiteral",
-      "offset": 164,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKToastDuration.swift",
-      "kind": "FloatLiteral",
-      "offset": 184,
-      "length": 3,
-      "value": "4.0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKToastDuration.swift",
-      "kind": "FloatLiteral",
-      "offset": 164,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKToastDuration.swift",
-      "kind": "FloatLiteral",
-      "offset": 184,
-      "length": 3,
-      "value": "4.0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Networking\/ResponseTypes\/CQSDKToastDuration.swift",
@@ -14808,90 +14541,6 @@
       "offset": 226,
       "length": 4,
       "value": "\"CQ\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 191,
-      "length": 30,
-      "value": "\"cq_sdk_disabled_button_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 255,
-      "length": 23,
-      "value": "\"cq_sdk_disabled_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 311,
-      "length": 22,
-      "value": "\"cq_sdk_divider_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 381,
-      "length": 37,
-      "value": "\"cq_sdk_input_field_label_text_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 448,
-      "length": 19,
-      "value": "\"cq_sdk_text_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 492,
-      "length": 14,
-      "value": "\"cq_sdk_white\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 543,
-      "length": 23,
-      "value": "\"cq_sdk_image_bg_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 613,
-      "length": 36,
-      "value": "\"cq_sdk_app_bar_icon_disabled_color\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 679,
-      "length": 19,
-      "value": "\"cq_sdk_dark_green\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 729,
-      "length": 20,
-      "value": "\"cq_sdk_overlay_red\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 782,
-      "length": 22,
-      "value": "\"cq_sdk_overlay_green\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
-      "kind": "StringLiteral",
-      "offset": 852,
-      "length": 37,
-      "value": "\"cq_sdk_rtd_message_background_color\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKColors.swift",
@@ -15046,6 +14695,13 @@
       "offset": 2115,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2301,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
@@ -15223,6 +14879,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/EntityScanner\/CQSDKEntityScannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1123,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
       "kind": "Array",
       "offset": 256,
@@ -15279,6 +14942,13 @@
       "value": "\"Loading...\""
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKLoadingDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 539,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Library\/Extensions\/UIImage+Watermark.swift",
       "kind": "StringLiteral",
       "offset": 1748,
@@ -15291,6 +14961,13 @@
       "offset": 533,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKGuidedFlowHelperGIFDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 688,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/CQSDKNetworkManager.swift",
@@ -15434,146 +15111,6 @@
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 2,
-      "value": "96"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 239,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 291,
-      "length": 2,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 317,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 343,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 369,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 2,
-      "value": "96"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 239,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 291,
-      "length": 2,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 317,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 343,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 369,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
       "kind": "StringLiteral",
       "offset": 484,
       "length": 14,
@@ -15590,48 +15127,6 @@
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
       "kind": "StringLiteral",
       "offset": 559,
-      "length": 11,
-      "value": "\"Exo2-Bold\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 484,
-      "length": 14,
-      "value": "\"Exo2-Regular\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 15,
-      "value": "\"Exo2-SemiBold\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 559,
-      "length": 11,
-      "value": "\"Exo2-Bold\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 807,
-      "length": 14,
-      "value": "\"Exo2-Regular\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 846,
-      "length": 15,
-      "value": "\"Exo2-SemiBold\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/CQSDKUIFonts.swift",
-      "kind": "StringLiteral",
-      "offset": 882,
       "length": 11,
       "value": "\"Exo2-Bold\""
     },
@@ -15678,6 +15173,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKMandatoryPanelsNotCapturedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 622,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Radio button\/CQSDKRadioButton.swift",
       "kind": "BooleanLiteral",
       "offset": 364,
@@ -15690,55 +15192,6 @@
       "offset": 1569,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 212,
-      "length": 28,
-      "value": "\"CQSDKUserAndDealerSettings\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 262,
-      "length": 13,
-      "value": "\"CQSDKRegion\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 304,
-      "length": 20,
-      "value": "\"CQSDKIsInitialized\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 343,
-      "length": 10,
-      "value": "\"CQSDKKey\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 385,
-      "length": 26,
-      "value": "\"CQSDKOnlineConfigVersion\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 25,
-      "value": "\"AppUserClientAttributes\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 504,
-      "length": 12,
-      "value": "\"CQLanguage\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKUserDefaultPreferenceKeys.swift",
@@ -15888,48 +15341,6 @@
       "value": "\"CQSDKInspection\""
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 153,
-      "length": 11,
-      "value": "\"CQSDKMain\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 14,
-      "value": "\"CQSDKUploads\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 234,
-      "length": 20,
-      "value": "\"CQSDKCustomDialogs\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 277,
-      "length": 17,
-      "value": "\"CQSDKGuidedFlow\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 320,
-      "length": 20,
-      "value": "\"CQSDKEntityScanner\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKStoryboards.swift",
-      "kind": "StringLiteral",
-      "offset": 363,
-      "length": 17,
-      "value": "\"CQSDKInspection\""
-    },
-    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK-Demo\/Library\/Helpers\/SVGImgProcessor.swift",
       "kind": "StringLiteral",
       "offset": 219,
@@ -15979,13 +15390,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 364,
-      "length": 28,
-      "value": "\"ClearQuoteSDK.CQSDKTFLiteInterpreterHelper\""
-    },
-    {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
       "kind": "StringLiteral",
       "offset": 158,
@@ -16005,48 +15409,6 @@
       "offset": 301,
       "length": 9,
       "value": "\"Failure\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 9,
-      "value": "\"Success\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "StringLiteral",
-      "offset": 301,
-      "length": 9,
-      "value": "\"Failure\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 370,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 399,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 370,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 399,
-      "length": 3,
-      "value": "400"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKInspectionCompletionStatus.swift",
@@ -16488,20 +15850,6 @@
       "offset": 3888,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/Progress\/CQProgressIndicator.swift",
-      "kind": "StringLiteral",
-      "offset": 114,
-      "length": 23,
-      "value": "\"ClearQuoteSDK.CQActivityIndicatorView\""
-    },
-    {
-      "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/source\/Views\/CustomViews\/Progress\/CQProgressIndicator.swift",
-      "kind": "StringLiteral",
-      "offset": 114,
-      "length": 23,
-      "value": "\"ClearQuoteSDK.CQActivityIndicatorView\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKCreateQuotePayload.swift",

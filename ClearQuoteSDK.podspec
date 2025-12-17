@@ -1,25 +1,24 @@
 Pod::Spec.new do |s|
-    s.name         = "ClearQuoteSDK"
-    s.version      = "0.0.9"
-    s.summary      = "ClearQuoteSDK: ClearQuoteSDK"
-    s.description  = "A more detailed description of ClearQuoteSDK"
-    s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk.git"
-    s.license = { :type => "MIT", :file => "LICENSE" }
-    s.author             = { "Abhishek Sheth" => "abhisheksheth@clearquote.io" }
-    s.source       = { :git => "https://github.com/clearquotetech/cq-ios-sdk.git", :branch => "main" }
-    s.vendored_frameworks = "ClearQuoteSDK.xcframework"
-    s.platform = :ios
-    s.swift_version = "5.0"
-    s.ios.deployment_target  = '15.0'
+  s.name         = "ClearQuoteSDK"
+  s.version      = "0.1.0"
+  s.summary      = "ClearQuote iOS SDK"
+  s.description  = "ClearQuote iOS SDK distributed as a prebuilt XCFramework."
+  s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "Abhishek Sheth" => "abhisheksheth@clearquote.io" }
 
-    s.dependency 'Kingfisher', '7.12.0'
-  s.dependency 'DropDown'
-  s.dependency 'SVGKit'
-  s.dependency 'IQKeyboardManagerSwift', '6.5.16'
-  s.dependency 'Fuse'
-  s.dependency 'AnyCodable-FlightSchool'
-  s.dependency 'TensorFlowLiteSwift', '2.3.0'
-  s.dependency 'Sentry', '8.46.0'
-  s.dependency 'SQLite.swift'
-  s.dependency 'ReachabilitySwift'
+  # Using branch for now (acceptable for internal distribution)
+  s.source = {
+    :git => "https://github.com/clearquotetech/cq-ios-sdk.git",
+    :branch => "RN-SUPPORT"
+  }
+
+  s.vendored_frameworks = "ClearQuoteSDK.xcframework"
+
+  s.platform = :ios, "16.0"
+  s.swift_version = "5.0"
+  s.requires_arc = true
+
+  # Self-contained SDK.
+  # Host apps must not add overlapping dependencies.
 end
