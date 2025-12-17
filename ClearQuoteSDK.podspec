@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Abhishek Sheth" => "abhisheksheth@clearquote.io" }
 
-  # Using branch for now (acceptable for internal distribution)
   s.source = {
     :git => "https://github.com/clearquotetech/cq-ios-sdk.git",
     :branch => "RN-SUPPORT"
@@ -15,10 +14,10 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "ClearQuoteSDK.xcframework"
 
+  # 🚫 REMOVE THIS
+  # s.static_framework = true
+
   s.platform = :ios, "16.0"
   s.swift_version = "5.0"
   s.requires_arc = true
-
-  # Self-contained SDK.
-  # Host apps must not add overlapping dependencies.
 end

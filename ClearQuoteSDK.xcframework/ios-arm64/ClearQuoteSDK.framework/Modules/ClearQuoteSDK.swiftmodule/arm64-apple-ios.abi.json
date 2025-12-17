@@ -26,21 +26,30 @@
         "name": "IQKeyboardManagerSwift",
         "printedName": "IQKeyboardManagerSwift",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Sentry",
         "printedName": "Sentry",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Reachability",
         "printedName": "Reachability",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1580,7 +1589,10 @@
         "name": "SQLite",
         "printedName": "SQLite",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1614,7 +1626,10 @@
         "name": "Fuse",
         "printedName": "Fuse",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2587,14 +2602,20 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "Fuse",
         "printedName": "Fuse",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -4096,7 +4117,10 @@
         "name": "SQLite",
         "printedName": "SQLite",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -4241,7 +4265,10 @@
         "name": "DropDown",
         "printedName": "DropDown",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -5962,7 +5989,10 @@
         "name": "Fuse",
         "printedName": "Fuse",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6546,7 +6576,10 @@
         "name": "DropDown",
         "printedName": "DropDown",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7258,7 +7291,10 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7275,7 +7311,10 @@
         "name": "AnyCodable",
         "printedName": "AnyCodable",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7796,7 +7835,10 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -8267,7 +8309,10 @@
         "name": "AnyCodable",
         "printedName": "AnyCodable",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9187,7 +9232,10 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9248,7 +9296,10 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9265,7 +9316,10 @@
         "name": "AnyCodable",
         "printedName": "AnyCodable",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -11887,7 +11941,10 @@
         "name": "Fuse",
         "printedName": "Fuse",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -11924,177 +11981,19 @@
         "name": "Kingfisher",
         "printedName": "Kingfisher",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "SVGKit",
         "printedName": "SVGKit",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SVGImgProcessor",
-        "printedName": "SVGImgProcessor",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "identifier",
-            "printedName": "identifier",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13ClearQuoteSDK15SVGImgProcessorV10identifierSSvp",
-            "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV10identifierSSvp",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13ClearQuoteSDK15SVGImgProcessorV10identifierSSvg",
-                "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV10identifierSSvg",
-                "moduleName": "ClearQuoteSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13ClearQuoteSDK15SVGImgProcessorV10identifierSSvs",
-                "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV10identifierSSvs",
-                "moduleName": "ClearQuoteSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13ClearQuoteSDK15SVGImgProcessorV10identifierSSvM",
-                "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV10identifierSSvM",
-                "moduleName": "ClearQuoteSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "process",
-            "printedName": "process(item:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImageProcessItem",
-                "printedName": "Kingfisher.ImageProcessItem",
-                "usr": "s:10Kingfisher16ImageProcessItemO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KingfisherParsedOptionsInfo",
-                "printedName": "Kingfisher.KingfisherParsedOptionsInfo",
-                "usr": "s:10Kingfisher0A17ParsedOptionsInfoV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ClearQuoteSDK15SVGImgProcessorV7process4item7optionsSo7UIImageCSg10Kingfisher16ImageProcessItemO_AJ0J17ParsedOptionsInfoVtF",
-            "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV7process4item7optionsSo7UIImageCSg10Kingfisher16ImageProcessItemO_AJ0J17ParsedOptionsInfoVtF",
-            "moduleName": "ClearQuoteSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13ClearQuoteSDK15SVGImgProcessorV",
-        "mangledName": "$s13ClearQuoteSDK15SVGImgProcessorV",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
           "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ImageProcessor",
-            "printedName": "ImageProcessor",
-            "usr": "s:10Kingfisher14ImageProcessorP",
-            "mangledName": "$s10Kingfisher14ImageProcessorP"
-          }
         ]
       },
       {
@@ -12112,7 +12011,10 @@
         "name": "DropDown",
         "printedName": "DropDown",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -12166,7 +12068,10 @@
         "name": "TensorFlowLite",
         "printedName": "TensorFlowLite",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -12366,7 +12271,10 @@
         "name": "AnyCodable",
         "printedName": "AnyCodable",
         "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -13376,14 +13284,14 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/ClearQuoteSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 584,
+      "offset": 611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/ClearQuoteSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 57039,
+      "offset": 57066,
       "length": 4,
       "value": "true"
     },
@@ -13425,14 +13333,14 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKAddVehicleDialogViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1162,
+      "offset": 1171,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKAddVehicleDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1793,
+      "offset": 1802,
       "length": 5,
       "value": "false"
     },
@@ -13677,28 +13585,28 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
       "kind": "StringLiteral",
-      "offset": 876,
+      "offset": 894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1277,
+      "offset": 1295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1391,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKEntityScannerResultDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1647,
+      "offset": 1665,
       "length": 5,
       "value": "false"
     },
@@ -14090,98 +13998,98 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 855,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1167,
+      "offset": 1176,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1205,
+      "offset": 1214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 3343,
+      "offset": 3352,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 5490,
+      "offset": 5499,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6050,
+      "offset": 6059,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6090,
+      "offset": 6099,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6129,
+      "offset": 6138,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 11227,
+      "offset": 11236,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 11253,
+      "offset": 11262,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 11288,
+      "offset": 11297,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 12643,
+      "offset": 12652,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 12669,
+      "offset": 12678,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/Input field\/CQSDKInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 12705,
+      "offset": 12714,
       "length": 2,
       "value": "10"
     },
@@ -14412,35 +14320,35 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
+      "offset": 1058,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1151,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1277,
+      "offset": 1286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1412,
+      "offset": 1421,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageOneViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1476,
+      "offset": 1485,
       "length": 4,
       "value": "\"10\""
     },
@@ -14643,14 +14551,14 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/App Bar\/CQSDKAppBarView.swift",
       "kind": "BooleanLiteral",
-      "offset": 640,
+      "offset": 649,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/CustomViews\/App Bar\/CQSDKAppBarView.swift",
       "kind": "BooleanLiteral",
-      "offset": 776,
+      "offset": 785,
       "length": 4,
       "value": "true"
     },
@@ -14706,175 +14614,175 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 786,
+      "offset": 795,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 817,
+      "offset": 826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 852,
+      "offset": 861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 884,
+      "offset": 893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "FloatLiteral",
-      "offset": 927,
+      "offset": 936,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1036,
+      "offset": 1045,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1071,
+      "offset": 1080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1109,
+      "offset": 1118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1154,
+      "offset": 1163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1221,
+      "offset": 1230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1270,
+      "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1333,
+      "offset": 1342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1437,
+      "offset": 1446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "IntegerLiteral",
-      "offset": 3003,
+      "offset": 3012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "IntegerLiteral",
-      "offset": 3105,
+      "offset": 3114,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 3220,
+      "offset": 3229,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 3323,
+      "offset": 3332,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 3976,
+      "offset": 3985,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 4075,
+      "offset": 4084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "FloatLiteral",
-      "offset": 4235,
+      "offset": 4244,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "FloatLiteral",
-      "offset": 4280,
+      "offset": 4289,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 4428,
+      "offset": 4437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "Array",
-      "offset": 4565,
+      "offset": 4574,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 5027,
+      "offset": 5036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
       "kind": "BooleanLiteral",
-      "offset": 5176,
+      "offset": 5185,
       "length": 5,
       "value": "false"
     },
@@ -14958,14 +14866,14 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKGuidedFlowHelperGIFDialogViewController.swift",
       "kind": "StringLiteral",
-      "offset": 533,
+      "offset": 542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKGuidedFlowHelperGIFDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 688,
+      "offset": 697,
       "length": 5,
       "value": "false"
     },
@@ -15154,21 +15062,21 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/Cells\/CollectionViewCells\/UploadsPage\/CQSDKUploadsPageCollectionViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 933,
       "length": 36,
       "value": "\"CQSDKUploadsPageCollectionViewCell\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/Cells\/CollectionViewCells\/UploadsPage\/CQSDKUploadsPageCollectionViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1182,
+      "offset": 1191,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/Cells\/CollectionViewCells\/UploadsPage\/CQSDKUploadsPageCollectionViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1227,
+      "offset": 1236,
       "length": 1,
       "value": "0"
     },
@@ -15245,56 +15153,56 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1626,
+      "offset": 1635,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1725,
+      "offset": 1734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1860,
+      "offset": 1869,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1982,
+      "offset": 1991,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2118,
+      "offset": 2127,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2253,
+      "offset": 2262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2397,
+      "offset": 2406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageTwoViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2860,
+      "offset": 2869,
       "length": 2,
       "value": "\"\""
     },
@@ -15343,49 +15251,49 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK-Demo\/Library\/Helpers\/SVGImgProcessor.swift",
       "kind": "StringLiteral",
-      "offset": 219,
+      "offset": 230,
       "length": 33,
       "value": "\"com.appidentifier.webpprocessor\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 548,
+      "offset": 557,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 817,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 944,
+      "offset": 953,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1242,
+      "offset": 1251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
       "kind": "Array",
-      "offset": 482,
+      "offset": 491,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 540,
+      "offset": 549,
       "length": 1,
       "value": "1"
     },
@@ -15854,14 +15762,14 @@
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKCreateQuotePayload.swift",
       "kind": "StringLiteral",
-      "offset": 742,
+      "offset": 751,
       "length": 11,
       "value": "\"nativeIOS\""
     },
     {
       "filePath": "\/Users\/abhishek\/Projects\/Others\/CQ\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKCreateQuotePayload.swift",
       "kind": "BooleanLiteral",
-      "offset": 1789,
+      "offset": 1798,
       "length": 4,
       "value": "true"
     },
