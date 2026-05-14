@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.dependency 'Sentry', '8.46.0'
   s.dependency 'SQLite.swift'
   s.dependency 'ReachabilitySwift'
+  s.dependency 'Clarity'
 end
