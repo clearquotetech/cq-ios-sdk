@@ -6,23 +6,87 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NnqAZgNrwl7ReOqm2KDsTFGCsKE=
+		zhzPta9RoOW19BIbS+0tgo99vNM=
+		</data>
+		<key>AtkinsonHyperlegible-Bold.ttf</key>
+		<data>
+		x8EyzlHDzuj5NlRwqV8eZIvd+AA=
+		</data>
+		<key>AtkinsonHyperlegible-Regular.ttf</key>
+		<data>
+		XEUb3noXKkEL6vCO+B/VXwGvhQA=
 		</data>
 		<key>CQSDKAppBarView.nib</key>
 		<data>
 		KVlCev6u67lIM7Z43eegySHqFqM=
 		</data>
+		<key>CQSDKCameraPermissionDialogViewController.nib</key>
+		<data>
+		rd/bEWqE7dB/xlX36maMEaFpGzI=
+		</data>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListBaseVC.nib</key>
+		<data>
+		zPWPE07b7Gml+3bOfNzkrWrroj8=
+		</data>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListGuidedFlowVC.nib</key>
+		<data>
+		vgGvNktAUheCqhHFVoAKQw3l3a8=
+		</data>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListNotesPopup.nib</key>
+		<data>
+		Ln6iPXcHPKlO8J3rc/PpzDNb9Fc=
+		</data>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListSummaryVC.nib</key>
+		<data>
+		j62BkyoJk6Ik9wgXuXDbOG7ct4E=
+		</data>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListThumbnailPopup.nib</key>
+		<data>
+		wGnr89GX4CLF/YlAse7sQ+78TEo=
+		</data>
+		<key>CQSDKCheckList.storyboardc/Info.plist</key>
+		<data>
+		E33hz8z3TbD2B9xp+NSllulgz8U=
+		</data>
+		<key>CQSDKCheckList.storyboardc/NzU-9C-P3t-view-U7J-q5-YcN.nib</key>
+		<data>
+		xL6kONdmRuLhN8M0EiAl9yywfTI=
+		</data>
+		<key>CQSDKCheckList.storyboardc/VvV-13-oUe-view-w5G-eo-gfn.nib</key>
+		<data>
+		3GIFc1VLxnx9CHx1CkrPodgZcvo=
+		</data>
+		<key>CQSDKCheckList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<data>
+		levbkBAem9dbw1IqG8qZI5nbqZg=
+		</data>
+		<key>CQSDKCheckList.storyboardc/aEK-i8-Iom-view-yH3-Z4-GPi.nib</key>
+		<data>
+		WS0uy3ZI7LL4UtIL9E0FgjYkRhA=
+		</data>
+		<key>CQSDKCheckList.storyboardc/pY9-Sa-0TV-view-5EW-TU-p5b.nib</key>
+		<data>
+		aws6GBoEYJVENsWBx8A7t+I98RE=
+		</data>
+		<key>CQSDKChecklistSummaryCell.nib</key>
+		<data>
+		dE5dxAXmTSftZ/j4bdxWA8w1/oQ=
+		</data>
+		<key>CQSDKChecklistThumbnailCell.nib</key>
+		<data>
+		55zgSxzk+GtWemAUANkLVIsh5WM=
+		</data>
 		<key>CQSDKCustomDialogs.storyboardc/5im-bZ-flX-view-uvb-pJ-t1W.nib</key>
 		<data>
-		ICXWZAq1aPNNPWjoLT86rzUokF4=
+		AsCU3syWM/fEg7Br4PEBWcq8+ro=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/6Xl-nj-GiQ-view-w8L-hi-h9L.nib</key>
 		<data>
-		xjmC8O/cG3d1g8280aXdbyGGbeg=
+		UxKDXFEEiXo+GnfovpZ24tyzTvo=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/84A-cb-Yxc-view-SRM-aF-1mh.nib</key>
 		<data>
-		Xo5gOxyPyKFzhK/dTS9rk6wP0D0=
+		HaH9MsPZs/+ZzVSQAEXGprdPYXo=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/CQSDKAddVehicleDialogViewController.nib</key>
 		<data>
@@ -56,6 +120,10 @@
 		<data>
 		fXuZttl5nTwBhEyZt96pLMwf2I0=
 		</data>
+		<key>CQSDKCustomDialogs.storyboardc/CQSDKInformAdminDialogViewAdmin.nib</key>
+		<data>
+		8vDNUqlbCU1Al0gsEuf6fEef7Hw=
+		</data>
 		<key>CQSDKCustomDialogs.storyboardc/CQSDKInspectionCompletedDialogViewController.nib</key>
 		<data>
 		T8GFEeH0VgqeS+Xod2r6U8M/N0c=
@@ -78,11 +146,11 @@
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/Info.plist</key>
 		<data>
-		hK9hIhQm3+qNzI5RpzTAg3J5xjc=
+		t1uJ5yPpiRktsxveQh8FOrqbLxM=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/L2c-WL-wUx-view-gRF-jl-j9s.nib</key>
 		<data>
-		FrKjbeU2ip8WCQ+t3ldQxjcosx8=
+		83/DqyftjwIwPHL2ZEy+l5rHL48=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/LoadingDialogViewController.nib</key>
 		<data>
@@ -90,47 +158,59 @@
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/Of5-Au-YFc-view-V1B-2v-Si2.nib</key>
 		<data>
-		ggeH0xxnmPOxS46MHcUK3VHrKl8=
+		clDMS/aUUD1QGp7wo12VHtd8eT8=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/QAE-Tv-lcu-view-1yD-Qj-1dV.nib</key>
 		<data>
-		ovzgg97zeXEBl3pR3ZglkMu2AFY=
+		ufotS/zaJlCeB7oj79d3cTAaJas=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/U1J-9M-1x4-view-511-b7-3eq.nib</key>
 		<data>
-		saBSqEBlszBziL9sxzNzG13iMVg=
+		YJLAPpuoEtmnb2dONXscvPlmONQ=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		5hJB92/GGGL+0bxcPChIA775SIM=
+		8OHtUd4BsBtZbN8sKx0RLTXY9ns=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/abm-NH-y5w-view-GoB-hg-yQG.nib</key>
 		<data>
-		+tfZblflGgN3WrBTYtnf+EMozjo=
+		8eqWD6DNLM6VA1dFOpGNd3UYH0I=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/adI-lQ-oS8-view-Op6-Q1-SJU.nib</key>
 		<data>
-		fkhuWBsFeg0tA7nHSFnUatMAa8k=
+		iwVJWacgWFUrD0p4U0OEjQ4k/Vw=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/b59-5W-x5B-view-7wJ-7b-vZq.nib</key>
 		<data>
-		ZuuXzi6JGCig4by4qFN2OgZm0N0=
+		yZIQ3FwBYgMqycQsYgWs+fE5saU=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/dZQ-8D-7ng-view-lUf-nn-pGL.nib</key>
 		<data>
-		sa192kZtg7R1f7ElY3gVytyIfGw=
+		iYPJ35b4qatGY2J6qvneV8hlMwo=
+		</data>
+		<key>CQSDKCustomDialogs.storyboardc/lzI-Ii-0c6-view-Azv-qy-7II.nib</key>
+		<data>
+		Z/NXBNnjVv3RbPUSm/UnDMIrgkg=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/nJU-eF-yYH-view-qlw-ii-unY.nib</key>
 		<data>
-		Fo0uoKmXn0aA9dS2oQ+krWMNjUA=
+		UwC3tBmAba6r6AXKePl0TKmbFWE=
 		</data>
 		<key>CQSDKCustomDialogs.storyboardc/poq-Md-sSd-view-t3W-55-2ek.nib</key>
 		<data>
-		SpMiBQRKD4S2wZ8G9HVUG29AccY=
+		8cL+2QUtQnjZ8fUTjC2ME8xGa6c=
+		</data>
+		<key>CQSDKDateTimeCollectionViewCell.nib</key>
+		<data>
+		mNIZ0D8UwtM9pg88M3mM6h/rIPw=
+		</data>
+		<key>CQSDKDropDownCollectionViewCell.nib</key>
+		<data>
+		DOy10tWGNHLYLZgdVE+YPKNjZU4=
 		</data>
 		<key>CQSDKDropdownItemTableViewCell.nib</key>
 		<data>
-		JGXX6CkRNpWqD0ajTEN+VIwqKQI=
+		mVgfaCeEV7au8+/CBa8yINZ9v6Q=
 		</data>
 		<key>CQSDKEntityScanner.storyboardc/CQSDKEntityScannerViewController.nib</key>
 		<data>
@@ -142,7 +222,7 @@
 		</data>
 		<key>CQSDKEntityScanner.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		UIaLEGyWnP+XB6uqq/iKWKE19mU=
+		dweY2JrDU4Owrsf6fTgildb/ZS0=
 		</data>
 		<key>CQSDKFilledIconButton.nib</key>
 		<data>
@@ -162,15 +242,31 @@
 		</data>
 		<key>CQSDKGuidedFlow.storyboardc/Y6W-OH-hqX-view-QVe-wV-8qP.nib</key>
 		<data>
-		qASm2N2Fng7CxkxST1U2vE4pb6A=
+		izdIhOVj/sCkEuz2qBOnmHNdvJ8=
 		</data>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
 		<data>
-		36yZ7rTf/efTs8cPg42PRIcfZEk=
+		XlR5d0thaxlOSHn/fKP+xGrXt8Y=
+		</data>
+		<key>CQSDKImageCapturedDialogViewController.nib</key>
+		<data>
+		U0WQ6QNxQSUbyLekwlOVgKMvNK4=
 		</data>
 		<key>CQSDKInputField.nib</key>
 		<data>
-		Yrdl5+sF/H5Odah4bU9ES5rm1Co=
+		nQZbLrovyoxEnUSYu69KJOk/82s=
+		</data>
+		<key>CQSDKInputField2.nib</key>
+		<data>
+		fbAmzRIBmOciAp2FbjaSCzGAuAI=
+		</data>
+		<key>CQSDKInputNumberCollectionViewCell.nib</key>
+		<data>
+		OkNGgakE52iPx/DnD+vmkg4TlRE=
+		</data>
+		<key>CQSDKInputTextCollectionViewCell.nib</key>
+		<data>
+		W1NiSU5JjxNvRRfgNxOGFwU7574=
 		</data>
 		<key>CQSDKInspection.storyboardc/Info.plist</key>
 		<data>
@@ -178,7 +274,7 @@
 		</data>
 		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsNavigationController.nib</key>
 		<data>
-		Y1zkYRgi8OftDFn/h83I7exLTS8=
+		UzF6O6pZaId2UfUsG0MX9ptv4eE=
 		</data>
 		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsViewController.nib</key>
 		<data>
@@ -186,23 +282,39 @@
 		</data>
 		<key>CQSDKInspection.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		5iDwlUeyXVniL9/ZvdZayapwFQY=
+		RMD0SVaF5SEv6FuKyFAJr7bG3fc=
 		</data>
 		<key>CQSDKMain.storyboardc/72C-AD-ltI-view-Yzg-2q-Zgv.nib</key>
 		<data>
-		17WlPwFppqCaNNGGx1Q8cZUDZSY=
+		ljVXBUG38Dtc9pL3tmsQprI3mRc=
 		</data>
 		<key>CQSDKMain.storyboardc/7QN-KD-zsk-view-Z1V-xa-pQN.nib</key>
 		<data>
-		vMEZPvY3WzPbdyC5xd6WJdDh71A=
+		vt9ecKTAeoPChxJtkL7zRc8uE9E=
+		</data>
+		<key>CQSDKMain.storyboardc/CQSDKInputPageDriverInfoViewController.nib</key>
+		<data>
+		xw2RnT5Sb06lQgKFzqucsQdz6DY=
+		</data>
+		<key>CQSDKMain.storyboardc/CQSDKInputPageViewController.nib</key>
+		<data>
+		kZLEGrE6fhC6R2KB+tCIDAFyDNE=
 		</data>
 		<key>CQSDKMain.storyboardc/CQSDKQuoteCreationParentViewController.nib</key>
 		<data>
 		I8VEBiD0W2Wc5okr9v/xIxpFCEg=
 		</data>
+		<key>CQSDKMain.storyboardc/CQSDKVehicleNumberInputViewController.nib</key>
+		<data>
+		uIHS333wh0YbpD1o3ZRV2ybsMrY=
+		</data>
+		<key>CQSDKMain.storyboardc/HxV-8H-Nqb-view-Gfi-Lw-4FO.nib</key>
+		<data>
+		hqNvmBd0HdDllLF4Ou9Rg+AIVok=
+		</data>
 		<key>CQSDKMain.storyboardc/Info.plist</key>
 		<data>
-		tWem6ryk7tX4n4a4YVOOR4sKzg0=
+		LbC/SO/iWPQaf3y3l79Gmqip2rs=
 		</data>
 		<key>CQSDKMain.storyboardc/InputPageOneViewController.nib</key>
 		<data>
@@ -214,11 +326,11 @@
 		</data>
 		<key>CQSDKMain.storyboardc/O2h-44-bvr-view-TJp-Db-mEM.nib</key>
 		<data>
-		P6SBGIi+6/sZGREDWq9PG+5ZKl8=
+		V0TDfT1QoCwho7esVAZAyT30zyY=
 		</data>
 		<key>CQSDKMain.storyboardc/RootNavigationController.nib</key>
 		<data>
-		mS1KqewlUJhKfp2o0LZAsIDb8l0=
+		XDU+74A35hUa+O1jihz3+N8utPY=
 		</data>
 		<key>CQSDKMain.storyboardc/UIViewController-W8v-Jm-9OB.nib</key>
 		<data>
@@ -226,7 +338,23 @@
 		</data>
 		<key>CQSDKMain.storyboardc/W8v-Jm-9OB-view-UMP-A4-Gkj.nib</key>
 		<data>
-		bhA4OMFlfe+QQ+XCVhHgsS6r4ac=
+		TcKZWIxdt1vWpNawwSMAHjaTTDU=
+		</data>
+		<key>CQSDKMain.storyboardc/WX3-U9-HcF-view-UFb-UR-Dru.nib</key>
+		<data>
+		dsaC8iH5F+59kZTQcvjEuKcQQDM=
+		</data>
+		<key>CQSDKMain.storyboardc/crJ-yA-32t-view-Dyc-fJ-QEC.nib</key>
+		<data>
+		lJXPHKIyFcNJVV9W/kGIJWcc3IM=
+		</data>
+		<key>CQSDKMessageCollectionViewCell.nib</key>
+		<data>
+		L20kW8MlJMuFEITI2cqNRMuIZfE=
+		</data>
+		<key>CQSDKMultiSelectionTableCell.nib</key>
+		<data>
+		yy2LyJXA/E4y8A5RgJsvJvH/Hcc=
 		</data>
 		<key>CQSDKOutlinedIconButton.nib</key>
 		<data>
@@ -238,15 +366,67 @@
 		</data>
 		<key>CQSDKQuoteCreationStepperView.nib</key>
 		<data>
-		D1fKIrE14+xjXhRwHgRDJudbLgM=
+		BEjDvymYBa5ugLVxswxTG4Yd4NM=
 		</data>
 		<key>CQSDKRadioButton.nib</key>
 		<data>
-		tlnEVnWofDhXbjWauemB23ycuBQ=
+		vZJMeXiH9U5Y6YngMCaj2Pb640I=
+		</data>
+		<key>CQSDKRadioButtonCollectionViewCell.nib</key>
+		<data>
+		Rtb8UfCioVClEYCRwIsHvK1fvJA=
+		</data>
+		<key>CQSDKRadioCheckBoxColViewCell.nib</key>
+		<data>
+		9iesvYznmIhLoVzP+WZ0wWAo3wI=
+		</data>
+		<key>CQSDKRadioSelection.nib</key>
+		<data>
+		9oGR8F4HVvHM2/iWYw8IGQdqWOo=
+		</data>
+		<key>CQSDKSegmentView.nib</key>
+		<data>
+		7pX9pO1NZFo7ZtQ5sOnmWlK83hE=
+		</data>
+		<key>CQSDKSignatureCollectionViewCell.nib</key>
+		<data>
+		s7X/m+9Yd+p5S2GUA5BHR9SMgQE=
+		</data>
+		<key>CQSDKSingleRadioViewCell.nib</key>
+		<data>
+		2w4hZp48nRUV9URgKBd6qrUlqa4=
+		</data>
+		<key>CQSDKStarRatingCollectionViewCell.nib</key>
+		<data>
+		pidZmKixkZx1qxlbcdZsYmjJkH4=
+		</data>
+		<key>CQSDKSummaryQuestionCell.nib</key>
+		<data>
+		PKWbAb8WXgaWnXK3CFQ8m/V6o8k=
+		</data>
+		<key>CQSDKToggleCollectionViewCell.nib</key>
+		<data>
+		K1TbZ3bJECATWY3J5jDJQ+SOrFw=
+		</data>
+		<key>CQSDKToggleFlow.storyboardc/CQSDKToggleBaseVC.nib</key>
+		<data>
+		cYbFNwDtogyGG9pK9VbFY0zZ4q0=
+		</data>
+		<key>CQSDKToggleFlow.storyboardc/Info.plist</key>
+		<data>
+		UroCyfi5TysLi1MMv5+BRjr/n4A=
+		</data>
+		<key>CQSDKToggleFlow.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<data>
+		GBDfAPMonLDWOlmMoVtFMl05ZC4=
+		</data>
+		<key>CQSDKUploadPageOverlayCell.nib</key>
+		<data>
+		yS3+KY1D6m5XrJaYFl8Vg7thKrE=
 		</data>
 		<key>CQSDKUploads.storyboardc/4uN-ag-VdO-view-tNI-8A-ZrY.nib</key>
 		<data>
-		TDb3+05b1ccCwfyycNMJ0AEL5Es=
+		4YqxMiikBo+FgVu/qyqycnQ98Vg=
 		</data>
 		<key>CQSDKUploads.storyboardc/CQSDKUploadsPageViewController.nib</key>
 		<data>
@@ -260,9 +440,9 @@
 		<data>
 		h87Ta/7xid5bk9kDUXlUnis05IQ=
 		</data>
-		<key>CQSDKUploadsPageTableViewCell.nib</key>
+		<key>CQSDKWarningLightsCollectionViewCell.nib</key>
 		<data>
-		w/wmKq9nDKApqtRHxl0tVGOrV3M=
+		r/7Y7ZUsJypFJ2WSk/dAnhPa4GU=
 		</data>
 		<key>Exo2-Bold.ttf</key>
 		<data>
@@ -271,6 +451,10 @@
 		<key>Exo2-Light.ttf</key>
 		<data>
 		6gLRGfp4WICSjTj+PI4HTFN+oi8=
+		</data>
+		<key>Exo2-Medium.ttf</key>
+		<data>
+		N/5GBXbMv9MjG0fIDKIlDNpK8Jc=
 		</data>
 		<key>Exo2-Regular.ttf</key>
 		<data>
@@ -286,35 +470,51 @@
 		</data>
 		<key>Headers/ClearQuoteSDK-Swift.h</key>
 		<data>
-		B4pCxnsUaycMdIvjHv+xq5Weg9Q=
+		GJE5TfzK+wZOh1s1idgC+uvMK7Q=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oI9/oEWVMIM1PnF8iHGz32wnxdI=
+		gPJyyK/hksEizT9XovMvSLnpMQ8=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bh+x9U77H5SKxz6SDWwKHsj7D/w=
+		vcXLxSJEjL8kpdAYCe99ONVcdNY=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		l/ZOsryq4DrCCpFGzlnMjkcjrUU=
+		neSxEGv4cIBNhXo4jsUqH3MU89c=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		517mM6m8rUutajBn4zakWjQCF34=
+		I/o17lvcklzqrMadlc9OyufOjxM=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l/ZOsryq4DrCCpFGzlnMjkcjrUU=
+		neSxEGv4cIBNhXo4jsUqH3MU89c=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Df8R11RbChfQ4mZFUh6NoYLS1P8=
+		jhUSz4rBRRadrLvG3bk4bmk8Kko=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		OGYswUypWYcvV8CiCeq5QBAiKkg=
+		X3otXzqkvmLHH/ldLiUlHThl6/o=
+		</data>
+		<key>Montserrat-Bold.ttf</key>
+		<data>
+		vnwUOAcKtjfhFxaRXk5QkDcm3Mg=
+		</data>
+		<key>Montserrat-Medium.ttf</key>
+		<data>
+		d/NVNBXYWMZTuupFqsqyAZZ3YzQ=
+		</data>
+		<key>Montserrat-Regular.ttf</key>
+		<data>
+		7BPvHyyZ+HgNby6z+fJ++J8wFhs=
+		</data>
+		<key>Montserrat-SemiBold.ttf</key>
+		<data>
+		efdGFtaLh9bPiXmP5yJZA2MmVno=
 		</data>
 		<key>Poppins-Bold.ttf</key>
 		<data>
@@ -332,37 +532,69 @@
 		<data>
 		5bZvesiYJfi8v8aIu+e1Qw7nLlI=
 		</data>
+		<key>TensorFlowLite.bundle/Info.plist</key>
+		<data>
+		0r315iMyBPS9MYWq0/ZRFnX7Ow0=
+		</data>
+		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		i3YpomTpJHpRGpdt+oGaesmknBg=
+		</data>
+		<key>TensorFlowLiteC.bundle/Info.plist</key>
+		<data>
+		cwrps6q58PmRrCnqRDtCSTezTLY=
+		</data>
+		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		PFHYbs0V3eUFDWQyYQcwEetuqEk=
+		</data>
+		<key>ToggleFlowCell.nib</key>
+		<data>
+		olpogPyMY3q3OFW6/mWRAkh5T2A=
+		</data>
 		<key>de-de.json</key>
 		<data>
-		Es0DkwCGLOJWn49nIrMoVeZryGw=
+		K+vxq6kgsGByEC0U0p5IjofEo6k=
+		</data>
+		<key>el-el.json</key>
+		<data>
+		tdisMi7xlQw4VOtf5mxJ3Hby7hA=
+		</data>
+		<key>en-na.json</key>
+		<data>
+		D8nlWc3VGAWPCijmvGjSS3EV40o=
 		</data>
 		<key>en-us.json</key>
 		<data>
-		KV/gPU6shwDpL5bUiDCL02RENbw=
+		vTvzGuqMiDXiSshb+sP5yk2QMLU=
 		</data>
 		<key>es-es.json</key>
 		<data>
-		Mv74zDYgkWpUjzhOnB1TpgdR8tg=
+		wnu7KxMdY7xxDUwL9CzMIG2sA60=
 		</data>
 		<key>fr-mr.json</key>
 		<data>
-		d+ciQ1TQY9LbJIc6EYWcyEwGQK0=
+		3P9hw57GDAYQh/yBKhBMfOx058M=
+		</data>
+		<key>image_upload_loader.gif</key>
+		<data>
+		DooGm01T9Nl0Ffy9Ieqz4wH81Js=
 		</data>
 		<key>it-IT.json</key>
 		<data>
-		yc9cjYXtHQP+7K/LQwdD0OxlPIo=
+		zFarN92YJtFrkmbATo8H2ZACAUE=
+		</data>
+		<key>nl-nl.json</key>
+		<data>
+		mqYkhCdZLxMX+/Pp9jxVtmXoidI=
 		</data>
 		<key>ro-ro.json</key>
 		<data>
-		6AWk3pY1x2uA7e1lgTftNHhlSEM=
+		F6aHj0iBAXdNR/VVFgqHZ/8iStU=
 		</data>
-		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>
+		<key>sl-sl.json</key>
 		<data>
-		sC9bFv+Wyzs9DLvsVfUokOQLJSA=
-		</data>
-		<key>vanmodelmetadata_new_fp16_Jan2024.tflite</key>
-		<data>
-		YwdAjOByORJyrHVhpnxxSwqKqfQ=
+		ziktegviyBkItF4ga9oeDpsa6QM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -371,7 +603,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZqAaLeXMGavUPUV/34IEQvfUaUytABEAA+X20QpYgmY=
+			FtbVJJ70bzJIg0FzQImqgNrDcJxgoJenU1noaw5VNQ0=
+			</data>
+		</dict>
+		<key>AtkinsonHyperlegible-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			brkb2y04S/RiyNAS2GVF4VRCNUHlq+vR/LggXHZ+qeQ=
+			</data>
+		</dict>
+		<key>AtkinsonHyperlegible-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZAJJkdQs2c3cCc00nlMFy+U3sutzzQFOldoasWtKZPM=
 			</data>
 		</dict>
 		<key>CQSDKAppBarView.nib</key>
@@ -381,25 +627,123 @@
 			8Sgdu0Z5160PYTGI1m1y89jtdWm+0NkDaYz3Soa5GYY=
 			</data>
 		</dict>
+		<key>CQSDKCameraPermissionDialogViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/g6xEy3ZYSZNA0AdXKWaj1Harzj2FsrwrEY+30hH1JY=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListBaseVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Fv6XUmYHnKele5k7yFNWyVR2fhwu16sQUNLZ4sZWXs4=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListGuidedFlowVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uVcwkJ5XJAs+OQhXY+JdNuye8DDE2dGtrnokhR3VfZY=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListNotesPopup.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cLertGqq7Au7ScfjtgQ2NkMnNoKPBWE6kYz/xnEc5fo=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListSummaryVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OPhYpmn42GyuBejcfqJIky7X0jWSRWHCo8GXwKHtlkA=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/CQSDKCheckListThumbnailPopup.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yxvghyxqs/CjxG+qTnBPF32PeCCkjIkR8BqYNju5SF4=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rIbQ981E/0p3256ubP2oJgzv5QFn6p5r7zfbg1scELw=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/NzU-9C-P3t-view-U7J-q5-YcN.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			diLz+pSeDb8M4Xd51YRN40fL5lg6CxG5PnKGWdMbtyM=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/VvV-13-oUe-view-w5G-eo-gfn.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TctjFyA6A7XJ955zOPrsTwVEKAMTcVYy2Ou1qATkv5k=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vmE6E3n70dM+aAsHaKFFR0ZEfvj1HUu4OQ4W0xnGeo8=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/aEK-i8-Iom-view-yH3-Z4-GPi.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iM2Cgpm12zmkmrx8ZVZhUs48HSA+W7e1Gk3WtFMH66o=
+			</data>
+		</dict>
+		<key>CQSDKCheckList.storyboardc/pY9-Sa-0TV-view-5EW-TU-p5b.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FLwk59HK4F/5l1Gzfj7WV7Pwbk4VRM2ykRw+BIzSvUU=
+			</data>
+		</dict>
+		<key>CQSDKChecklistSummaryCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pM36Dd0p7wNspt2nB7l/DvQQGO8xZHtYZTz0xRaTLWw=
+			</data>
+		</dict>
+		<key>CQSDKChecklistThumbnailCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WK7hDnS+y4FQ8+0Pn8temTqgtwRnA1FZY82myH4n5B8=
+			</data>
+		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/5im-bZ-flX-view-uvb-pJ-t1W.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6LA8ltfca0geg1nFrSq/RddJZUFq0LX0Abt6ZIJ2doY=
+			qpVRHI7RnnIrYfVD8LOCieOGMvKwMdFws1Zz0dkbD4g=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/6Xl-nj-GiQ-view-w8L-hi-h9L.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fF0jEyY6xYd68QFdkvjuyHW99RyHDBxCEwGNtls6vXs=
+			9ipLVyZO89yxxWrVXAXPNv3ut/7vl+cA6w2q8Oa7ihY=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/84A-cb-Yxc-view-SRM-aF-1mh.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EWWcwQHv1EQEGjumXR6ZMT75WdNu+TMhu7+0RBk7j24=
+			XRdkKcVWbVQlUeWYI1PyVFy3FeYRsRizE/Ap6xi3zCA=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/CQSDKAddVehicleDialogViewController.nib</key>
@@ -458,6 +802,13 @@
 			mFxqFTYTdRiyzXh32XAfgddJGIxpR4EoYvanq7BN5Ls=
 			</data>
 		</dict>
+		<key>CQSDKCustomDialogs.storyboardc/CQSDKInformAdminDialogViewAdmin.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PCFhast3+AWU8RQtSKC+78uUdMbmMfNcHgp1ar4m7Eg=
+			</data>
+		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/CQSDKInspectionCompletedDialogViewController.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -497,14 +848,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			naDO9N1KLfn1+aJcBBnapWSH2dC8f9B5U232o8usPWE=
+			H/Rh6gaFIIfQVjLYG0+93u6Jw1P57FfFZaCaTY01sA0=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/L2c-WL-wUx-view-gRF-jl-j9s.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vmWaZGEc7na4iN5MviFAUNZSxvKxGHcWYzaLylwcrfg=
+			faPRz9uaTIcL1plqwfdjmKNWKMZ3mrpjeXpIn0kaYGU=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/LoadingDialogViewController.nib</key>
@@ -518,77 +869,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			48vqPBf9r1cRXC3mTKYhsAan1jb78hpitIzSkT+KzeA=
+			v7j8hYu2cgzemc7F00Mp8/Fv2gvdAKUsoqE6VxuuGmY=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/QAE-Tv-lcu-view-1yD-Qj-1dV.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6enzeVUkqRttxfqa0Pb4UEis5G+CCZJOBfZGbinw1s=
+			laWw9Xy3OfnvwOPRQGdG+hnHKJdhyhGlKbI0vZCdSxw=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/U1J-9M-1x4-view-511-b7-3eq.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4BVdNcHw6cW9jMJWPg93RZQccSzACVOfzD3xjHA1Ck=
+			qKRR+cKN0r161aKDq1rnNU7bqQW/rQVq03CHNhcQnKo=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wispsTk6Qy7NK5K0bg7rzgu5DTn69np8iz1BSYqsWCM=
+			F4fh2EQP3EWIHkZFEKiOtkQ1JQRDSwW7tX8VfsOo5dc=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/abm-NH-y5w-view-GoB-hg-yQG.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bkdp0YPCCiS6HU9XfR+/6GXka8/PQc406T7EULki/nI=
+			H5eJ9hECIkgvOunJCc1F8zveGSzLX64HIWEjVrYB11I=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/adI-lQ-oS8-view-Op6-Q1-SJU.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SIbIDHJnfc8LuhngWZujZJgDUppgh9QUd2Fi+yNsc4c=
+			2xqZepbN9oTj/4+hM86qWZTa8SPsVDqZkckzD484OSQ=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/b59-5W-x5B-view-7wJ-7b-vZq.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgyEf8/0T2Ge/IZe8tdrJmgghrCUEfZ24hFfFUdnBuM=
+			lVSYvtTZiLd+yiAHDv1AmHKtCpdtWgefyoaDTDRaNFU=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/dZQ-8D-7ng-view-lUf-nn-pGL.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBvHeX4ehVevmqxu+KU269HRcQ4wAOwelGxj/o7AxUQ=
+			0UhHmFDJtaX3OvdJMJUyILs9KbZ86B4VtVUzSOtWVnU=
+			</data>
+		</dict>
+		<key>CQSDKCustomDialogs.storyboardc/lzI-Ii-0c6-view-Azv-qy-7II.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EyNnG5IlP/HCpJRAYiWhEghxeTEgpA4WgEqBw0LQSSs=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/nJU-eF-yYH-view-qlw-ii-unY.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nuwMC+zhIgp4AFG/4OKdCuRDZwN6G0CK2yI34wiOAxA=
+			yxqZZlf6VcIBDsEzPK8ksVe/dfUQ5iXc8jE9Hd4m+PM=
 			</data>
 		</dict>
 		<key>CQSDKCustomDialogs.storyboardc/poq-Md-sSd-view-t3W-55-2ek.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1wEMiddaHM/prFtbAKMwJloEDXK3/J2ry3TvHui754Q=
+			lkBw2X525li+Yb8D2C5zcgd9iqJB5+GIUL9QhoJ2hvI=
+			</data>
+		</dict>
+		<key>CQSDKDateTimeCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4E6Zta+U2fShzSgOuz5sx0OT+yk2Tv04CiGYjt60mVQ=
+			</data>
+		</dict>
+		<key>CQSDKDropDownCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ruOcwhBvwwyg34OXK9N2ygd7FFz2JdBeI51E4fsH30A=
 			</data>
 		</dict>
 		<key>CQSDKDropdownItemTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8r/ETeahb439SHPMwGM/QVVw1fNDAmT9n4puNKWajCc=
+			eD5IvfF4v6d23ogfg4xIhE4Pyvi+cqdoAhR4HSo5q3I=
 			</data>
 		</dict>
 		<key>CQSDKEntityScanner.storyboardc/CQSDKEntityScannerViewController.nib</key>
@@ -609,7 +981,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vX6pF8Hg5gmaw3JOu67RlzwKi86VoR9i+wtdMjYgOLY=
+			kdSAlLAoKj/CagwzU2/rFo26ewZaY0If9G4hQWf4ibg=
 			</data>
 		</dict>
 		<key>CQSDKFilledIconButton.nib</key>
@@ -644,21 +1016,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dKWTKunjaw3tsXf7fZLwzQsMcQJ0JH5ueeA5oWFXdAc=
+			c78p/Rm1NVGGGsPIzq7pAPBer4RsPIjLUow5YK1vXVM=
 			</data>
 		</dict>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6zFLoYkpOZRJetjLjICBYN1OaKj5QrNZ5xcNl8/DHxw=
+			gqrxZDgBF0Ul9HIBtwk1ucvv8qdlHQcrE3haK8sxnac=
+			</data>
+		</dict>
+		<key>CQSDKImageCapturedDialogViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			26cMHC8A6uj3VgsemhL05OfbDdiJbqa+5X4cbxoBfs0=
 			</data>
 		</dict>
 		<key>CQSDKInputField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VUEySG4U+ai2eVYwQiIr202fSKE8Ruc9tG0oej3al2w=
+			YmLMsBytXMJRcbYVbn2K/Up6hLT0HSGrHFXOOG61mvA=
+			</data>
+		</dict>
+		<key>CQSDKInputField2.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a5RjwVC0cg+7VI5K87uAJdfeDIC8iflKCm5po1WaLqk=
+			</data>
+		</dict>
+		<key>CQSDKInputNumberCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jZdPWPleRwU7uN1Sd33Qxhg1BQlvTferBJF+bdo+eAg=
+			</data>
+		</dict>
+		<key>CQSDKInputTextCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2NnQ7zVinb2KKGxS9xBw0z72GJyUkjLzWRILtQKR0rs=
 			</data>
 		</dict>
 		<key>CQSDKInspection.storyboardc/Info.plist</key>
@@ -672,7 +1072,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlKxlhI26eJ3DieQ05PaanZx/58avSKPHdqm86Rem5I=
+			k0IYZnn0/yCbUuU8u4XcRh5XhFhGZVvI8ZrqM9hRiPI=
 			</data>
 		</dict>
 		<key>CQSDKInspection.storyboardc/SQSDKInspectionDetailsViewController.nib</key>
@@ -686,21 +1086,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7EcvMO+H2x+RL6aXhlIg6b9ar6TuBOHFeGkpFmv9JkE=
+			GU9B2Yxct9R+Ag39ge4XOj1uz2K5Yo5L7TClHXgqIvw=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/72C-AD-ltI-view-Yzg-2q-Zgv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			55V7vV8H95Ew6IYceKNPtQ0uKpJO5ThxQf7IqE+InWU=
+			OFnQ1xYHD8R7rI0PxJJyitSlTP3bnlmy33Tnv8FBV7A=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/7QN-KD-zsk-view-Z1V-xa-pQN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SfVB98xUSR2wfaoSh4tHJ3oolhQefQo871yQhlJV0S0=
+			W04tnUVB2Z9ELbyEIbq/WCZeT/975clX+8kWvGqteFQ=
+			</data>
+		</dict>
+		<key>CQSDKMain.storyboardc/CQSDKInputPageDriverInfoViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54yPJmBorggD101OXP3Kh+AMdyqRJf1pLbp3V1LBoOU=
+			</data>
+		</dict>
+		<key>CQSDKMain.storyboardc/CQSDKInputPageViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pDRi+8YVg0FKh2iuuMr4PEhIKFiLti9bJUWtCyLmVD0=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/CQSDKQuoteCreationParentViewController.nib</key>
@@ -710,11 +1124,25 @@
 			0RwYhZ5/fT41LFqEd5io2xQ1UNehnUkXJDbHyl40DYE=
 			</data>
 		</dict>
+		<key>CQSDKMain.storyboardc/CQSDKVehicleNumberInputViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iYGgPxBOfLPjjmo5kZenQJ+NU4skMg534KAXxh37ww0=
+			</data>
+		</dict>
+		<key>CQSDKMain.storyboardc/HxV-8H-Nqb-view-Gfi-Lw-4FO.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXqlK8o5tw6pg74sxqmoldfSQ+MEaurRGnzWc7sCDpE=
+			</data>
+		</dict>
 		<key>CQSDKMain.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iHk6JcwW4OK5eq7CS1Wwd8DTmqS5VheX5TvBIMUXPmU=
+			QYJVso0XznrhbC5Q9nPFDX26laoATzoYVe52Q6n7CKI=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/InputPageOneViewController.nib</key>
@@ -735,14 +1163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpuHzV/UTaKbgUkDiUWDVH9McffR2Mh0JL2duEL1sZk=
+			11bPHB0XiiIv/1XaTQ1VaCZE9C40eGi3jrqoTj7EMlk=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/RootNavigationController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SZG7jkdg/wCAkQIt6I64l/ivhppnwW+PIsqyuashX8s=
+			VZC2f4nJ+OAv68SUxABQ2bjura7eC9OetL7eMA+As/o=
 			</data>
 		</dict>
 		<key>CQSDKMain.storyboardc/UIViewController-W8v-Jm-9OB.nib</key>
@@ -756,7 +1184,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sm0D7lNYCfvC17ylSJG1gDGjRzYmHl8bOahJ8iUthJU=
+			8mmv1YfVOtP/3DGfAiSWNQGUj/JDtjXNj7lbcM2SO4Q=
+			</data>
+		</dict>
+		<key>CQSDKMain.storyboardc/WX3-U9-HcF-view-UFb-UR-Dru.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zmt/oDRP0Z2u18b6aur059hdFtT8AQOqLxcl9JqsgDw=
+			</data>
+		</dict>
+		<key>CQSDKMain.storyboardc/crJ-yA-32t-view-Dyc-fJ-QEC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			95IuHHyM+KLKD1w3RwDIvNjrIWAjHFqATpP3hIlhw88=
+			</data>
+		</dict>
+		<key>CQSDKMessageCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S5ehJke65Qihs/4N9BSmvXZd+tT+Lu4gt3OvQo4uqVQ=
+			</data>
+		</dict>
+		<key>CQSDKMultiSelectionTableCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WpeWEo7F0vJYwaKXQxSk/eF9pJklLnlVUfZgPOjL5Uw=
 			</data>
 		</dict>
 		<key>CQSDKOutlinedIconButton.nib</key>
@@ -777,21 +1233,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OC9nRf0OYfCyiUxkA4YZ4fyYsvjYucqw8JZoM2PxEoo=
+			y11xzunEnnwPauUrRdtlrU6djofD5sRzsLcti8+ae1g=
 			</data>
 		</dict>
 		<key>CQSDKRadioButton.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kZYeGVm0CIfiPmQZMpyjcLsg6zWSQYRRRgu4J/O8QmQ=
+			jt+vQJ64FlbDmyn2jeeZa8mUIs1MgBBFCdA8BnJ45XI=
+			</data>
+		</dict>
+		<key>CQSDKRadioButtonCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PGGHHMV0qsvX2RZuKq9HZaCW6BRrOYS+OhgxPFPdahg=
+			</data>
+		</dict>
+		<key>CQSDKRadioCheckBoxColViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gBY9RJgfvzz4rKAJb/843hYlrrc1vACo0iKTyAsslfU=
+			</data>
+		</dict>
+		<key>CQSDKRadioSelection.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YOhHFkJCQmuVnCg3aiLhgjm587UAgWer6KKx5oZbAV4=
+			</data>
+		</dict>
+		<key>CQSDKSegmentView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UIAGwwQqzU32E8LrWW2TQRig0T9es+E+iGX181veBZc=
+			</data>
+		</dict>
+		<key>CQSDKSignatureCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IgwceNNsXEyYGI73ujAYJKH9J6HNZHzYaxnNljjfgc4=
+			</data>
+		</dict>
+		<key>CQSDKSingleRadioViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FP6jD3mKIiKRDqA5WnnfxFsYHAppJEwIpx67qJfE1bA=
+			</data>
+		</dict>
+		<key>CQSDKStarRatingCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qBvQe8a1zisdtX3fnYHVLAE6Ckxxi/6LTIDRd+JoRMk=
+			</data>
+		</dict>
+		<key>CQSDKSummaryQuestionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bPUMiiJ6IUtIhzACrQ8Ojm6nKOmyvulKYDwVphVauPw=
+			</data>
+		</dict>
+		<key>CQSDKToggleCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vPKQoMPePaaMFebXBuvgguo/xaGQpToSnxzaG5CiB2s=
+			</data>
+		</dict>
+		<key>CQSDKToggleFlow.storyboardc/CQSDKToggleBaseVC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3p3+dfKB/KIvuT82qye19OMypS8IkmIg9VFIM2WqgI=
+			</data>
+		</dict>
+		<key>CQSDKToggleFlow.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VdECsgUDA1L/tHBixe3sW2iH/7cpJnNrsv4TQxlfarg=
+			</data>
+		</dict>
+		<key>CQSDKToggleFlow.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ELgDFXtG7fLZkLVxUEFFH1bvs+t6uyt2GiApinJzCa8=
+			</data>
+		</dict>
+		<key>CQSDKUploadPageOverlayCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ngNn/kcxIwB+6D7JInAZeBPOv2zQCwhrnCtJTGGaqIw=
 			</data>
 		</dict>
 		<key>CQSDKUploads.storyboardc/4uN-ag-VdO-view-tNI-8A-ZrY.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAsD3aqQ/rfKkKnqrG2wsQJpO3ZxVqeY6LqnjrgVYVE=
+			cmtuntlysGNQ6sK3rpMyM0B1Hee2j50kHNoyrAebJdI=
 			</data>
 		</dict>
 		<key>CQSDKUploads.storyboardc/CQSDKUploadsPageViewController.nib</key>
@@ -815,11 +1362,11 @@
 			pBUCQfwxxBttRFOAlgj1iRPFexcBQNqA4tcaSHdCVhw=
 			</data>
 		</dict>
-		<key>CQSDKUploadsPageTableViewCell.nib</key>
+		<key>CQSDKWarningLightsCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mgbA6I6oc++l5/Z4ntIO9W3YRIqLwPYpkZx7TjMTzc4=
+			g3fLxV0Sa9bG6O/eatuP971GTq5SrWyRTw5ApXq9rbs=
 			</data>
 		</dict>
 		<key>Exo2-Bold.ttf</key>
@@ -834,6 +1381,13 @@
 			<key>hash2</key>
 			<data>
 			/S05nsnfa5m72M96bEycUh2RdRZGR56OTme3PMChc0k=
+			</data>
+		</dict>
+		<key>Exo2-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EDg3+cAkC+rFaTDIig4UhgbtJiFVFCWBsEWRbNGFyDI=
 			</data>
 		</dict>
 		<key>Exo2-Regular.ttf</key>
@@ -861,49 +1415,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ok92ROXhBsbrjS+wthoPwzbEC6y8OZdynN4MZYtIfIc=
+			7oBgZmE/dFVBv+ionLtpMkqGIr+MAcCjn628VMB+JGs=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h0YcHJAvQ5ybmrTNtIoAXjYg8W3NJyAfd+zPdgQMHXg=
+			kmRvlFOUoZTOMDqiz+VnddRn7saFTCEhyYJTTvmijO4=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OEC6leKIYwQM/ngExmvUhW8r7xoSx9z396EkosPIGHE=
+			UiUIQVo+fVeHR/Rvvdzx69I2GvSAn0FVeeNnD+6dUno=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6JGqaaqxOjy8/g9nvSe3Z2km3MYmNWi/jaXVwNTJ30w=
+			Xj0IauEEsSJ4W1b2fOznFYPzdMXx52kHt5kox+vfnLo=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OEC6leKIYwQM/ngExmvUhW8r7xoSx9z396EkosPIGHE=
+			UiUIQVo+fVeHR/Rvvdzx69I2GvSAn0FVeeNnD+6dUno=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vlla2Dj39VfQjVoMeIiUC/jJ8Nz8a7zaArkFcjvDr3o=
+			GZOLvCnvFUDbPxAUnTrIQWWJfo3Of+JD32RMJpb2W+s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZjoVg75B9QUZ/CYG3JmHMFL+2sERR7r3VUY5dKxVgJs=
+			gtDYi42BPOK8DHwLAzxcU9EwpAL+ufH4TeecYo05uhE=
+			</data>
+		</dict>
+		<key>Montserrat-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f6k9fapcL4gaZycinCEXgt5rdgCPvWNGs9dmTo/IP0M=
+			</data>
+		</dict>
+		<key>Montserrat-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zRYcujo83PaK1yGSD80WTIfnt8yea61RAnjD+jeNkdI=
+			</data>
+		</dict>
+		<key>Montserrat-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			75z5nwF1vvUwuIk0vZBPz1b3c87G/U37jMr3ziu9OV4=
+			</data>
+		</dict>
+		<key>Montserrat-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nE2zgUh1QQ59ZP3I5pZ2w7hJaLsVvzrOizlExZ+8VrY=
 			</data>
 		</dict>
 		<key>Poppins-Bold.ttf</key>
@@ -934,60 +1516,116 @@
 			1UWu97Pqaqdpvpa+hCCGNOy1rJ1sylzsEeTOPfeOdAs=
 			</data>
 		</dict>
+		<key>TensorFlowLite.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GI2qsCFiUG5amVXQTeAl0IzCGDTzml8FuvkHSYLR+Cs=
+			</data>
+		</dict>
+		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jWXQtDoSYs/inoM5bACz25T7Eg1E0RiNknNB8UpsIjw=
+			</data>
+		</dict>
+		<key>TensorFlowLiteC.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BKAtp1Xcl1EZYAy6CNsIsqsASkuzCHnDMiCphW7YsiI=
+			</data>
+		</dict>
+		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A7LHCDOjMaKx79Ef8WjtAqjq39Xn0fvzDuzHUJpK6kc=
+			</data>
+		</dict>
+		<key>ToggleFlowCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s+8ZR1yNeAlozIkyL9eihHPXo1F/KTRwpCcY/1fOPD8=
+			</data>
+		</dict>
 		<key>de-de.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nh0qzxI12XrYMHSWUEdfXjlGUsJ+H8pJkg/MSTdUO1I=
+			NqT+nz3yZQX3gw8Tjgn3oCFZ+y19Z0EUP+0TfCiOurs=
+			</data>
+		</dict>
+		<key>el-el.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mPHZFKS7CzJe+RDc8yIwwww7fhqXU2DvZRGCV3MKNvw=
+			</data>
+		</dict>
+		<key>en-na.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EDTUveJU95JflNA9ltPM5CvnUbN5ZVUX2WFEuk/cUDA=
 			</data>
 		</dict>
 		<key>en-us.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yim7Tt2RbkwjHMDT+GvfJ8To/8huetnWs3VIdX+rbmU=
+			mYl4wqOWy4YydLKQgAD2OUqGqUKW3uDsUkaE3HkrHJY=
 			</data>
 		</dict>
 		<key>es-es.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmPA26GhTZIEo1FibBMLeREd6NtEC6VScfM/8fLRWbM=
+			hKk0AEAtLJp+roMudq9FG1am0mSLQOZmnk97XO61gUY=
 			</data>
 		</dict>
 		<key>fr-mr.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1tZG2wUA3YHDPy0hWDH1lFoBfwqLmLBIhQrCKwvzBDo=
+			5CM92IXPwNNTo/rN0pGjNnV1EIgXWYLkOAR4PVuboqU=
+			</data>
+		</dict>
+		<key>image_upload_loader.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HXaKU7DB8oE+joAF6ayyG9GUGb3pkukCXzV12/g/V4c=
 			</data>
 		</dict>
 		<key>it-IT.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4awTrGOKkDjHQnULCm5f0lQo15iJQRa/80HeDOZ3sOM=
+			H1IJDs7TjZ2sAy0d04AhfH5Te0SddjU6n4v2wx+tm48=
+			</data>
+		</dict>
+		<key>nl-nl.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DHrw25kVxiAbSH+SMUU0KewDUXgLM7I+UfvJKQscxuM=
 			</data>
 		</dict>
 		<key>ro-ro.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			st6ZUCzrLm5BBk/YRP9MOIK2QCGw9k0VVXRYBx0bhq8=
+			+PhPq+dyVYXMZaWhaHhbJ3GP2uSaicC0Tt0Y7rxQ8ow=
 			</data>
 		</dict>
-		<key>ssd320_fpnlite_30c_100d_with_metadata.tflite</key>
+		<key>sl-sl.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+08Q3p26e+56nLYpe4l9CYtoNvwmUVEdkhualOYxtFY=
-			</data>
-		</dict>
-		<key>vanmodelmetadata_new_fp16_Jan2024.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zd/9gk7QSj4oBIXeDnQgCB+X8x8dyQNnlK33oJKpTzM=
+			NAW9DhkLRtrSY/XXQq9X0ieTyK2Ecf8aHD94oF51QKI=
 			</data>
 		</dict>
 	</dict>

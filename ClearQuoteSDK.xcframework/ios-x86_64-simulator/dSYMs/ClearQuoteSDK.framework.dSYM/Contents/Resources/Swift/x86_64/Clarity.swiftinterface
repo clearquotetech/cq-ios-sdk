@@ -1,0 +1,4414 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Clarity
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import Clarity
+import CoreGraphics
+import CoreTelephony
+import CryptoKit
+import Darwin
+import Dispatch
+import Foundation
+import Foundation/*.Data*/
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+import zlib
+@_inheritsConvenienceInitializers @objc public class ClaritySDK : ObjectiveC.NSObject {
+  public typealias OnSessionStartedCallback = (Swift.String) -> Swift.Void
+  @discardableResult
+  @objc public static func initialize(config: Clarity.ClarityConfig) -> Swift.Bool
+  @objc public static func pause()
+  @objc public static func resume()
+  @objc public static func isPaused() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  @objc public static func startNewSession(callback: Clarity.ClaritySDK.OnSessionStartedCallback?) -> Swift.Bool
+  #endif
+  @objc public static func maskView(_ view: UIKit.UIView)
+  @objc public static func unmaskView(_ view: UIKit.UIView)
+  @discardableResult
+  @objc public static func setCustomUserId(_ customUserId: Swift.String) -> Swift.Bool
+  @discardableResult
+  @objc public static func setCustomSessionId(_ customSessionId: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This function is deprecated and will be removed in a future major version. Please use `ClaritySDK.getCurrentSessionUrl()` instead.")
+  @objc public static func getCurrentSessionId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func getCurrentSessionUrl() -> Swift.String?
+  #endif
+  @discardableResult
+  @objc public static func setCustomTag(key: Swift.String, value: Swift.String) -> Swift.Bool
+  @discardableResult
+  public static func setCustomTag(key: Swift.String, value: Swift.String...) -> Swift.Bool
+  @discardableResult
+  @objc public static func setCustomTag(key: Swift.String, values: Swift.Set<Swift.String>) -> Swift.Bool
+  @discardableResult
+  @objc public static func sendCustomEvent(value: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  @objc public static func setCurrentScreenName(_ name: Swift.String?) -> Swift.Bool
+  #endif
+  @discardableResult
+  @objc public static func setOnSessionStartedCallback(_ callback: @escaping Clarity.ClaritySDK.OnSessionStartedCallback) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@preconcurrency public protocol ExtensionMap : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  subscript(messageType: any Clarity.Message.Type, fieldNumber: Swift.Int) -> (any Clarity.AnyMessageExtension)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func fieldNumberForProto(messageType: any Clarity.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  #endif
+}
+public protocol _ProtoNameProviding {
+  static var _protobuf_nameMap: Clarity._NameMap { get }
+}
+public protocol SwiftProtobufContiguousBytes {
+  init(repeating: Swift.UInt8, count: Swift.Int)
+  init<S>(_ sequence: S) where S : Swift.Sequence, S.Element == Swift.UInt8
+  var count: Swift.Int { get }
+  func withUnsafeBytes<R>(_ body: (Swift.UnsafeRawBufferPointer) throws -> R) rethrows -> R
+  mutating func withUnsafeMutableBytes<R>(_ body: (Swift.UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R
+}
+extension Swift.Array : Clarity.SwiftProtobufContiguousBytes where Element == Swift.UInt8 {
+}
+extension Foundation.Data : Clarity.SwiftProtobufContiguousBytes {
+}
+public struct Google_Protobuf_Timestamp : Swift.Sendable {
+  public var seconds: Swift.Int64
+  public var nanos: Swift.Int32
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Timestamp : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Timestamp, rhs: Clarity.Google_Protobuf_Timestamp) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public let defaultAnyTypeURLPrefix: Swift.String
+extension Clarity.Google_Protobuf_Any {
+  public init(message: any Clarity.Message, partial: Swift.Bool = false, typePrefix: Swift.String = defaultAnyTypeURLPrefix) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_disfavoredOverload public init(textFormatString: Swift.String, extensions: (any Clarity.ExtensionMap)? = nil) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(textFormatString: Swift.String, options: Clarity.TextFormatDecodingOptions = TextFormatDecodingOptions(), extensions: (any Clarity.ExtensionMap)? = nil) throws
+  #endif
+  public func isA<M>(_ type: M.Type) -> Swift.Bool where M : Clarity.Message
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct _ProtobufMap<KeyType, ValueType> where KeyType : Clarity.MapKeyType, ValueType : Clarity.FieldType {
+  public typealias Key = KeyType.BaseType
+  public typealias Value = ValueType.BaseType
+  public typealias BaseType = [Clarity._ProtobufMap<KeyType, ValueType>.Key : Clarity._ProtobufMap<KeyType, ValueType>.Value]
+}
+public struct _ProtobufMessageMap<KeyType, ValueType> where KeyType : Clarity.MapKeyType, ValueType : Clarity.Message, ValueType : Swift.Hashable {
+  public typealias Key = KeyType.BaseType
+  public typealias Value = ValueType
+  public typealias BaseType = [Clarity._ProtobufMessageMap<KeyType, ValueType>.Key : Clarity._ProtobufMessageMap<KeyType, ValueType>.Value]
+}
+public struct _ProtobufEnumMap<KeyType, ValueType> where KeyType : Clarity.MapKeyType, ValueType : Clarity.Enum {
+  public typealias Key = KeyType.BaseType
+  public typealias Value = ValueType
+  public typealias BaseType = [Clarity._ProtobufEnumMap<KeyType, ValueType>.Key : Clarity._ProtobufEnumMap<KeyType, ValueType>.Value]
+}
+@preconcurrency public protocol AnyMessageExtension : Swift.Sendable {
+  var fieldNumber: Swift.Int { get }
+  var fieldName: Swift.String { get }
+  var messageType: any Clarity.Message.Type { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func _protobuf_newField<D>(decoder: inout D) throws -> (any Clarity.AnyExtensionField)? where D : Clarity.Decoder
+  #endif
+}
+final public class MessageExtension<FieldType, MessageType> : Clarity.AnyMessageExtension where FieldType : Clarity.ExtensionField, MessageType : Clarity.Message {
+  final public let fieldNumber: Swift.Int
+  final public let fieldName: Swift.String
+  final public let messageType: any Clarity.Message.Type
+  public init(_protobuf_fieldNumber: Swift.Int, fieldName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func _protobuf_newField<D>(decoder: inout D) throws -> (any Clarity.AnyExtensionField)? where D : Clarity.Decoder
+  #endif
+  @objc deinit
+}
+extension Clarity.Google_Protobuf_Struct : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.String
+  public typealias Value = Clarity.Google_Protobuf_Value
+  public init(dictionaryLiteral: (Swift.String, Clarity.Google_Protobuf_Value)...)
+}
+extension Clarity.Google_Protobuf_Struct {
+  public init(fields: [Swift.String : Clarity.Google_Protobuf_Value])
+  #if compiler(>=5.3) && $NonescapableTypes
+  public subscript(key: Swift.String) -> Clarity.Google_Protobuf_Value? {
+    get
+    set(newValue)
+  }
+  #endif
+}
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+extension _Concurrency.AsyncSequence where Self.Element == Swift.UInt8 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @inlinable public func binaryProtobufDelimitedMessages<M>(of messageType: M.Type = M.self, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) -> Clarity.AsyncMessageSequence<Self, M> where M : Clarity.Message {
+        AsyncMessageSequence<Self, M>(
+            base: self,
+            extensions: extensions,
+            partial: partial,
+            options: options
+        )
+    }
+  #endif
+}
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+public struct AsyncMessageSequence<Base, M> : _Concurrency.AsyncSequence where Base : _Concurrency.AsyncSequence, M : Clarity.Message, Base.Element == Swift.UInt8 {
+  public typealias Element = M
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(base: Base, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions())
+  #endif
+  public struct AsyncIterator : _Concurrency.AsyncIteratorProtocol {
+    @usableFromInline
+    internal var iterator: Base.AsyncIterator?
+    @usableFromInline
+    internal let extensions: (any Clarity.ExtensionMap)?
+    @usableFromInline
+    internal let partial: Swift.Bool
+    @usableFromInline
+    internal let options: Clarity.BinaryDecodingOptions
+    #if compiler(>=5.3) && $NonescapableTypes
+    @inlinable internal mutating func nextVarInt() async throws -> Swift.UInt64? {
+            var messageSize: UInt64 = 0
+            var shift: UInt64 = 0
+
+            while let byte = try await iterator?.next() {
+                messageSize |= UInt64(byte & 0x7f) << shift
+                shift += UInt64(7)
+                if shift > 35 {
+                    iterator = nil
+                    throw SwiftProtobufError.BinaryStreamDecoding.malformedLength()
+                }
+                if byte & 0x80 == 0 {
+                    return messageSize
+                }
+            }
+            if shift > 0 {
+                 
+                iterator = nil
+                throw BinaryDelimited.Error.truncated
+            }
+            return nil   
+        }
+    #endif
+    @usableFromInline
+    internal mutating func readBytes(_ size: Swift.Int) async throws -> [Swift.UInt8]
+    #if compiler(>=5.3) && $NonescapableTypes
+    @inlinable public mutating func next() async throws -> M? {
+            guard let messageSize = try await nextVarInt() else {
+                iterator = nil
+                return nil
+            }
+            guard messageSize <= UInt64(0x7fff_ffff) else {
+                iterator = nil
+                throw SwiftProtobufError.BinaryDecoding.tooLarge()
+            }
+            if messageSize == 0 {
+                return try M(
+                    serializedBytes: [],
+                    extensions: extensions,
+                    partial: partial,
+                    options: options
+                )
+            }
+            let buffer = try await readBytes(Int(messageSize))
+            return try M(
+                serializedBytes: buffer,
+                extensions: extensions,
+                partial: partial,
+                options: options
+            )
+        }
+    #endif
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    public typealias Element = M
+    @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+    @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = any Swift.Error
+  }
+  public func makeAsyncIterator() -> Clarity.AsyncMessageSequence<Base, M>.AsyncIterator
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = any Swift.Error
+}
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+extension Clarity.AsyncMessageSequence : Swift.Sendable where Base : Swift.Sendable {
+}
+@available(*, unavailable)
+extension Clarity.AsyncMessageSequence.AsyncIterator : Swift.Sendable {
+}
+public struct ExtensionFieldValueSet : Swift.Hashable, Swift.Sendable {
+  public static func == (lhs: Clarity.ExtensionFieldValueSet, rhs: Clarity.ExtensionFieldValueSet) -> Swift.Bool
+  public init()
+  public func hash(into hasher: inout Swift.Hasher)
+  public func traverse<V>(visitor: inout V, start: Swift.Int, end: Swift.Int) throws where V : Clarity.Visitor
+  #if compiler(>=5.3) && $NonescapableTypes
+  public subscript(index: Swift.Int) -> (any Clarity.AnyExtensionField)? {
+    get
+    set
+  }
+  #endif
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct BinaryEncodingOptions : Swift.Sendable {
+  public var useDeterministicOrdering: Swift.Bool
+  public init()
+}
+public enum BinaryDecodingError : Swift.Error {
+  case trailingGarbage
+  case truncated
+  case invalidUTF8
+  case malformedProtobuf
+  case missingRequiredFields
+  case internalExtensionError
+  case messageDepthLimit
+  public static func == (a: Clarity.BinaryDecodingError, b: Clarity.BinaryDecodingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ListValue : Swift.ExpressibleByArrayLiteral {
+  public typealias Element = Clarity.Google_Protobuf_Value
+  public init(arrayLiteral elements: Clarity.Google_Protobuf_ListValue.Element...)
+  public typealias ArrayLiteralElement = Clarity.Google_Protobuf_ListValue.Element
+}
+extension Clarity.Google_Protobuf_ListValue {
+  public init(values: [Clarity.Google_Protobuf_Value])
+  public subscript(index: Swift.Int) -> Clarity.Google_Protobuf_Value {
+    get
+    set(newValue)
+  }
+}
+extension Clarity.Message {
+  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, extensions: any Clarity.ExtensionMap = SimpleExtensionMap(), options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func jsonUTF8Data<C>(from collection: C, options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data where Self == C.Element, C : Swift.Collection
+}
+public struct _NameMap : Swift.ExpressibleByDictionaryLiteral {
+  public enum NameDescription {
+    case same(proto: Swift.StaticString)
+    case standard(proto: Swift.StaticString)
+    case unique(proto: Swift.StaticString, json: Swift.StaticString)
+    case aliased(proto: Swift.StaticString, aliases: [Swift.StaticString])
+  }
+  public init()
+  @available(*, deprecated, message: "Please regenerate your .pb.swift files with the current version of the SwiftProtobuf protoc plugin.")
+  public init(reservedNames: [Swift.String], reservedRanges: [Swift.Range<Swift.Int32>], numberNameMappings: Swift.KeyValuePairs<Swift.Int, Clarity._NameMap.NameDescription>)
+  @available(*, deprecated, message: "Please regenerate your .pb.swift files with the current version of the SwiftProtobuf protoc plugin.")
+  public init(dictionaryLiteral elements: (Swift.Int, Clarity._NameMap.NameDescription)...)
+  public init(bytecode: Swift.StaticString)
+  public typealias Key = Swift.Int
+  public typealias Value = Clarity._NameMap.NameDescription
+}
+extension Clarity._NameMap : Swift.Sendable {
+}
+public struct SimpleExtensionMap : Clarity.ExtensionMap, Swift.ExpressibleByArrayLiteral {
+  public typealias Element = Clarity.AnyMessageExtension
+  public init()
+  public init(arrayLiteral: any Clarity.AnyMessageExtension...)
+  public init(_ others: Clarity.SimpleExtensionMap...)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public subscript(messageType: any Clarity.Message.Type, fieldNumber: Swift.Int) -> (any Clarity.AnyMessageExtension)? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func fieldNumberForProto(messageType: any Clarity.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  #endif
+  public mutating func insert(_ newValue: any Clarity.AnyMessageExtension)
+  public mutating func insert(contentsOf: [any Clarity.AnyMessageExtension])
+  public mutating func formUnion(_ other: Clarity.SimpleExtensionMap)
+  public func union(_ other: Clarity.SimpleExtensionMap) -> Clarity.SimpleExtensionMap
+  public typealias ArrayLiteralElement = any Clarity.AnyMessageExtension
+}
+extension Clarity.SimpleExtensionMap : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public enum AnyUnpackError : Swift.Error {
+  case typeMismatch
+  case malformedWellKnownTypeJSON
+  case malformedAnyField
+  public static func == (a: Clarity.AnyUnpackError, b: Clarity.AnyUnpackError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Google_Protobuf_NullValue : Clarity.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case nullValue
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [Clarity.Google_Protobuf_NullValue]
+  public typealias AllCases = [Clarity.Google_Protobuf_NullValue]
+}
+public struct Google_Protobuf_Struct : Swift.Sendable {
+  public var fields: [Swift.String : Clarity.Google_Protobuf_Value]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Value : Swift.Sendable {
+  public var kind: Clarity.Google_Protobuf_Value.OneOf_Kind?
+  public var nullValue: Clarity.Google_Protobuf_NullValue {
+    get
+    set
+  }
+  public var numberValue: Swift.Double {
+    get
+    set
+  }
+  public var stringValue: Swift.String {
+    get
+    set
+  }
+  public var boolValue: Swift.Bool {
+    get
+    set
+  }
+  public var structValue: Clarity.Google_Protobuf_Struct {
+    get
+    set
+  }
+  public var listValue: Clarity.Google_Protobuf_ListValue {
+    get
+    set
+  }
+  public var unknownFields: Clarity.UnknownStorage
+  public enum OneOf_Kind : Swift.Equatable, Swift.Sendable {
+    case nullValue(Clarity.Google_Protobuf_NullValue)
+    case numberValue(Swift.Double)
+    case stringValue(Swift.String)
+    case boolValue(Swift.Bool)
+    case structValue(Clarity.Google_Protobuf_Struct)
+    case listValue(Clarity.Google_Protobuf_ListValue)
+    public static func == (a: Clarity.Google_Protobuf_Value.OneOf_Kind, b: Clarity.Google_Protobuf_Value.OneOf_Kind) -> Swift.Bool
+  }
+  public init()
+}
+public struct Google_Protobuf_ListValue : Swift.Sendable {
+  public var values: [Clarity.Google_Protobuf_Value]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_NullValue : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_Struct : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Struct, rhs: Clarity.Google_Protobuf_Struct) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Value : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Value, rhs: Clarity.Google_Protobuf_Value) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ListValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_ListValue, rhs: Clarity.Google_Protobuf_ListValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Google_Protobuf_SourceContext : Swift.Sendable {
+  public var fileName: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_SourceContext : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_SourceContext, rhs: Clarity.Google_Protobuf_SourceContext) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Google_Protobuf_Edition : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+  case unknown
+  case legacy
+  case proto2
+  case proto3
+  case edition2023
+  case edition2024
+  case edition1TestOnly
+  case edition2TestOnly
+  case edition99997TestOnly
+  case edition99998TestOnly
+  case edition99999TestOnly
+  case max
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [Clarity.Google_Protobuf_Edition]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [Clarity.Google_Protobuf_Edition] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum Google_Protobuf_SymbolVisibility : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+  case visibilityUnset
+  case visibilityLocal
+  case visibilityExport
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [Clarity.Google_Protobuf_SymbolVisibility]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [Clarity.Google_Protobuf_SymbolVisibility] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct Google_Protobuf_FileDescriptorSet : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var file: [Clarity.Google_Protobuf_FileDescriptorProto]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_FileDescriptorProto : Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var package: Swift.String {
+    get
+    set
+  }
+  public var hasPackage: Swift.Bool {
+    get
+  }
+  public mutating func clearPackage()
+  public var dependency: [Swift.String]
+  public var publicDependency: [Swift.Int32]
+  public var weakDependency: [Swift.Int32]
+  public var optionDependency: [Swift.String]
+  public var messageType: [Clarity.Google_Protobuf_DescriptorProto]
+  public var enumType: [Clarity.Google_Protobuf_EnumDescriptorProto]
+  public var service: [Clarity.Google_Protobuf_ServiceDescriptorProto]
+  public var `extension`: [Clarity.Google_Protobuf_FieldDescriptorProto]
+  public var options: Clarity.Google_Protobuf_FileOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var sourceCodeInfo: Clarity.Google_Protobuf_SourceCodeInfo {
+    get
+    set
+  }
+  public var hasSourceCodeInfo: Swift.Bool {
+    get
+  }
+  public mutating func clearSourceCodeInfo()
+  public var syntax: Swift.String {
+    get
+    set
+  }
+  public var hasSyntax: Swift.Bool {
+    get
+  }
+  public mutating func clearSyntax()
+  public var edition: Clarity.Google_Protobuf_Edition {
+    get
+    set
+  }
+  public var hasEdition: Swift.Bool {
+    get
+  }
+  public mutating func clearEdition()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_DescriptorProto : @unchecked Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var field: [Clarity.Google_Protobuf_FieldDescriptorProto] {
+    get
+    set
+  }
+  public var `extension`: [Clarity.Google_Protobuf_FieldDescriptorProto] {
+    get
+    set
+  }
+  public var nestedType: [Clarity.Google_Protobuf_DescriptorProto] {
+    get
+    set
+  }
+  public var enumType: [Clarity.Google_Protobuf_EnumDescriptorProto] {
+    get
+    set
+  }
+  public var extensionRange: [Clarity.Google_Protobuf_DescriptorProto.ExtensionRange] {
+    get
+    set
+  }
+  public var oneofDecl: [Clarity.Google_Protobuf_OneofDescriptorProto] {
+    get
+    set
+  }
+  public var options: Clarity.Google_Protobuf_MessageOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var reservedRange: [Clarity.Google_Protobuf_DescriptorProto.ReservedRange] {
+    get
+    set
+  }
+  public var reservedName: [Swift.String] {
+    get
+    set
+  }
+  public var visibility: Clarity.Google_Protobuf_SymbolVisibility {
+    get
+    set
+  }
+  public var hasVisibility: Swift.Bool {
+    get
+  }
+  public mutating func clearVisibility()
+  public var unknownFields: Clarity.UnknownStorage
+  public struct ExtensionRange : Swift.Sendable {
+    public var start: Swift.Int32 {
+      get
+      set
+    }
+    public var hasStart: Swift.Bool {
+      get
+    }
+    public mutating func clearStart()
+    public var end: Swift.Int32 {
+      get
+      set
+    }
+    public var hasEnd: Swift.Bool {
+      get
+    }
+    public mutating func clearEnd()
+    public var options: Clarity.Google_Protobuf_ExtensionRangeOptions {
+      get
+      set
+    }
+    public var hasOptions: Swift.Bool {
+      get
+    }
+    public mutating func clearOptions()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public struct ReservedRange : Swift.Sendable {
+    public var start: Swift.Int32 {
+      get
+      set
+    }
+    public var hasStart: Swift.Bool {
+      get
+    }
+    public mutating func clearStart()
+    public var end: Swift.Int32 {
+      get
+      set
+    }
+    public var hasEnd: Swift.Bool {
+      get
+    }
+    public mutating func clearEnd()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Google_Protobuf_ExtensionRangeOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var declaration: [Clarity.Google_Protobuf_ExtensionRangeOptions.Declaration]
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var verification: Clarity.Google_Protobuf_ExtensionRangeOptions.VerificationState {
+    get
+    set
+  }
+  public var hasVerification: Swift.Bool {
+    get
+  }
+  public mutating func clearVerification()
+  public var unknownFields: Clarity.UnknownStorage
+  public enum VerificationState : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case declaration
+    case unverified
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_ExtensionRangeOptions.VerificationState]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_ExtensionRangeOptions.VerificationState] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct Declaration : Swift.Sendable {
+    public var number: Swift.Int32 {
+      get
+      set
+    }
+    public var hasNumber: Swift.Bool {
+      get
+    }
+    public mutating func clearNumber()
+    public var fullName: Swift.String {
+      get
+      set
+    }
+    public var hasFullName: Swift.Bool {
+      get
+    }
+    public mutating func clearFullName()
+    public var type: Swift.String {
+      get
+      set
+    }
+    public var hasType: Swift.Bool {
+      get
+    }
+    public mutating func clearType()
+    public var reserved: Swift.Bool {
+      get
+      set
+    }
+    public var hasReserved: Swift.Bool {
+      get
+    }
+    public mutating func clearReserved()
+    public var repeated: Swift.Bool {
+      get
+      set
+    }
+    public var hasRepeated: Swift.Bool {
+      get
+    }
+    public mutating func clearRepeated()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_FieldDescriptorProto : Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var number: Swift.Int32 {
+    get
+    set
+  }
+  public var hasNumber: Swift.Bool {
+    get
+  }
+  public mutating func clearNumber()
+  public var label: Clarity.Google_Protobuf_FieldDescriptorProto.Label {
+    get
+    set
+  }
+  public var hasLabel: Swift.Bool {
+    get
+  }
+  public mutating func clearLabel()
+  public var type: Clarity.Google_Protobuf_FieldDescriptorProto.TypeEnum {
+    get
+    set
+  }
+  public var hasType: Swift.Bool {
+    get
+  }
+  public mutating func clearType()
+  public var typeName: Swift.String {
+    get
+    set
+  }
+  public var hasTypeName: Swift.Bool {
+    get
+  }
+  public mutating func clearTypeName()
+  public var extendee: Swift.String {
+    get
+    set
+  }
+  public var hasExtendee: Swift.Bool {
+    get
+  }
+  public mutating func clearExtendee()
+  public var defaultValue: Swift.String {
+    get
+    set
+  }
+  public var hasDefaultValue: Swift.Bool {
+    get
+  }
+  public mutating func clearDefaultValue()
+  public var oneofIndex: Swift.Int32 {
+    get
+    set
+  }
+  public var hasOneofIndex: Swift.Bool {
+    get
+  }
+  public mutating func clearOneofIndex()
+  public var jsonName: Swift.String {
+    get
+    set
+  }
+  public var hasJsonName: Swift.Bool {
+    get
+  }
+  public mutating func clearJsonName()
+  public var options: Clarity.Google_Protobuf_FieldOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var proto3Optional: Swift.Bool {
+    get
+    set
+  }
+  public var hasProto3Optional: Swift.Bool {
+    get
+  }
+  public mutating func clearProto3Optional()
+  public var unknownFields: Clarity.UnknownStorage
+  public enum TypeEnum : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case double
+    case float
+    case int64
+    case uint64
+    case int32
+    case fixed64
+    case fixed32
+    case bool
+    case string
+    case group
+    case message
+    case bytes
+    case uint32
+    case `enum`
+    case sfixed32
+    case sfixed64
+    case sint32
+    case sint64
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldDescriptorProto.TypeEnum]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldDescriptorProto.TypeEnum] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Label : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case optional
+    case repeated
+    case required
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldDescriptorProto.Label]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldDescriptorProto.Label] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+}
+public struct Google_Protobuf_OneofDescriptorProto : Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var options: Clarity.Google_Protobuf_OneofOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_EnumDescriptorProto : @unchecked Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var value: [Clarity.Google_Protobuf_EnumValueDescriptorProto] {
+    get
+    set
+  }
+  public var options: Clarity.Google_Protobuf_EnumOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var reservedRange: [Clarity.Google_Protobuf_EnumDescriptorProto.EnumReservedRange] {
+    get
+    set
+  }
+  public var reservedName: [Swift.String] {
+    get
+    set
+  }
+  public var visibility: Clarity.Google_Protobuf_SymbolVisibility {
+    get
+    set
+  }
+  public var hasVisibility: Swift.Bool {
+    get
+  }
+  public mutating func clearVisibility()
+  public var unknownFields: Clarity.UnknownStorage
+  public struct EnumReservedRange : Swift.Sendable {
+    public var start: Swift.Int32 {
+      get
+      set
+    }
+    public var hasStart: Swift.Bool {
+      get
+    }
+    public mutating func clearStart()
+    public var end: Swift.Int32 {
+      get
+      set
+    }
+    public var hasEnd: Swift.Bool {
+      get
+    }
+    public mutating func clearEnd()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Google_Protobuf_EnumValueDescriptorProto : @unchecked Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var number: Swift.Int32 {
+    get
+    set
+  }
+  public var hasNumber: Swift.Bool {
+    get
+  }
+  public mutating func clearNumber()
+  public var options: Clarity.Google_Protobuf_EnumValueOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_ServiceDescriptorProto : Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var method: [Clarity.Google_Protobuf_MethodDescriptorProto]
+  public var options: Clarity.Google_Protobuf_ServiceOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_MethodDescriptorProto : Swift.Sendable {
+  public var name: Swift.String {
+    get
+    set
+  }
+  public var hasName: Swift.Bool {
+    get
+  }
+  public mutating func clearName()
+  public var inputType: Swift.String {
+    get
+    set
+  }
+  public var hasInputType: Swift.Bool {
+    get
+  }
+  public mutating func clearInputType()
+  public var outputType: Swift.String {
+    get
+    set
+  }
+  public var hasOutputType: Swift.Bool {
+    get
+  }
+  public mutating func clearOutputType()
+  public var options: Clarity.Google_Protobuf_MethodOptions {
+    get
+    set
+  }
+  public var hasOptions: Swift.Bool {
+    get
+  }
+  public mutating func clearOptions()
+  public var clientStreaming: Swift.Bool {
+    get
+    set
+  }
+  public var hasClientStreaming: Swift.Bool {
+    get
+  }
+  public mutating func clearClientStreaming()
+  public var serverStreaming: Swift.Bool {
+    get
+    set
+  }
+  public var hasServerStreaming: Swift.Bool {
+    get
+  }
+  public mutating func clearServerStreaming()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_FileOptions : Clarity.ExtensibleMessage, @unchecked Swift.Sendable {
+  public var javaPackage: Swift.String {
+    get
+    set
+  }
+  public var hasJavaPackage: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaPackage()
+  public var javaOuterClassname: Swift.String {
+    get
+    set
+  }
+  public var hasJavaOuterClassname: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaOuterClassname()
+  public var javaMultipleFiles: Swift.Bool {
+    get
+    set
+  }
+  public var hasJavaMultipleFiles: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaMultipleFiles()
+  public var javaGenerateEqualsAndHash: Swift.Bool {
+    get
+    set
+  }
+  public var hasJavaGenerateEqualsAndHash: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaGenerateEqualsAndHash()
+  public var javaStringCheckUtf8: Swift.Bool {
+    get
+    set
+  }
+  public var hasJavaStringCheckUtf8: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaStringCheckUtf8()
+  public var optimizeFor: Clarity.Google_Protobuf_FileOptions.OptimizeMode {
+    get
+    set
+  }
+  public var hasOptimizeFor: Swift.Bool {
+    get
+  }
+  public mutating func clearOptimizeFor()
+  public var goPackage: Swift.String {
+    get
+    set
+  }
+  public var hasGoPackage: Swift.Bool {
+    get
+  }
+  public mutating func clearGoPackage()
+  public var ccGenericServices: Swift.Bool {
+    get
+    set
+  }
+  public var hasCcGenericServices: Swift.Bool {
+    get
+  }
+  public mutating func clearCcGenericServices()
+  public var javaGenericServices: Swift.Bool {
+    get
+    set
+  }
+  public var hasJavaGenericServices: Swift.Bool {
+    get
+  }
+  public mutating func clearJavaGenericServices()
+  public var pyGenericServices: Swift.Bool {
+    get
+    set
+  }
+  public var hasPyGenericServices: Swift.Bool {
+    get
+  }
+  public mutating func clearPyGenericServices()
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var ccEnableArenas: Swift.Bool {
+    get
+    set
+  }
+  public var hasCcEnableArenas: Swift.Bool {
+    get
+  }
+  public mutating func clearCcEnableArenas()
+  public var objcClassPrefix: Swift.String {
+    get
+    set
+  }
+  public var hasObjcClassPrefix: Swift.Bool {
+    get
+  }
+  public mutating func clearObjcClassPrefix()
+  public var csharpNamespace: Swift.String {
+    get
+    set
+  }
+  public var hasCsharpNamespace: Swift.Bool {
+    get
+  }
+  public mutating func clearCsharpNamespace()
+  public var swiftPrefix: Swift.String {
+    get
+    set
+  }
+  public var hasSwiftPrefix: Swift.Bool {
+    get
+  }
+  public mutating func clearSwiftPrefix()
+  public var phpClassPrefix: Swift.String {
+    get
+    set
+  }
+  public var hasPhpClassPrefix: Swift.Bool {
+    get
+  }
+  public mutating func clearPhpClassPrefix()
+  public var phpNamespace: Swift.String {
+    get
+    set
+  }
+  public var hasPhpNamespace: Swift.Bool {
+    get
+  }
+  public mutating func clearPhpNamespace()
+  public var phpMetadataNamespace: Swift.String {
+    get
+    set
+  }
+  public var hasPhpMetadataNamespace: Swift.Bool {
+    get
+  }
+  public mutating func clearPhpMetadataNamespace()
+  public var rubyPackage: Swift.String {
+    get
+    set
+  }
+  public var hasRubyPackage: Swift.Bool {
+    get
+  }
+  public mutating func clearRubyPackage()
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption] {
+    get
+    set
+  }
+  public var unknownFields: Clarity.UnknownStorage
+  public enum OptimizeMode : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case speed
+    case codeSize
+    case liteRuntime
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FileOptions.OptimizeMode]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FileOptions.OptimizeMode] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_MessageOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var messageSetWireFormat: Swift.Bool {
+    get
+    set
+  }
+  public var hasMessageSetWireFormat: Swift.Bool {
+    get
+  }
+  public mutating func clearMessageSetWireFormat()
+  public var noStandardDescriptorAccessor: Swift.Bool {
+    get
+    set
+  }
+  public var hasNoStandardDescriptorAccessor: Swift.Bool {
+    get
+  }
+  public mutating func clearNoStandardDescriptorAccessor()
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var mapEntry: Swift.Bool {
+    get
+    set
+  }
+  public var hasMapEntry: Swift.Bool {
+    get
+  }
+  public mutating func clearMapEntry()
+  public var deprecatedLegacyJsonFieldConflicts: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecatedLegacyJsonFieldConflicts: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecatedLegacyJsonFieldConflicts()
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_FieldOptions : Clarity.ExtensibleMessage, @unchecked Swift.Sendable {
+  public var ctype: Clarity.Google_Protobuf_FieldOptions.CType {
+    get
+    set
+  }
+  public var hasCtype: Swift.Bool {
+    get
+  }
+  public mutating func clearCtype()
+  public var packed: Swift.Bool {
+    get
+    set
+  }
+  public var hasPacked: Swift.Bool {
+    get
+  }
+  public mutating func clearPacked()
+  public var jstype: Clarity.Google_Protobuf_FieldOptions.JSType {
+    get
+    set
+  }
+  public var hasJstype: Swift.Bool {
+    get
+  }
+  public mutating func clearJstype()
+  public var lazy: Swift.Bool {
+    get
+    set
+  }
+  public var hasLazy: Swift.Bool {
+    get
+  }
+  public mutating func clearLazy()
+  public var unverifiedLazy: Swift.Bool {
+    get
+    set
+  }
+  public var hasUnverifiedLazy: Swift.Bool {
+    get
+  }
+  public mutating func clearUnverifiedLazy()
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var weak: Swift.Bool {
+    get
+    set
+  }
+  public var hasWeak: Swift.Bool {
+    get
+  }
+  public mutating func clearWeak()
+  public var debugRedact: Swift.Bool {
+    get
+    set
+  }
+  public var hasDebugRedact: Swift.Bool {
+    get
+  }
+  public mutating func clearDebugRedact()
+  public var retention: Clarity.Google_Protobuf_FieldOptions.OptionRetention {
+    get
+    set
+  }
+  public var hasRetention: Swift.Bool {
+    get
+  }
+  public mutating func clearRetention()
+  public var targets: [Clarity.Google_Protobuf_FieldOptions.OptionTargetType] {
+    get
+    set
+  }
+  public var editionDefaults: [Clarity.Google_Protobuf_FieldOptions.EditionDefault] {
+    get
+    set
+  }
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var featureSupport: Clarity.Google_Protobuf_FieldOptions.FeatureSupport {
+    get
+    set
+  }
+  public var hasFeatureSupport: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatureSupport()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption] {
+    get
+    set
+  }
+  public var unknownFields: Clarity.UnknownStorage
+  public enum CType : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case string
+    case cord
+    case stringPiece
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldOptions.CType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldOptions.CType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum JSType : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case jsNormal
+    case jsString
+    case jsNumber
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldOptions.JSType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldOptions.JSType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum OptionRetention : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case retentionUnknown
+    case retentionRuntime
+    case retentionSource
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldOptions.OptionRetention]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldOptions.OptionRetention] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum OptionTargetType : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case targetTypeUnknown
+    case targetTypeFile
+    case targetTypeExtensionRange
+    case targetTypeMessage
+    case targetTypeField
+    case targetTypeOneof
+    case targetTypeEnum
+    case targetTypeEnumEntry
+    case targetTypeService
+    case targetTypeMethod
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FieldOptions.OptionTargetType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FieldOptions.OptionTargetType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct EditionDefault : Swift.Sendable {
+    public var edition: Clarity.Google_Protobuf_Edition {
+      get
+      set
+    }
+    public var hasEdition: Swift.Bool {
+      get
+    }
+    public mutating func clearEdition()
+    public var value: Swift.String {
+      get
+      set
+    }
+    public var hasValue: Swift.Bool {
+      get
+    }
+    public mutating func clearValue()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public struct FeatureSupport : Swift.Sendable {
+    public var editionIntroduced: Clarity.Google_Protobuf_Edition {
+      get
+      set
+    }
+    public var hasEditionIntroduced: Swift.Bool {
+      get
+    }
+    public mutating func clearEditionIntroduced()
+    public var editionDeprecated: Clarity.Google_Protobuf_Edition {
+      get
+      set
+    }
+    public var hasEditionDeprecated: Swift.Bool {
+      get
+    }
+    public mutating func clearEditionDeprecated()
+    public var deprecationWarning: Swift.String {
+      get
+      set
+    }
+    public var hasDeprecationWarning: Swift.Bool {
+      get
+    }
+    public mutating func clearDeprecationWarning()
+    public var editionRemoved: Clarity.Google_Protobuf_Edition {
+      get
+      set
+    }
+    public var hasEditionRemoved: Swift.Bool {
+      get
+    }
+    public mutating func clearEditionRemoved()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_OneofOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_EnumOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var allowAlias: Swift.Bool {
+    get
+    set
+  }
+  public var hasAllowAlias: Swift.Bool {
+    get
+  }
+  public mutating func clearAllowAlias()
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var deprecatedLegacyJsonFieldConflicts: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecatedLegacyJsonFieldConflicts: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecatedLegacyJsonFieldConflicts()
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_EnumValueOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var debugRedact: Swift.Bool {
+    get
+    set
+  }
+  public var hasDebugRedact: Swift.Bool {
+    get
+  }
+  public mutating func clearDebugRedact()
+  public var featureSupport: Clarity.Google_Protobuf_FieldOptions.FeatureSupport {
+    get
+    set
+  }
+  public var hasFeatureSupport: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatureSupport()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_ServiceOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_MethodOptions : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var deprecated: Swift.Bool {
+    get
+    set
+  }
+  public var hasDeprecated: Swift.Bool {
+    get
+  }
+  public mutating func clearDeprecated()
+  public var idempotencyLevel: Clarity.Google_Protobuf_MethodOptions.IdempotencyLevel {
+    get
+    set
+  }
+  public var hasIdempotencyLevel: Swift.Bool {
+    get
+  }
+  public mutating func clearIdempotencyLevel()
+  public var features: Clarity.Google_Protobuf_FeatureSet {
+    get
+    set
+  }
+  public var hasFeatures: Swift.Bool {
+    get
+  }
+  public mutating func clearFeatures()
+  public var uninterpretedOption: [Clarity.Google_Protobuf_UninterpretedOption]
+  public var unknownFields: Clarity.UnknownStorage
+  public enum IdempotencyLevel : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case idempotencyUnknown
+    case noSideEffects
+    case idempotent
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_MethodOptions.IdempotencyLevel]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_MethodOptions.IdempotencyLevel] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_UninterpretedOption : Swift.Sendable {
+  public var name: [Clarity.Google_Protobuf_UninterpretedOption.NamePart]
+  public var identifierValue: Swift.String {
+    get
+    set
+  }
+  public var hasIdentifierValue: Swift.Bool {
+    get
+  }
+  public mutating func clearIdentifierValue()
+  public var positiveIntValue: Swift.UInt64 {
+    get
+    set
+  }
+  public var hasPositiveIntValue: Swift.Bool {
+    get
+  }
+  public mutating func clearPositiveIntValue()
+  public var negativeIntValue: Swift.Int64 {
+    get
+    set
+  }
+  public var hasNegativeIntValue: Swift.Bool {
+    get
+  }
+  public mutating func clearNegativeIntValue()
+  public var doubleValue: Swift.Double {
+    get
+    set
+  }
+  public var hasDoubleValue: Swift.Bool {
+    get
+  }
+  public mutating func clearDoubleValue()
+  public var stringValue: Foundation.Data {
+    get
+    set
+  }
+  public var hasStringValue: Swift.Bool {
+    get
+  }
+  public mutating func clearStringValue()
+  public var aggregateValue: Swift.String {
+    get
+    set
+  }
+  public var hasAggregateValue: Swift.Bool {
+    get
+  }
+  public mutating func clearAggregateValue()
+  public var unknownFields: Clarity.UnknownStorage
+  public struct NamePart : Swift.Sendable {
+    public var namePart: Swift.String {
+      get
+      set
+    }
+    public var hasNamePart: Swift.Bool {
+      get
+    }
+    public mutating func clearNamePart()
+    public var isExtension: Swift.Bool {
+      get
+      set
+    }
+    public var hasIsExtension: Swift.Bool {
+      get
+    }
+    public mutating func clearIsExtension()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Google_Protobuf_FeatureSet : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var fieldPresence: Clarity.Google_Protobuf_FeatureSet.FieldPresence {
+    get
+    set
+  }
+  public var hasFieldPresence: Swift.Bool {
+    get
+  }
+  public mutating func clearFieldPresence()
+  public var enumType: Clarity.Google_Protobuf_FeatureSet.EnumType {
+    get
+    set
+  }
+  public var hasEnumType: Swift.Bool {
+    get
+  }
+  public mutating func clearEnumType()
+  public var repeatedFieldEncoding: Clarity.Google_Protobuf_FeatureSet.RepeatedFieldEncoding {
+    get
+    set
+  }
+  public var hasRepeatedFieldEncoding: Swift.Bool {
+    get
+  }
+  public mutating func clearRepeatedFieldEncoding()
+  public var utf8Validation: Clarity.Google_Protobuf_FeatureSet.Utf8Validation {
+    get
+    set
+  }
+  public var hasUtf8Validation: Swift.Bool {
+    get
+  }
+  public mutating func clearUtf8Validation()
+  public var messageEncoding: Clarity.Google_Protobuf_FeatureSet.MessageEncoding {
+    get
+    set
+  }
+  public var hasMessageEncoding: Swift.Bool {
+    get
+  }
+  public mutating func clearMessageEncoding()
+  public var jsonFormat: Clarity.Google_Protobuf_FeatureSet.JsonFormat {
+    get
+    set
+  }
+  public var hasJsonFormat: Swift.Bool {
+    get
+  }
+  public mutating func clearJsonFormat()
+  public var enforceNamingStyle: Clarity.Google_Protobuf_FeatureSet.EnforceNamingStyle {
+    get
+    set
+  }
+  public var hasEnforceNamingStyle: Swift.Bool {
+    get
+  }
+  public mutating func clearEnforceNamingStyle()
+  public var defaultSymbolVisibility: Clarity.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility {
+    get
+    set
+  }
+  public var hasDefaultSymbolVisibility: Swift.Bool {
+    get
+  }
+  public mutating func clearDefaultSymbolVisibility()
+  public var unknownFields: Clarity.UnknownStorage
+  public enum FieldPresence : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case explicit
+    case implicit
+    case legacyRequired
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.FieldPresence]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.FieldPresence] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum EnumType : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case open
+    case closed
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.EnumType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.EnumType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum RepeatedFieldEncoding : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case packed
+    case expanded
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.RepeatedFieldEncoding]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.RepeatedFieldEncoding] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Utf8Validation : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case verify
+    case none
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.Utf8Validation]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.Utf8Validation] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum MessageEncoding : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case lengthPrefixed
+    case delimited
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.MessageEncoding]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.MessageEncoding] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum JsonFormat : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case allow
+    case legacyBestEffort
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.JsonFormat]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.JsonFormat] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum EnforceNamingStyle : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+    case unknown
+    case style2024
+    case styleLegacy
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.EnforceNamingStyle]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.EnforceNamingStyle] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct VisibilityFeature : Swift.Sendable {
+    public var unknownFields: Clarity.UnknownStorage
+    public enum DefaultSymbolVisibility : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+      case unknown
+      case exportAll
+      case exportTopLevel
+      case localAll
+      case strict
+      public init()
+      #if compiler(>=5.3) && $NonescapableTypes
+      public init?(rawValue: Swift.Int)
+      #endif
+      public typealias AllCases = [Clarity.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility]
+      public typealias RawValue = Swift.Int
+      nonisolated public static var allCases: [Clarity.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility] {
+        get
+      }
+      public var rawValue: Swift.Int {
+        get
+      }
+    }
+    public init()
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_FeatureSetDefaults : Swift.Sendable {
+  public var defaults: [Clarity.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault]
+  public var minimumEdition: Clarity.Google_Protobuf_Edition {
+    get
+    set
+  }
+  public var hasMinimumEdition: Swift.Bool {
+    get
+  }
+  public mutating func clearMinimumEdition()
+  public var maximumEdition: Clarity.Google_Protobuf_Edition {
+    get
+    set
+  }
+  public var hasMaximumEdition: Swift.Bool {
+    get
+  }
+  public mutating func clearMaximumEdition()
+  public var unknownFields: Clarity.UnknownStorage
+  public struct FeatureSetEditionDefault : @unchecked Swift.Sendable {
+    public var edition: Clarity.Google_Protobuf_Edition {
+      get
+      set
+    }
+    public var hasEdition: Swift.Bool {
+      get
+    }
+    public mutating func clearEdition()
+    public var overridableFeatures: Clarity.Google_Protobuf_FeatureSet {
+      get
+      set
+    }
+    public var hasOverridableFeatures: Swift.Bool {
+      get
+    }
+    public mutating func clearOverridableFeatures()
+    public var fixedFeatures: Clarity.Google_Protobuf_FeatureSet {
+      get
+      set
+    }
+    public var hasFixedFeatures: Swift.Bool {
+      get
+    }
+    public mutating func clearFixedFeatures()
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+}
+public struct Google_Protobuf_SourceCodeInfo : Clarity.ExtensibleMessage, Swift.Sendable {
+  public var location: [Clarity.Google_Protobuf_SourceCodeInfo.Location]
+  public var unknownFields: Clarity.UnknownStorage
+  public struct Location : Swift.Sendable {
+    public var path: [Swift.Int32]
+    public var span: [Swift.Int32]
+    public var leadingComments: Swift.String {
+      get
+      set
+    }
+    public var hasLeadingComments: Swift.Bool {
+      get
+    }
+    public mutating func clearLeadingComments()
+    public var trailingComments: Swift.String {
+      get
+      set
+    }
+    public var hasTrailingComments: Swift.Bool {
+      get
+    }
+    public mutating func clearTrailingComments()
+    public var leadingDetachedComments: [Swift.String]
+    public var unknownFields: Clarity.UnknownStorage
+    public init()
+  }
+  public init()
+  public var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet
+}
+public struct Google_Protobuf_GeneratedCodeInfo : Swift.Sendable {
+  public var annotation: [Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation]
+  public var unknownFields: Clarity.UnknownStorage
+  public struct Annotation : Swift.Sendable {
+    public var path: [Swift.Int32]
+    public var sourceFile: Swift.String {
+      get
+      set
+    }
+    public var hasSourceFile: Swift.Bool {
+      get
+    }
+    public mutating func clearSourceFile()
+    public var begin: Swift.Int32 {
+      get
+      set
+    }
+    public var hasBegin: Swift.Bool {
+      get
+    }
+    public mutating func clearBegin()
+    public var end: Swift.Int32 {
+      get
+      set
+    }
+    public var hasEnd: Swift.Bool {
+      get
+    }
+    public mutating func clearEnd()
+    public var semantic: Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic {
+      get
+      set
+    }
+    public var hasSemantic: Swift.Bool {
+      get
+    }
+    public mutating func clearSemantic()
+    public var unknownFields: Clarity.UnknownStorage
+    public enum Semantic : Swift.Int, Clarity.Enum, Swift.CaseIterable {
+      case none
+      case set
+      case alias
+      public init()
+      #if compiler(>=5.3) && $NonescapableTypes
+      public init?(rawValue: Swift.Int)
+      #endif
+      public typealias AllCases = [Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic]
+      public typealias RawValue = Swift.Int
+      nonisolated public static var allCases: [Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic] {
+        get
+      }
+      public var rawValue: Swift.Int {
+        get
+      }
+    }
+    public init()
+  }
+  public init()
+}
+extension Clarity.Google_Protobuf_Edition : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_SymbolVisibility : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FileDescriptorSet : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FileDescriptorSet, rhs: Clarity.Google_Protobuf_FileDescriptorSet) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FileDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FileDescriptorProto, rhs: Clarity.Google_Protobuf_FileDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_DescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_DescriptorProto, rhs: Clarity.Google_Protobuf_DescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_DescriptorProto.ExtensionRange : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_DescriptorProto.ExtensionRange, rhs: Clarity.Google_Protobuf_DescriptorProto.ExtensionRange) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_DescriptorProto.ReservedRange : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_DescriptorProto.ReservedRange, rhs: Clarity.Google_Protobuf_DescriptorProto.ReservedRange) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ExtensionRangeOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_ExtensionRangeOptions, rhs: Clarity.Google_Protobuf_ExtensionRangeOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ExtensionRangeOptions.VerificationState : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_ExtensionRangeOptions.Declaration : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_ExtensionRangeOptions.Declaration, rhs: Clarity.Google_Protobuf_ExtensionRangeOptions.Declaration) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FieldDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FieldDescriptorProto, rhs: Clarity.Google_Protobuf_FieldDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FieldDescriptorProto.TypeEnum : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FieldDescriptorProto.Label : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_OneofDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_OneofDescriptorProto, rhs: Clarity.Google_Protobuf_OneofDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumDescriptorProto, rhs: Clarity.Google_Protobuf_EnumDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumDescriptorProto.EnumReservedRange : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumDescriptorProto.EnumReservedRange, rhs: Clarity.Google_Protobuf_EnumDescriptorProto.EnumReservedRange) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumValueDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumValueDescriptorProto, rhs: Clarity.Google_Protobuf_EnumValueDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ServiceDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_ServiceDescriptorProto, rhs: Clarity.Google_Protobuf_ServiceDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_MethodDescriptorProto : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_MethodDescriptorProto, rhs: Clarity.Google_Protobuf_MethodDescriptorProto) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FileOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FileOptions, rhs: Clarity.Google_Protobuf_FileOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FileOptions.OptimizeMode : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_MessageOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_MessageOptions, rhs: Clarity.Google_Protobuf_MessageOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FieldOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FieldOptions, rhs: Clarity.Google_Protobuf_FieldOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FieldOptions.CType : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FieldOptions.JSType : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FieldOptions.OptionRetention : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FieldOptions.OptionTargetType : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FieldOptions.EditionDefault : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FieldOptions.EditionDefault, rhs: Clarity.Google_Protobuf_FieldOptions.EditionDefault) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FieldOptions.FeatureSupport : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FieldOptions.FeatureSupport, rhs: Clarity.Google_Protobuf_FieldOptions.FeatureSupport) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_OneofOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_OneofOptions, rhs: Clarity.Google_Protobuf_OneofOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumOptions, rhs: Clarity.Google_Protobuf_EnumOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumValueOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumValueOptions, rhs: Clarity.Google_Protobuf_EnumValueOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_ServiceOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_ServiceOptions, rhs: Clarity.Google_Protobuf_ServiceOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_MethodOptions : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_MethodOptions, rhs: Clarity.Google_Protobuf_MethodOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_MethodOptions.IdempotencyLevel : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_UninterpretedOption : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_UninterpretedOption, rhs: Clarity.Google_Protobuf_UninterpretedOption) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_UninterpretedOption.NamePart : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_UninterpretedOption.NamePart, rhs: Clarity.Google_Protobuf_UninterpretedOption.NamePart) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FeatureSet : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FeatureSet, rhs: Clarity.Google_Protobuf_FeatureSet) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FeatureSet.FieldPresence : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.EnumType : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.RepeatedFieldEncoding : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.Utf8Validation : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.MessageEncoding : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.JsonFormat : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.EnforceNamingStyle : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSet.VisibilityFeature : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FeatureSet.VisibilityFeature, rhs: Clarity.Google_Protobuf_FeatureSet.VisibilityFeature) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_FeatureSetDefaults : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FeatureSetDefaults, rhs: Clarity.Google_Protobuf_FeatureSetDefaults) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault, rhs: Clarity.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_SourceCodeInfo : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_SourceCodeInfo, rhs: Clarity.Google_Protobuf_SourceCodeInfo) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_SourceCodeInfo.Location : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_SourceCodeInfo.Location, rhs: Clarity.Google_Protobuf_SourceCodeInfo.Location) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_GeneratedCodeInfo : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_GeneratedCodeInfo, rhs: Clarity.Google_Protobuf_GeneratedCodeInfo) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation, rhs: Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Message {
+  public init(jsonUTF8Data: Foundation.Data, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(jsonUTF8Data: Foundation.Data, extensions: (any Clarity.ExtensionMap)? = nil, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws
+  #endif
+  public func jsonUTF8Data(options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data
+}
+extension Clarity.Google_Protobuf_Duration {
+  public init(seconds: Swift.Int64 = 0, nanos: Swift.Int32 = 0)
+}
+extension Clarity.Google_Protobuf_Duration : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+  public init(floatLiteral value: Swift.Double)
+}
+extension Clarity.Google_Protobuf_Duration {
+  @available(*, deprecated, renamed: "init(rounding:rule:)")
+  public init(timeInterval: Foundation.TimeInterval)
+  public init(rounding timeInterval: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+  public var timeInterval: Foundation.TimeInterval {
+    get
+  }
+}
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+extension Clarity.Google_Protobuf_Duration {
+  public init(rounding duration: Swift.Duration, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+}
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+extension Swift.Duration {
+  public init(_ duration: Clarity.Google_Protobuf_Duration)
+}
+prefix public func - (operand: Clarity.Google_Protobuf_Duration) -> Clarity.Google_Protobuf_Duration
+public func + (lhs: Clarity.Google_Protobuf_Duration, rhs: Clarity.Google_Protobuf_Duration) -> Clarity.Google_Protobuf_Duration
+public func - (lhs: Clarity.Google_Protobuf_Duration, rhs: Clarity.Google_Protobuf_Duration) -> Clarity.Google_Protobuf_Duration
+public func - (lhs: Clarity.Google_Protobuf_Timestamp, rhs: Clarity.Google_Protobuf_Timestamp) -> Clarity.Google_Protobuf_Duration
+public protocol Visitor {
+  mutating func visitSingularFloatField(value: Swift.Float, fieldNumber: Swift.Int) throws
+  mutating func visitSingularDoubleField(value: Swift.Double, fieldNumber: Swift.Int) throws
+  mutating func visitSingularInt32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  mutating func visitSingularInt64Field(value: Swift.Int64, fieldNumber: Swift.Int) throws
+  mutating func visitSingularUInt32Field(value: Swift.UInt32, fieldNumber: Swift.Int) throws
+  mutating func visitSingularUInt64Field(value: Swift.UInt64, fieldNumber: Swift.Int) throws
+  mutating func visitSingularSInt32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  mutating func visitSingularSInt64Field(value: Swift.Int64, fieldNumber: Swift.Int) throws
+  mutating func visitSingularFixed32Field(value: Swift.UInt32, fieldNumber: Swift.Int) throws
+  mutating func visitSingularFixed64Field(value: Swift.UInt64, fieldNumber: Swift.Int) throws
+  mutating func visitSingularSFixed32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  mutating func visitSingularSFixed64Field(value: Swift.Int64, fieldNumber: Swift.Int) throws
+  mutating func visitSingularBoolField(value: Swift.Bool, fieldNumber: Swift.Int) throws
+  mutating func visitSingularStringField(value: Swift.String, fieldNumber: Swift.Int) throws
+  mutating func visitSingularBytesField(value: Foundation.Data, fieldNumber: Swift.Int) throws
+  mutating func visitSingularEnumField<E>(value: E, fieldNumber: Swift.Int) throws where E : Clarity.Enum
+  mutating func visitSingularMessageField<M>(value: M, fieldNumber: Swift.Int) throws where M : Clarity.Message
+  mutating func visitSingularGroupField<G>(value: G, fieldNumber: Swift.Int) throws where G : Clarity.Message
+  mutating func visitRepeatedFloatField(value: [Swift.Float], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedDoubleField(value: [Swift.Double], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedUInt32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedUInt64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedSInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedSInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedFixed32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedFixed64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedSFixed32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedSFixed64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedBoolField(value: [Swift.Bool], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedStringField(value: [Swift.String], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedBytesField(value: [Foundation.Data], fieldNumber: Swift.Int) throws
+  mutating func visitRepeatedEnumField<E>(value: [E], fieldNumber: Swift.Int) throws where E : Clarity.Enum
+  mutating func visitRepeatedMessageField<M>(value: [M], fieldNumber: Swift.Int) throws where M : Clarity.Message
+  mutating func visitRepeatedGroupField<G>(value: [G], fieldNumber: Swift.Int) throws where G : Clarity.Message
+  mutating func visitPackedFloatField(value: [Swift.Float], fieldNumber: Swift.Int) throws
+  mutating func visitPackedDoubleField(value: [Swift.Double], fieldNumber: Swift.Int) throws
+  mutating func visitPackedInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitPackedInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitPackedUInt32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  mutating func visitPackedUInt64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  mutating func visitPackedSInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitPackedSInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitPackedFixed32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  mutating func visitPackedFixed64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  mutating func visitPackedSFixed32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  mutating func visitPackedSFixed64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  mutating func visitPackedBoolField(value: [Swift.Bool], fieldNumber: Swift.Int) throws
+  mutating func visitPackedEnumField<E>(value: [E], fieldNumber: Swift.Int) throws where E : Clarity.Enum
+  mutating func visitMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufMap<KeyType, ValueType>.Type, value: Clarity._ProtobufMap<KeyType, ValueType>.BaseType, fieldNumber: Swift.Int) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.MapValueType
+  mutating func visitMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufEnumMap<KeyType, ValueType>.Type, value: Clarity._ProtobufEnumMap<KeyType, ValueType>.BaseType, fieldNumber: Swift.Int) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.Enum, ValueType.RawValue == Swift.Int
+  mutating func visitMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufMessageMap<KeyType, ValueType>.Type, value: Clarity._ProtobufMessageMap<KeyType, ValueType>.BaseType, fieldNumber: Swift.Int) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.Message, ValueType : Swift.Hashable
+  mutating func visitExtensionFields(fields: Clarity.ExtensionFieldValueSet, start: Swift.Int, end: Swift.Int) throws
+  mutating func visitExtensionFieldsAsMessageSet(fields: Clarity.ExtensionFieldValueSet, start: Swift.Int, end: Swift.Int) throws
+  mutating func visitUnknown(bytes: Foundation.Data) throws
+}
+extension Clarity.Visitor {
+  public mutating func visitSingularFloatField(value: Swift.Float, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularInt32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularUInt32Field(value: Swift.UInt32, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularSInt32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularSInt64Field(value: Swift.Int64, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularFixed32Field(value: Swift.UInt32, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularFixed64Field(value: Swift.UInt64, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularSFixed32Field(value: Swift.Int32, fieldNumber: Swift.Int) throws
+  public mutating func visitSingularSFixed64Field(value: Swift.Int64, fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedFloatField(value: [Swift.Float], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedDoubleField(value: [Swift.Double], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedUInt32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedUInt64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedSInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedSInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedFixed32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedFixed64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedSFixed32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedSFixed64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedBoolField(value: [Swift.Bool], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedStringField(value: [Swift.String], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedBytesField(value: [Foundation.Data], fieldNumber: Swift.Int) throws
+  public mutating func visitRepeatedEnumField<E>(value: [E], fieldNumber: Swift.Int) throws where E : Clarity.Enum
+  public mutating func visitRepeatedMessageField<M>(value: [M], fieldNumber: Swift.Int) throws where M : Clarity.Message
+  public mutating func visitRepeatedGroupField<G>(value: [G], fieldNumber: Swift.Int) throws where G : Clarity.Message
+  public mutating func visitPackedFloatField(value: [Swift.Float], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedDoubleField(value: [Swift.Double], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedUInt32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedUInt64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedSInt32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedSInt64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedFixed32Field(value: [Swift.UInt32], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedFixed64Field(value: [Swift.UInt64], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedSFixed32Field(value: [Swift.Int32], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedSFixed64Field(value: [Swift.Int64], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedBoolField(value: [Swift.Bool], fieldNumber: Swift.Int) throws
+  public mutating func visitPackedEnumField<E>(value: [E], fieldNumber: Swift.Int) throws where E : Clarity.Enum
+  public mutating func visitSingularGroupField<G>(value: G, fieldNumber: Swift.Int) throws where G : Clarity.Message
+  public mutating func visitExtensionFieldsAsMessageSet(fields: Clarity.ExtensionFieldValueSet, start: Swift.Int, end: Swift.Int) throws
+  public mutating func visitExtensionFields(fields: Clarity.ExtensionFieldValueSet, start: Swift.Int, end: Swift.Int) throws
+}
+extension Clarity.Message {
+  public static func isPathValid(_ path: Swift.String) -> Swift.Bool
+}
+extension Clarity.Google_Protobuf_FieldMask {
+  public struct MergeOptions {
+    public init()
+    public var replaceRepeatedFields: Swift.Bool
+  }
+}
+extension Clarity.Message {
+  public mutating func merge(from source: Self, fieldMask: Clarity.Google_Protobuf_FieldMask, mergeOption: Clarity.Google_Protobuf_FieldMask.MergeOptions = .init()) throws
+}
+extension Clarity.Message where Self : Clarity._ProtoNameProviding, Self : Swift.Equatable {
+  @discardableResult
+  public mutating func trim(keeping fieldMask: Clarity.Google_Protobuf_FieldMask) -> Swift.Bool
+}
+public enum PathDecodingError : Swift.Error {
+  case typeMismatch
+  case pathNotFound
+  public static func == (a: Clarity.PathDecodingError, b: Clarity.PathDecodingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@preconcurrency public protocol Enum : Swift.Hashable, Swift.RawRepresentable, Swift.Sendable {
+  init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  init?(rawValue: Swift.Int)
+  #endif
+  var rawValue: Swift.Int { get }
+}
+extension Clarity.Enum {
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension Clarity.Message {
+  public func textFormatString() -> Swift.String
+  public func textFormatString(options: Clarity.TextFormatEncodingOptions) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(textFormatString: Swift.String, extensions: (any Clarity.ExtensionMap)? = nil) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(textFormatString: Swift.String, options: Clarity.TextFormatDecodingOptions = TextFormatDecodingOptions(), extensions: (any Clarity.ExtensionMap)? = nil) throws
+  #endif
+}
+public struct Google_Protobuf_FieldMask : Swift.Sendable {
+  public var paths: [Swift.String]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_FieldMask : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FieldMask, rhs: Clarity.Google_Protobuf_FieldMask) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@preconcurrency public protocol FieldType : Swift.Sendable {
+  associatedtype BaseType : Swift.Hashable, Swift.Sendable
+  static var proto3DefaultValue: Self.BaseType { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func decodeSingular<D>(value: inout Self.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  static func decodeRepeated<D>(value: inout [Self.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  static func visitSingular<V>(value: Self.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  static func visitRepeated<V>(value: [Self.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  static func visitPacked<V>(value: [Self.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+@preconcurrency public protocol MapKeyType : Clarity.FieldType {
+  static func _lessThan(lhs: Self.BaseType, rhs: Self.BaseType) -> Swift.Bool
+}
+extension Clarity.MapKeyType where Self.BaseType : Swift.Comparable {
+  public static func _lessThan(lhs: Self.BaseType, rhs: Self.BaseType) -> Swift.Bool
+}
+@preconcurrency public protocol MapValueType : Clarity.FieldType {
+}
+public struct ProtobufFloat : Clarity.FieldType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Float
+  public static var proto3DefaultValue: Swift.Float {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufFloat.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufFloat.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufFloat.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufFloat.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufFloat.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufDouble : Clarity.FieldType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Double
+  public static var proto3DefaultValue: Swift.Double {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufDouble.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufDouble.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufDouble.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufDouble.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufDouble.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufInt32 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int32
+  public static var proto3DefaultValue: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufInt32.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufInt32.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufInt32.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufInt64 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int64
+  public static var proto3DefaultValue: Swift.Int64 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufInt64.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufInt64.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufInt64.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufUInt32 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.UInt32
+  public static var proto3DefaultValue: Swift.UInt32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufUInt32.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufUInt32.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufUInt32.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufUInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufUInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufUInt64 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.UInt64
+  public static var proto3DefaultValue: Swift.UInt64 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufUInt64.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufUInt64.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufUInt64.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufUInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufUInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufSInt32 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int32
+  public static var proto3DefaultValue: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufSInt32.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufSInt32.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufSInt32.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufSInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufSInt32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufSInt64 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int64
+  public static var proto3DefaultValue: Swift.Int64 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufSInt64.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufSInt64.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufSInt64.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufSInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufSInt64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufFixed32 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.UInt32
+  public static var proto3DefaultValue: Swift.UInt32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufFixed32.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufFixed32.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufFixed32.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufFixed32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufFixed32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufFixed64 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.UInt64
+  public static var proto3DefaultValue: Swift.UInt64 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufFixed64.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufFixed64.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufFixed64.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufFixed64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufFixed64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufSFixed32 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int32
+  public static var proto3DefaultValue: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufSFixed32.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufSFixed32.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufSFixed32.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufSFixed32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufSFixed32.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufSFixed64 : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Int64
+  public static var proto3DefaultValue: Swift.Int64 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufSFixed64.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufSFixed64.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufSFixed64.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufSFixed64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufSFixed64.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufBool : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.Bool
+  public static var proto3DefaultValue: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufBool.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufBool.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufBool.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufBool.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufBool.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func _lessThan(lhs: Clarity.ProtobufBool.BaseType, rhs: Clarity.ProtobufBool.BaseType) -> Swift.Bool
+}
+public struct ProtobufString : Clarity.FieldType, Clarity.MapKeyType, Clarity.MapValueType {
+  public typealias BaseType = Swift.String
+  public static var proto3DefaultValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufString.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufString.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufString.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufString.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufString.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public struct ProtobufBytes : Clarity.FieldType, Clarity.MapValueType {
+  public typealias BaseType = Foundation.Data
+  public static var proto3DefaultValue: Foundation.Data {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decodeSingular<D>(value: inout Clarity.ProtobufBytes.BaseType?, from decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public static func decodeRepeated<D>(value: inout [Clarity.ProtobufBytes.BaseType], from decoder: inout D) throws where D : Clarity.Decoder
+  public static func visitSingular<V>(value: Clarity.ProtobufBytes.BaseType, fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitRepeated<V>(value: [Clarity.ProtobufBytes.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+  public static func visitPacked<V>(value: [Clarity.ProtobufBytes.BaseType], fieldNumber: Swift.Int, with visitor: inout V) throws where V : Clarity.Visitor
+}
+public enum JSONDecodingError : Swift.Error {
+  case failure
+  case malformedNumber
+  case numberRange
+  case malformedMap
+  case malformedBool
+  case malformedString
+  case invalidUTF8
+  case missingFieldNames
+  case schemaMismatch
+  case unrecognizedEnumValue
+  case illegalNull
+  case unquotedMapKey
+  case leadingZero
+  case truncated
+  case malformedDuration
+  case malformedTimestamp
+  case malformedFieldMask
+  case trailingGarbage
+  case conflictingOneOf
+  case messageDepthLimit
+  case unknownField(Swift.String)
+}
+public struct JSONDecodingOptions : Swift.Sendable {
+  public var messageDepthLimit: Swift.Int
+  public var ignoreUnknownFields: Swift.Bool
+  public init()
+}
+extension Clarity.Google_Protobuf_Any {
+  @discardableResult
+  public static func register(messageType: any Clarity.Message.Type) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func messageType(forTypeURL url: Swift.String) -> (any Clarity.Message.Type)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func messageType(forMessageName name: Swift.String) -> (any Clarity.Message.Type)?
+  #endif
+}
+extension Clarity.Google_Protobuf_FieldMask {
+  public init(protoPaths: [Swift.String])
+  public init(protoPaths: Swift.String...)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(jsonPaths: Swift.String...)
+  #endif
+}
+extension Clarity.Google_Protobuf_FieldMask {
+  public init<M>(allFieldsOf messageType: M.Type) where M : Clarity.Message, M : Clarity._ProtoNameProviding
+  public init<M>(fieldNumbers: [Swift.Int], of messageType: M.Type) throws where M : Clarity.Message, M : Clarity._ProtoNameProviding
+}
+extension Clarity.Google_Protobuf_FieldMask {
+  public mutating func addPath<M>(_ path: Swift.String, of messageType: M.Type) throws where M : Clarity.Message
+  public var canonical: Clarity.Google_Protobuf_FieldMask {
+    get
+  }
+  public func union(_ mask: Clarity.Google_Protobuf_FieldMask) -> Clarity.Google_Protobuf_FieldMask
+  public func intersect(_ mask: Clarity.Google_Protobuf_FieldMask) -> Clarity.Google_Protobuf_FieldMask
+  public func subtract(_ mask: Clarity.Google_Protobuf_FieldMask) -> Clarity.Google_Protobuf_FieldMask
+  public func contains(_ path: Swift.String) -> Swift.Bool
+}
+extension Clarity.Google_Protobuf_FieldMask {
+  public func isValid<M>(for messageType: M.Type) -> Swift.Bool where M : Clarity.Message, M : Clarity._ProtoNameProviding
+}
+public enum FieldMaskError : Swift.Error {
+  case invalidPath
+  case invalidFieldNumber
+  public static func == (a: Clarity.FieldMaskError, b: Clarity.FieldMaskError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct JSONEncodingOptions : Swift.Sendable {
+  public var alwaysPrintInt64sAsNumbers: Swift.Bool
+  public var alwaysPrintEnumsAsInts: Swift.Bool
+  public var preserveProtoFieldNames: Swift.Bool
+  public var useDeterministicOrdering: Swift.Bool
+  public init()
+}
+public struct UnknownStorage : Swift.Equatable, Swift.Sendable {
+  public var data: Foundation.Data {
+    get
+  }
+  public init()
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (a: Clarity.UnknownStorage, b: Clarity.UnknownStorage) -> Swift.Bool
+}
+public struct Google_Protobuf_DoubleValue : Swift.Sendable {
+  public var value: Swift.Double
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_FloatValue : Swift.Sendable {
+  public var value: Swift.Float
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Int64Value : Swift.Sendable {
+  public var value: Swift.Int64
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_UInt64Value : Swift.Sendable {
+  public var value: Swift.UInt64
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Int32Value : Swift.Sendable {
+  public var value: Swift.Int32
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_UInt32Value : Swift.Sendable {
+  public var value: Swift.UInt32
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_BoolValue : Swift.Sendable {
+  public var value: Swift.Bool
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_StringValue : Swift.Sendable {
+  public var value: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_BytesValue : Swift.Sendable {
+  public var value: Foundation.Data
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_DoubleValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_DoubleValue, rhs: Clarity.Google_Protobuf_DoubleValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_FloatValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_FloatValue, rhs: Clarity.Google_Protobuf_FloatValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Int64Value : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Int64Value, rhs: Clarity.Google_Protobuf_Int64Value) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_UInt64Value : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_UInt64Value, rhs: Clarity.Google_Protobuf_UInt64Value) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Int32Value : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Int32Value, rhs: Clarity.Google_Protobuf_Int32Value) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_UInt32Value : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_UInt32Value, rhs: Clarity.Google_Protobuf_UInt32Value) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_BoolValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_BoolValue, rhs: Clarity.Google_Protobuf_BoolValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_StringValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_StringValue, rhs: Clarity.Google_Protobuf_StringValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_BytesValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_BytesValue, rhs: Clarity.Google_Protobuf_BytesValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum Internal {
+  @available(*, deprecated, message: "Internal.emptyData isn't used any longer in newer versions of the generator. Generate code with a version later than 1.10.2 to get performance improvements. See https://github.com/apple/swift-protobuf/pull/1028 for more information.")
+  public static let emptyData: Foundation.Data
+  public static func areAllInitialized(_ listOfMessages: [any Clarity.Message]) -> Swift.Bool
+  public static func areAllInitialized<K>(_ mapToMessages: [K : any Clarity.Message]) -> Swift.Bool where K : Swift.Hashable
+}
+extension Clarity.Google_Protobuf_Timestamp {
+  public init(seconds: Swift.Int64 = 0, nanos: Swift.Int32 = 0)
+}
+extension Clarity.Google_Protobuf_Timestamp {
+  @available(*, deprecated, renamed: "init(roundingTimeIntervalSince1970:rule:)")
+  public init(timeIntervalSince1970: Foundation.TimeInterval)
+  public init(roundingTimeIntervalSince1970 timeIntervalSince1970: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+  @available(*, deprecated, renamed: "init(roundingTimeIntervalSinceReferenceDate:rule:)")
+  public init(timeIntervalSinceReferenceDate: Foundation.TimeInterval)
+  public init(roundingTimeIntervalSinceReferenceDate timeIntervalSinceReferenceDate: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+  public init(date: Foundation.Date)
+  public var timeIntervalSince1970: Foundation.TimeInterval {
+    get
+  }
+  public var timeIntervalSinceReferenceDate: Foundation.TimeInterval {
+    get
+  }
+  public var date: Foundation.Date {
+    get
+  }
+}
+public func + (lhs: Clarity.Google_Protobuf_Timestamp, rhs: Clarity.Google_Protobuf_Duration) -> Clarity.Google_Protobuf_Timestamp
+public func + (lhs: Clarity.Google_Protobuf_Duration, rhs: Clarity.Google_Protobuf_Timestamp) -> Clarity.Google_Protobuf_Timestamp
+public func - (lhs: Clarity.Google_Protobuf_Timestamp, rhs: Clarity.Google_Protobuf_Duration) -> Clarity.Google_Protobuf_Timestamp
+public enum JSONEncodingError : Swift.Error, Swift.Hashable {
+  case anyTranscodeFailure
+  case timestampRange
+  case durationRange
+  case fieldMaskConversion
+  case missingFieldNames
+  case missingValue
+  case valueNumberNotFinite
+  public static func == (a: Clarity.JSONEncodingError, b: Clarity.JSONEncodingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Message {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(unpackingAny: Clarity.Google_Protobuf_Any, extensions: (any Clarity.ExtensionMap)? = nil, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws
+  #endif
+}
+public struct Version {
+  public static let major: Swift.Int
+  public static let minor: Swift.Int
+  public static let revision: Swift.Int
+  public static let versionString: Swift.String
+}
+extension Clarity.Message {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, renamed: "init(serializedBytes:extensions:partial:options:)")
+  @inlinable public init(serializedData data: Foundation.Data, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+        self.init()
+        try merge(serializedBytes: data, extensions: extensions, partial: partial, options: options)
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, renamed: "init(serializedBytes:extensions:partial:options:)")
+  @inlinable @_disfavoredOverload public init<Bytes>(contiguousBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+        self.init()
+        try merge(serializedBytes: bytes, extensions: extensions, partial: partial, options: options)
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Please conform your Bytes type to `SwiftProtobufContiguousBytes` instead of `Foundation.ContiguousBytes`.")
+  @inlinable @_disfavoredOverload public init<Bytes>(serializedBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+        self.init()
+        try merge(serializedBytes: bytes, extensions: extensions, partial: partial, options: options)
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, renamed: "merge(serializedBytes:extensions:partial:options:)")
+  @inlinable @_disfavoredOverload public mutating func merge<Bytes>(contiguousBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+        try bytes.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
+            try _merge(rawBuffer: body, extensions: extensions, partial: partial, options: options)
+        }
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Please conform your Bytes type to `SwiftProtobufContiguousBytes` instead of `Foundation.ContiguousBytes`.")
+  @inlinable @_disfavoredOverload public mutating func merge<Bytes>(serializedBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+        try bytes.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
+            try _merge(rawBuffer: body, extensions: extensions, partial: partial, options: options)
+        }
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @inlinable public mutating func merge(serializedData data: Foundation.Data, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+        try merge(serializedBytes: data, extensions: extensions, partial: partial, options: options)
+    }
+  #endif
+  public func serializedData(partial: Swift.Bool = false) throws -> Foundation.Data
+  public func serializedData(partial: Swift.Bool = false, options: Clarity.BinaryEncodingOptions = BinaryEncodingOptions()) throws -> Foundation.Data
+}
+public struct TextFormatEncodingOptions : Swift.Sendable {
+  public var printUnknownFields: Swift.Bool
+  public init()
+}
+public struct Google_Protobuf_Api : Swift.Sendable {
+  public var name: Swift.String
+  public var methods: [Clarity.Google_Protobuf_Method]
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var version: Swift.String
+  public var sourceContext: Clarity.Google_Protobuf_SourceContext {
+    get
+    set
+  }
+  public var hasSourceContext: Swift.Bool {
+    get
+  }
+  public mutating func clearSourceContext()
+  public var mixins: [Clarity.Google_Protobuf_Mixin]
+  public var syntax: Clarity.Google_Protobuf_Syntax
+  public var edition: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Method : Swift.Sendable {
+  public var name: Swift.String
+  public var requestTypeURL: Swift.String
+  public var requestStreaming: Swift.Bool
+  public var responseTypeURL: Swift.String
+  public var responseStreaming: Swift.Bool
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var syntax: Clarity.Google_Protobuf_Syntax
+  public var edition: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Mixin : Swift.Sendable {
+  public var name: Swift.String
+  public var root: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Api : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Api, rhs: Clarity.Google_Protobuf_Api) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Method : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Method, rhs: Clarity.Google_Protobuf_Method) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Mixin : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Mixin, rhs: Clarity.Google_Protobuf_Mixin) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@preconcurrency public protocol AnyExtensionField : Swift.CustomDebugStringConvertible, Swift.Sendable {
+  func hash(into hasher: inout Swift.Hasher)
+  var protobufExtension: any Clarity.AnyMessageExtension { get }
+  func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  mutating func decodeExtensionField<T>(decoder: inout T) throws where T : Clarity.Decoder
+  func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  var isInitialized: Swift.Bool { get }
+}
+extension Clarity.AnyExtensionField {
+  public var isInitialized: Swift.Bool {
+    get
+  }
+}
+@preconcurrency public protocol ExtensionField : Clarity.AnyExtensionField, Swift.Hashable {
+  associatedtype ValueType
+  var value: Self.ValueType { get set }
+  init(protobufExtension: any Clarity.AnyMessageExtension, value: Self.ValueType)
+  #if compiler(>=5.3) && $NonescapableTypes
+  init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+}
+public struct OptionalExtensionField<T> : Clarity.ExtensionField where T : Clarity.FieldType {
+  public typealias BaseType = T.BaseType
+  public typealias ValueType = Clarity.OptionalExtensionField<T>.BaseType
+  public var value: Clarity.OptionalExtensionField<T>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.OptionalExtensionField<T>, rhs: Clarity.OptionalExtensionField<T>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.OptionalExtensionField<T>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RepeatedExtensionField<T> : Clarity.ExtensionField where T : Clarity.FieldType {
+  public typealias BaseType = T.BaseType
+  public typealias ValueType = [Clarity.RepeatedExtensionField<T>.BaseType]
+  public var value: Clarity.RepeatedExtensionField<T>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.RepeatedExtensionField<T>, rhs: Clarity.RepeatedExtensionField<T>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.RepeatedExtensionField<T>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PackedExtensionField<T> : Clarity.ExtensionField where T : Clarity.FieldType {
+  public typealias BaseType = T.BaseType
+  public typealias ValueType = [Clarity.PackedExtensionField<T>.BaseType]
+  public var value: Clarity.PackedExtensionField<T>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.PackedExtensionField<T>, rhs: Clarity.PackedExtensionField<T>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.PackedExtensionField<T>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OptionalEnumExtensionField<E> : Clarity.ExtensionField where E : Clarity.Enum, E.RawValue == Swift.Int {
+  public typealias BaseType = E
+  public typealias ValueType = E
+  public var value: Clarity.OptionalEnumExtensionField<E>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.OptionalEnumExtensionField<E>, rhs: Clarity.OptionalEnumExtensionField<E>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.OptionalEnumExtensionField<E>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RepeatedEnumExtensionField<E> : Clarity.ExtensionField where E : Clarity.Enum, E.RawValue == Swift.Int {
+  public typealias BaseType = E
+  public typealias ValueType = [E]
+  public var value: Clarity.RepeatedEnumExtensionField<E>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.RepeatedEnumExtensionField<E>, rhs: Clarity.RepeatedEnumExtensionField<E>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.RepeatedEnumExtensionField<E>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PackedEnumExtensionField<E> : Clarity.ExtensionField where E : Clarity.Enum, E.RawValue == Swift.Int {
+  public typealias BaseType = E
+  public typealias ValueType = [E]
+  public var value: Clarity.PackedEnumExtensionField<E>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.PackedEnumExtensionField<E>, rhs: Clarity.PackedEnumExtensionField<E>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.PackedEnumExtensionField<E>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OptionalMessageExtensionField<M> : Clarity.ExtensionField where M : Clarity.Message, M : Swift.Equatable {
+  public typealias BaseType = M
+  public typealias ValueType = Clarity.OptionalMessageExtensionField<M>.BaseType
+  public var value: Clarity.OptionalMessageExtensionField<M>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.OptionalMessageExtensionField<M>, rhs: Clarity.OptionalMessageExtensionField<M>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.OptionalMessageExtensionField<M>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RepeatedMessageExtensionField<M> : Clarity.ExtensionField where M : Clarity.Message, M : Swift.Equatable {
+  public typealias BaseType = M
+  public typealias ValueType = [Clarity.RepeatedMessageExtensionField<M>.BaseType]
+  public var value: Clarity.RepeatedMessageExtensionField<M>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.RepeatedMessageExtensionField<M>, rhs: Clarity.RepeatedMessageExtensionField<M>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.RepeatedMessageExtensionField<M>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OptionalGroupExtensionField<G> : Clarity.ExtensionField where G : Clarity.Message, G : Swift.Hashable {
+  public typealias BaseType = G
+  public typealias ValueType = Clarity.OptionalGroupExtensionField<G>.BaseType
+  public var value: G
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.OptionalGroupExtensionField<G>, rhs: Clarity.OptionalGroupExtensionField<G>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.OptionalGroupExtensionField<G>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RepeatedGroupExtensionField<G> : Clarity.ExtensionField where G : Clarity.Message, G : Swift.Hashable {
+  public typealias BaseType = G
+  public typealias ValueType = [Clarity.RepeatedGroupExtensionField<G>.BaseType]
+  public var value: Clarity.RepeatedGroupExtensionField<G>.ValueType
+  public var protobufExtension: any Clarity.AnyMessageExtension
+  public static func == (lhs: Clarity.RepeatedGroupExtensionField<G>, rhs: Clarity.RepeatedGroupExtensionField<G>) -> Swift.Bool
+  public init(protobufExtension: any Clarity.AnyMessageExtension, value: Clarity.RepeatedGroupExtensionField<G>.ValueType)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public func isEqual(other: any Clarity.AnyExtensionField) -> Swift.Bool
+  public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : Clarity.Decoder
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<D>(protobufExtension: any Clarity.AnyMessageExtension, decoder: inout D) throws where D : Clarity.Decoder
+  #endif
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BinaryDelimited {
+  public enum Error : Swift.Error {
+    case unknownStreamError
+    case truncated
+    public static func == (a: Clarity.BinaryDelimited.Error, b: Clarity.BinaryDelimited.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func serialize(message: any Clarity.Message, to stream: Foundation.OutputStream, partial: Swift.Bool = false) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func parse<M>(messageType: M.Type, from stream: Foundation.InputStream, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws -> M where M : Clarity.Message
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func merge<M>(into message: inout M, from stream: Foundation.InputStream, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where M : Clarity.Message
+  #endif
+}
+extension Clarity.Google_Protobuf_DoubleValue : Swift.ExpressibleByFloatLiteral {
+  public typealias WrappedType = Clarity.ProtobufDouble
+  public typealias FloatLiteralType = Clarity.Google_Protobuf_DoubleValue.WrappedType.BaseType
+  public init(_ value: Clarity.Google_Protobuf_DoubleValue.WrappedType.BaseType)
+  public init(floatLiteral: Clarity.Google_Protobuf_DoubleValue.FloatLiteralType)
+}
+extension Clarity.Google_Protobuf_FloatValue : Swift.ExpressibleByFloatLiteral {
+  public typealias WrappedType = Clarity.ProtobufFloat
+  public typealias FloatLiteralType = Swift.Float
+  public init(_ value: Clarity.Google_Protobuf_FloatValue.WrappedType.BaseType)
+  public init(floatLiteral: Clarity.Google_Protobuf_FloatValue.FloatLiteralType)
+}
+extension Clarity.Google_Protobuf_Int64Value : Swift.ExpressibleByIntegerLiteral {
+  public typealias WrappedType = Clarity.ProtobufInt64
+  public typealias IntegerLiteralType = Clarity.Google_Protobuf_Int64Value.WrappedType.BaseType
+  public init(_ value: Clarity.Google_Protobuf_Int64Value.WrappedType.BaseType)
+  public init(integerLiteral: Clarity.Google_Protobuf_Int64Value.IntegerLiteralType)
+}
+extension Clarity.Google_Protobuf_UInt64Value : Swift.ExpressibleByIntegerLiteral {
+  public typealias WrappedType = Clarity.ProtobufUInt64
+  public typealias IntegerLiteralType = Clarity.Google_Protobuf_UInt64Value.WrappedType.BaseType
+  public init(_ value: Clarity.Google_Protobuf_UInt64Value.WrappedType.BaseType)
+  public init(integerLiteral: Clarity.Google_Protobuf_UInt64Value.IntegerLiteralType)
+}
+extension Clarity.Google_Protobuf_Int32Value : Swift.ExpressibleByIntegerLiteral {
+  public typealias WrappedType = Clarity.ProtobufInt32
+  public typealias IntegerLiteralType = Clarity.Google_Protobuf_Int32Value.WrappedType.BaseType
+  public init(_ value: Clarity.Google_Protobuf_Int32Value.WrappedType.BaseType)
+  public init(integerLiteral: Clarity.Google_Protobuf_Int32Value.IntegerLiteralType)
+}
+extension Clarity.Google_Protobuf_UInt32Value : Swift.ExpressibleByIntegerLiteral {
+  public typealias WrappedType = Clarity.ProtobufUInt32
+  public typealias IntegerLiteralType = Clarity.Google_Protobuf_UInt32Value.WrappedType.BaseType
+  public init(_ value: Clarity.Google_Protobuf_UInt32Value.WrappedType.BaseType)
+  public init(integerLiteral: Clarity.Google_Protobuf_UInt32Value.IntegerLiteralType)
+}
+extension Clarity.Google_Protobuf_BoolValue : Swift.ExpressibleByBooleanLiteral {
+  public typealias WrappedType = Clarity.ProtobufBool
+  public typealias BooleanLiteralType = Swift.Bool
+  public init(_ value: Clarity.Google_Protobuf_BoolValue.WrappedType.BaseType)
+  public init(booleanLiteral: Swift.Bool)
+}
+extension Clarity.Google_Protobuf_StringValue : Swift.ExpressibleByStringLiteral {
+  public typealias WrappedType = Clarity.ProtobufString
+  public typealias StringLiteralType = Swift.String
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public init(_ value: Clarity.Google_Protobuf_StringValue.WrappedType.BaseType)
+  public init(stringLiteral: Swift.String)
+  public init(extendedGraphemeClusterLiteral: Swift.String)
+  public init(unicodeScalarLiteral: Swift.String)
+}
+extension Clarity.Google_Protobuf_BytesValue {
+  public typealias WrappedType = Clarity.ProtobufBytes
+  public init(_ value: Clarity.Google_Protobuf_BytesValue.WrappedType.BaseType)
+}
+@preconcurrency public protocol Message : Swift.CustomDebugStringConvertible, Swift.Sendable {
+  init()
+  static var protoMessageName: Swift.String { get }
+  var isInitialized: Swift.Bool { get }
+  var unknownFields: Clarity.UnknownStorage { get set }
+  mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  func hash(into hasher: inout Swift.Hasher)
+  func isEqualTo(message: any Clarity.Message) -> Swift.Bool
+}
+extension Clarity.Message {
+  public var isInitialized: Swift.Bool {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var debugDescription: Swift.String {
+    get
+  }
+  public static func with(_ populator: (inout Self) throws -> Swift.Void) rethrows -> Self
+}
+@preconcurrency public protocol _MessageImplementationBase : Clarity.Message, Swift.Hashable {
+  func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
+}
+extension Clarity._MessageImplementationBase {
+  public func isEqualTo(message: any Clarity.Message) -> Swift.Bool
+  public static func == (lhs: Self, rhs: Self) -> Swift.Bool
+  public func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
+}
+public enum Google_Protobuf_Syntax : Clarity.Enum, Swift.CaseIterable {
+  public typealias RawValue = Swift.Int
+  case proto2
+  case proto3
+  case editions
+  case UNRECOGNIZED(Swift.Int)
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public var rawValue: Swift.Int {
+    get
+  }
+  public static let allCases: [Clarity.Google_Protobuf_Syntax]
+  public typealias AllCases = [Clarity.Google_Protobuf_Syntax]
+}
+public struct Google_Protobuf_Type : Swift.Sendable {
+  public var name: Swift.String
+  public var fields: [Clarity.Google_Protobuf_Field]
+  public var oneofs: [Swift.String]
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var sourceContext: Clarity.Google_Protobuf_SourceContext {
+    get
+    set
+  }
+  public var hasSourceContext: Swift.Bool {
+    get
+  }
+  public mutating func clearSourceContext()
+  public var syntax: Clarity.Google_Protobuf_Syntax
+  public var edition: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Field : Swift.Sendable {
+  public var kind: Clarity.Google_Protobuf_Field.Kind
+  public var cardinality: Clarity.Google_Protobuf_Field.Cardinality
+  public var number: Swift.Int32
+  public var name: Swift.String
+  public var typeURL: Swift.String
+  public var oneofIndex: Swift.Int32
+  public var packed: Swift.Bool
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var jsonName: Swift.String
+  public var defaultValue: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public enum Kind : Clarity.Enum, Swift.CaseIterable {
+    public typealias RawValue = Swift.Int
+    case typeUnknown
+    case typeDouble
+    case typeFloat
+    case typeInt64
+    case typeUint64
+    case typeInt32
+    case typeFixed64
+    case typeFixed32
+    case typeBool
+    case typeString
+    case typeGroup
+    case typeMessage
+    case typeBytes
+    case typeUint32
+    case typeEnum
+    case typeSfixed32
+    case typeSfixed64
+    case typeSint32
+    case typeSint64
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public var rawValue: Swift.Int {
+      get
+    }
+    public static let allCases: [Clarity.Google_Protobuf_Field.Kind]
+    public typealias AllCases = [Clarity.Google_Protobuf_Field.Kind]
+  }
+  public enum Cardinality : Clarity.Enum, Swift.CaseIterable {
+    public typealias RawValue = Swift.Int
+    case unknown
+    case optional
+    case required
+    case repeated
+    case UNRECOGNIZED(Swift.Int)
+    public init()
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public var rawValue: Swift.Int {
+      get
+    }
+    public static let allCases: [Clarity.Google_Protobuf_Field.Cardinality]
+    public typealias AllCases = [Clarity.Google_Protobuf_Field.Cardinality]
+  }
+  public init()
+}
+public struct Google_Protobuf_Enum : Swift.Sendable {
+  public var name: Swift.String
+  public var enumvalue: [Clarity.Google_Protobuf_EnumValue]
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var sourceContext: Clarity.Google_Protobuf_SourceContext {
+    get
+    set
+  }
+  public var hasSourceContext: Swift.Bool {
+    get
+  }
+  public mutating func clearSourceContext()
+  public var syntax: Clarity.Google_Protobuf_Syntax
+  public var edition: Swift.String
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_EnumValue : Swift.Sendable {
+  public var name: Swift.String
+  public var number: Swift.Int32
+  public var options: [Clarity.Google_Protobuf_Option]
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+public struct Google_Protobuf_Option : Swift.Sendable {
+  public var name: Swift.String
+  public var value: Clarity.Google_Protobuf_Any {
+    get
+    set
+  }
+  public var hasValue: Swift.Bool {
+    get
+  }
+  public mutating func clearValue()
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Syntax : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_Type : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Type, rhs: Clarity.Google_Protobuf_Type) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Field : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Field, rhs: Clarity.Google_Protobuf_Field) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Field.Kind : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_Field.Cardinality : Clarity._ProtoNameProviding {
+  public static let _protobuf_nameMap: Clarity._NameMap
+}
+extension Clarity.Google_Protobuf_Enum : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Enum, rhs: Clarity.Google_Protobuf_Enum) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_EnumValue : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_EnumValue, rhs: Clarity.Google_Protobuf_EnumValue) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Google_Protobuf_Option : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Option, rhs: Clarity.Google_Protobuf_Option) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Google_Protobuf_Duration : Swift.Sendable {
+  public var seconds: Swift.Int64
+  public var nanos: Swift.Int32
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Duration : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Duration, rhs: Clarity.Google_Protobuf_Duration) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct TextFormatDecodingOptions : Swift.Sendable {
+  public var messageDepthLimit: Swift.Int
+  public var ignoreUnknownFields: Swift.Bool
+  public var ignoreUnknownExtensionFields: Swift.Bool
+  public init()
+}
+public protocol ProtobufAPIVersion_2 {
+}
+public protocol ProtobufAPIVersionCheck {
+  associatedtype Version : Clarity.ProtobufAPIVersion_2
+}
+@preconcurrency public protocol ExtensibleMessage : Clarity.Message {
+  var _protobuf_extensionFieldValues: Clarity.ExtensionFieldValueSet { get set }
+}
+extension Clarity.ExtensibleMessage {
+  public mutating func setExtensionValue<F>(ext: Clarity.MessageExtension<F, Self>, value: F.ValueType) where F : Clarity.ExtensionField
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getExtensionValue<F>(ext: Clarity.MessageExtension<F, Self>) -> F.ValueType? where F : Clarity.ExtensionField
+  #endif
+  public func hasExtensionValue<F>(ext: Clarity.MessageExtension<F, Self>) -> Swift.Bool where F : Clarity.ExtensionField
+  public mutating func clearExtensionValue<F>(ext: Clarity.MessageExtension<F, Self>) where F : Clarity.ExtensionField
+}
+extension Clarity.ExtensibleMessage {
+  public mutating func setExtensionValue<T>(ext: Clarity.MessageExtension<Clarity.RepeatedExtensionField<T>, Self>, value: [T.BaseType]) where T : Clarity.FieldType
+  public mutating func setExtensionValue<T>(ext: Clarity.MessageExtension<Clarity.PackedExtensionField<T>, Self>, value: [T.BaseType]) where T : Clarity.FieldType
+  public mutating func setExtensionValue<E>(ext: Clarity.MessageExtension<Clarity.RepeatedEnumExtensionField<E>, Self>, value: [E]) where E : Clarity.Enum, E.RawValue == Swift.Int
+  public mutating func setExtensionValue<E>(ext: Clarity.MessageExtension<Clarity.PackedEnumExtensionField<E>, Self>, value: [E]) where E : Clarity.Enum, E.RawValue == Swift.Int
+  public mutating func setExtensionValue<M>(ext: Clarity.MessageExtension<Clarity.RepeatedMessageExtensionField<M>, Self>, value: [M]) where M : Clarity.Message, M : Swift.Equatable
+  public mutating func setExtensionValue<M>(ext: Clarity.MessageExtension<Clarity.RepeatedGroupExtensionField<M>, Self>, value: [M]) where M : Clarity.Message, M : Swift.Hashable
+}
+extension Clarity.Message {
+  public func serializedBytes<Bytes>(partial: Swift.Bool = false, options: Clarity.BinaryEncodingOptions = BinaryEncodingOptions()) throws -> Bytes where Bytes : Clarity.SwiftProtobufContiguousBytes
+  #if compiler(>=5.3) && $NonescapableTypes
+  @inlinable public init<Bytes>(serializedBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Clarity.SwiftProtobufContiguousBytes {
+        self.init()
+        try merge(serializedBytes: bytes, extensions: extensions, partial: partial, options: options)
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @inlinable public mutating func merge<Bytes>(serializedBytes bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, partial: Swift.Bool = false, options: Clarity.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Clarity.SwiftProtobufContiguousBytes {
+        try bytes.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
+            try _merge(rawBuffer: body, extensions: extensions, partial: partial, options: options)
+        }
+    }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @usableFromInline
+  internal mutating func _merge(rawBuffer body: Swift.UnsafeRawBufferPointer, extensions: (any Clarity.ExtensionMap)?, partial: Swift.Bool, options: Clarity.BinaryDecodingOptions) throws
+  #endif
+}
+public struct Google_Protobuf_Any : @unchecked Swift.Sendable {
+  public var typeURL: Swift.String {
+    get
+    set
+  }
+  public var value: Foundation.Data {
+    get
+    set
+  }
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Any : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Any, rhs: Clarity.Google_Protobuf_Any) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Clarity.Message {
+  public static func jsonString<C>(from collection: C, options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String where Self == C.Element, C : Swift.Collection
+  public static func jsonUTF8Bytes<C, Bytes>(from collection: C, options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Bytes where Self == C.Element, C : Swift.Collection, Bytes : Clarity.SwiftProtobufContiguousBytes
+  public static func array(fromJSONString jsonString: Swift.String, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONString jsonString: Swift.String, extensions: any Clarity.ExtensionMap = SimpleExtensionMap(), options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array<Bytes>(fromJSONUTF8Bytes jsonUTF8Bytes: Bytes, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self] where Bytes : Clarity.SwiftProtobufContiguousBytes
+  public static func array<Bytes>(fromJSONUTF8Bytes jsonUTF8Bytes: Bytes, extensions: any Clarity.ExtensionMap = SimpleExtensionMap(), options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self] where Bytes : Clarity.SwiftProtobufContiguousBytes
+}
+public struct SwiftProtobufError : Swift.Error, @unchecked Swift.Sendable {
+  public var code: Clarity.SwiftProtobufError.Code {
+    get
+    set
+  }
+  public init(code: Clarity.SwiftProtobufError.Code, message: Swift.String, location: Clarity.SwiftProtobufError.SourceLocation)
+}
+extension Clarity.SwiftProtobufError {
+  public struct Code : Swift.Hashable, Swift.Sendable, Swift.CustomStringConvertible {
+    public var description: Swift.String {
+      get
+    }
+    public static var binaryDecodingError: Clarity.SwiftProtobufError.Code {
+      get
+    }
+    public static var binaryStreamDecodingError: Clarity.SwiftProtobufError.Code {
+      get
+    }
+    public static var jsonDecodingError: Clarity.SwiftProtobufError.Code {
+      get
+    }
+    public static var jsonEncodingError: Clarity.SwiftProtobufError.Code {
+      get
+    }
+    public static func == (a: Clarity.SwiftProtobufError.Code, b: Clarity.SwiftProtobufError.Code) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct SourceLocation : Swift.Sendable, Swift.Hashable {
+    public var function: Swift.String
+    public var file: Swift.String
+    public var line: Swift.Int
+    public init(function: Swift.String, file: Swift.String, line: Swift.Int)
+    @usableFromInline
+    internal static func here(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError.SourceLocation
+    public static func == (a: Clarity.SwiftProtobufError.SourceLocation, b: Clarity.SwiftProtobufError.SourceLocation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Clarity.SwiftProtobufError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Clarity.SwiftProtobufError : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension Clarity.SwiftProtobufError {
+  public enum BinaryDecoding {
+    public static func tooLarge(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+  }
+  public enum BinaryStreamDecoding {
+    public static func tooLarge(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+    public static func malformedLength(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+    public static func noBytesAvailable(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+  }
+  public enum JSONDecoding {
+    public static func invalidAnyTypeURL(type_url: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+    public static func emptyAnyTypeURL(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+  }
+  public enum JSONEncoding {
+    public static func invalidAnyTypeURL(type_url: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+    public static func emptyAnyTypeURL(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> Clarity.SwiftProtobufError
+  }
+}
+public struct BinaryDecodingOptions : Swift.Sendable {
+  public var messageDepthLimit: Swift.Int
+  public var discardUnknownFields: Swift.Bool
+  public init()
+}
+extension Clarity.Message {
+  public func jsonString(options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String
+  public func jsonUTF8Bytes<Bytes>(options: Clarity.JSONEncodingOptions = JSONEncodingOptions()) throws -> Bytes where Bytes : Clarity.SwiftProtobufContiguousBytes
+  public init(jsonString: Swift.String, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(jsonString: Swift.String, extensions: (any Clarity.ExtensionMap)? = nil, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws
+  #endif
+  public init<Bytes>(jsonUTF8Bytes: Bytes, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws where Bytes : Clarity.SwiftProtobufContiguousBytes
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init<Bytes>(jsonUTF8Bytes: Bytes, extensions: (any Clarity.ExtensionMap)? = nil, options: Clarity.JSONDecodingOptions = JSONDecodingOptions()) throws where Bytes : Clarity.SwiftProtobufContiguousBytes
+  #endif
+}
+public enum BinaryEncodingError : Swift.Error, Swift.Hashable {
+  case anyTranscodeFailure
+  case missingRequiredFields
+  public static func == (a: Clarity.BinaryEncodingError, b: Clarity.BinaryEncodingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Decoder {
+  mutating func handleConflictingOneOf() throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func nextFieldNumber() throws -> Swift.Int?
+  #endif
+  mutating func decodeSingularFloatField(value: inout Swift.Float) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularFloatField(value: inout Swift.Float?) throws
+  #endif
+  mutating func decodeRepeatedFloatField(value: inout [Swift.Float]) throws
+  mutating func decodeSingularDoubleField(value: inout Swift.Double) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularDoubleField(value: inout Swift.Double?) throws
+  #endif
+  mutating func decodeRepeatedDoubleField(value: inout [Swift.Double]) throws
+  mutating func decodeSingularInt32Field(value: inout Swift.Int32) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularInt32Field(value: inout Swift.Int32?) throws
+  #endif
+  mutating func decodeRepeatedInt32Field(value: inout [Swift.Int32]) throws
+  mutating func decodeSingularInt64Field(value: inout Swift.Int64) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularInt64Field(value: inout Swift.Int64?) throws
+  #endif
+  mutating func decodeRepeatedInt64Field(value: inout [Swift.Int64]) throws
+  mutating func decodeSingularUInt32Field(value: inout Swift.UInt32) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularUInt32Field(value: inout Swift.UInt32?) throws
+  #endif
+  mutating func decodeRepeatedUInt32Field(value: inout [Swift.UInt32]) throws
+  mutating func decodeSingularUInt64Field(value: inout Swift.UInt64) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularUInt64Field(value: inout Swift.UInt64?) throws
+  #endif
+  mutating func decodeRepeatedUInt64Field(value: inout [Swift.UInt64]) throws
+  mutating func decodeSingularSInt32Field(value: inout Swift.Int32) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularSInt32Field(value: inout Swift.Int32?) throws
+  #endif
+  mutating func decodeRepeatedSInt32Field(value: inout [Swift.Int32]) throws
+  mutating func decodeSingularSInt64Field(value: inout Swift.Int64) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularSInt64Field(value: inout Swift.Int64?) throws
+  #endif
+  mutating func decodeRepeatedSInt64Field(value: inout [Swift.Int64]) throws
+  mutating func decodeSingularFixed32Field(value: inout Swift.UInt32) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularFixed32Field(value: inout Swift.UInt32?) throws
+  #endif
+  mutating func decodeRepeatedFixed32Field(value: inout [Swift.UInt32]) throws
+  mutating func decodeSingularFixed64Field(value: inout Swift.UInt64) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularFixed64Field(value: inout Swift.UInt64?) throws
+  #endif
+  mutating func decodeRepeatedFixed64Field(value: inout [Swift.UInt64]) throws
+  mutating func decodeSingularSFixed32Field(value: inout Swift.Int32) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularSFixed32Field(value: inout Swift.Int32?) throws
+  #endif
+  mutating func decodeRepeatedSFixed32Field(value: inout [Swift.Int32]) throws
+  mutating func decodeSingularSFixed64Field(value: inout Swift.Int64) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularSFixed64Field(value: inout Swift.Int64?) throws
+  #endif
+  mutating func decodeRepeatedSFixed64Field(value: inout [Swift.Int64]) throws
+  mutating func decodeSingularBoolField(value: inout Swift.Bool) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularBoolField(value: inout Swift.Bool?) throws
+  #endif
+  mutating func decodeRepeatedBoolField(value: inout [Swift.Bool]) throws
+  mutating func decodeSingularStringField(value: inout Swift.String) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularStringField(value: inout Swift.String?) throws
+  #endif
+  mutating func decodeRepeatedStringField(value: inout [Swift.String]) throws
+  mutating func decodeSingularBytesField(value: inout Foundation.Data) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularBytesField(value: inout Foundation.Data?) throws
+  #endif
+  mutating func decodeRepeatedBytesField(value: inout [Foundation.Data]) throws
+  mutating func decodeSingularEnumField<E>(value: inout E) throws where E : Clarity.Enum, E.RawValue == Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularEnumField<E>(value: inout E?) throws where E : Clarity.Enum, E.RawValue == Swift.Int
+  #endif
+  mutating func decodeRepeatedEnumField<E>(value: inout [E]) throws where E : Clarity.Enum, E.RawValue == Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularMessageField<M>(value: inout M?) throws where M : Clarity.Message
+  #endif
+  mutating func decodeRepeatedMessageField<M>(value: inout [M]) throws where M : Clarity.Message
+  #if compiler(>=5.3) && $NonescapableTypes
+  mutating func decodeSingularGroupField<G>(value: inout G?) throws where G : Clarity.Message
+  #endif
+  mutating func decodeRepeatedGroupField<G>(value: inout [G]) throws where G : Clarity.Message
+  mutating func decodeMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufMap<KeyType, ValueType>.Type, value: inout Clarity._ProtobufMap<KeyType, ValueType>.BaseType) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.MapValueType
+  mutating func decodeMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufEnumMap<KeyType, ValueType>.Type, value: inout Clarity._ProtobufEnumMap<KeyType, ValueType>.BaseType) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.Enum, ValueType.RawValue == Swift.Int
+  mutating func decodeMapField<KeyType, ValueType>(fieldType: Clarity._ProtobufMessageMap<KeyType, ValueType>.Type, value: inout Clarity._ProtobufMessageMap<KeyType, ValueType>.BaseType) throws where KeyType : Clarity.MapKeyType, ValueType : Clarity.Message, ValueType : Swift.Hashable
+  mutating func decodeExtensionField(values: inout Clarity.ExtensionFieldValueSet, messageType: any Clarity.Message.Type, fieldNumber: Swift.Int) throws
+  mutating func decodeExtensionFieldsAsMessageSet(values: inout Clarity.ExtensionFieldValueSet, messageType: any Clarity.Message.Type) throws
+}
+extension Clarity.Decoder {
+  public mutating func decodeExtensionFieldsAsMessageSet(values: inout Clarity.ExtensionFieldValueSet, messageType: any Clarity.Message.Type) throws
+}
+extension Clarity.Google_Protobuf_Value : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int64
+  public init(integerLiteral value: Swift.Int64)
+}
+extension Clarity.Google_Protobuf_Value : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+  public init(floatLiteral value: Swift.Double)
+}
+extension Clarity.Google_Protobuf_Value : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+  public init(booleanLiteral value: Swift.Bool)
+}
+extension Clarity.Google_Protobuf_Value : Swift.ExpressibleByStringLiteral {
+  public typealias StringLiteralType = Swift.String
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public init(stringLiteral value: Swift.String)
+  public init(unicodeScalarLiteral value: Swift.String)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+}
+extension Clarity.Google_Protobuf_Value : Swift.ExpressibleByNilLiteral {
+  public init(nilLiteral: ())
+}
+extension Clarity.Google_Protobuf_Value {
+  public init(numberValue: Swift.Double)
+  public init(stringValue: Swift.String)
+  public init(boolValue: Swift.Bool)
+  public init(structValue: Clarity.Google_Protobuf_Struct)
+  public init(listValue: Clarity.Google_Protobuf_ListValue)
+}
+public enum TextFormatDecodingError : Swift.Error {
+  case malformedText
+  case malformedNumber
+  case trailingGarbage
+  case truncated
+  case invalidUTF8
+  case schemaMismatch
+  case missingFieldNames
+  case unknownField
+  case unrecognizedEnumValue
+  case conflictingOneOf
+  case internalExtensionError
+  case messageDepthLimit
+  public static func == (a: Clarity.TextFormatDecodingError, b: Clarity.TextFormatDecodingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Google_Protobuf_Empty : Swift.Sendable {
+  public var unknownFields: Clarity.UnknownStorage
+  public init()
+}
+extension Clarity.Google_Protobuf_Empty : Clarity.Message, Clarity._MessageImplementationBase, Clarity._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: Clarity._NameMap
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : Clarity.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : Clarity.Visitor
+  public static func == (lhs: Clarity.Google_Protobuf_Empty, rhs: Clarity.Google_Protobuf_Empty) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public enum LogLevel : Swift.Int {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  case none
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class ClarityConfig : ObjectiveC.NSObject {
+  @objc convenience public init(projectId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  convenience public init(projectId: Swift.String, logLevel: Clarity.LogLevel = .none, applicationFramework: Clarity.ApplicationFramework = .native, customSignalsCallback: ((Swift.String, Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This initializer accepts deprecated parameters that would be removed in a future major version.")
+  public init(projectId: Swift.String, userId: Swift.String? = nil, logLevel: Clarity.LogLevel = .none, applicationFramework: Clarity.ApplicationFramework = .native, customSignalsCallback: ((Swift.String, Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This property is deprecated and would be removed in a future major version. Use `ClaritySDK.setCustomUserId(_:)` instead.")
+  @objc public var userId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc public var logLevel: Clarity.LogLevel {
+    @objc get
+    @objc set
+  }
+  @objc public var applicationFramework: Clarity.ApplicationFramework {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var customSignalsCallback: ((Swift.String, Swift.String?) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @objc deinit
+}
+@objc public enum ApplicationFramework : Swift.Int {
+  case native
+  case cordova
+  case reactNative
+  case ionic
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func clarityMask() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func clarityUnmask() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func clarityFontNameHint(name: Swift.String) -> some SwiftUICore.View
+  
+}
+extension Clarity.BinaryDecodingError : Swift.Equatable {}
+extension Clarity.BinaryDecodingError : Swift.Hashable {}
+extension Clarity.AnyUnpackError : Swift.Equatable {}
+extension Clarity.AnyUnpackError : Swift.Hashable {}
+extension Clarity.PathDecodingError : Swift.Equatable {}
+extension Clarity.PathDecodingError : Swift.Hashable {}
+extension Clarity.FieldMaskError : Swift.Equatable {}
+extension Clarity.FieldMaskError : Swift.Hashable {}
+extension Clarity.BinaryDelimited.Error : Swift.Equatable {}
+extension Clarity.BinaryDelimited.Error : Swift.Hashable {}
+extension Clarity.TextFormatDecodingError : Swift.Equatable {}
+extension Clarity.TextFormatDecodingError : Swift.Hashable {}
+extension Clarity.LogLevel : Swift.Equatable {}
+extension Clarity.LogLevel : Swift.Hashable {}
+extension Clarity.LogLevel : Swift.RawRepresentable {}
+extension Clarity.ApplicationFramework : Swift.Equatable {}
+extension Clarity.ApplicationFramework : Swift.Hashable {}
+extension Clarity.ApplicationFramework : Swift.RawRepresentable {}

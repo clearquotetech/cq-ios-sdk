@@ -1,12 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ClearQuoteSDK
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ClearQuoteSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import AVFoundation
 import AVKit
 import Accelerate
 import AnyCodable
+import Clarity
+import CommonCrypto
 import CoreGraphics
 import CoreImage
+import CoreLocation
 import CoreText
 import CoreVideo
 import DeveloperToolsSupport
@@ -15,29 +19,38 @@ import Foundation
 import Fuse
 import IQKeyboardManagerSwift
 import Kingfisher
+import Network
+import ObjectiveC
+import PencilKit
 import Reachability
 import SQLite
 import SVGKit
+import Security
 import Sentry
 import Swift
 import SwiftUI
 import TensorFlowLite
 import UIKit
+import VideoToolbox
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol ClearQuoteSDKDelegate {
+public protocol ClearQuoteSDKDelegate : AnyObject {
   func inspectionCompletionStatus(identifier: Swift.String, message: Swift.String, code: Swift.Int, isOffline: Swift.Bool, serverQuoteId: Swift.String?, serverInspectionId: Swift.String?)
 }
 @_hasMissingDesignatedInitializers public class ClearQuote {
   public static let shared: ClearQuoteSDK.ClearQuote
-  public var versionInQuoteDetails: (Swift.String)
+  public var versionInQuoteDetails: Swift.String
   public var isOffline: Swift.Bool
+  public var enanceImages: Swift.Bool
   public var clientAttrs: ClearQuoteSDK.CQSDKClientAttrs
-  public var clearQuoteSdkDelegate: (any ClearQuoteSDK.ClearQuoteSDKDelegate)?
+  public var redirectDetailsPageSdkLoaded: Swift.Bool
+  weak public var clearQuoteSdkDelegate: (any ClearQuoteSDK.ClearQuoteSDKDelegate)?
+  public var offlineUploadedImagesCount: Swift.Int
+  public var currentUploadingQuote: Swift.Int64
   public func initSDKNoBaseVc(key: Swift.String, region: Swift.String? = nil, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
-  public func initSDK(baseVC: UIKit.UIViewController, key: Swift.String, region: Swift.String? = nil, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
+  public func initSDK(baseVC: UIKit.UIViewController, key: Swift.String, region: Swift.String? = nil, message: Swift.String? = nil, result: @escaping (_ isInitialized: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void)
   public func isClientAttrsEqual(previousClientAttrs: ClearQuoteSDK.CQSDKClientAttrs?, latestClientAttrs: ClearQuoteSDK.CQSDKClientAttrs?) -> Swift.Bool
   public func startInspection(baseVC: UIKit.UIViewController, clearQuoteSdkDelegate: any ClearQuoteSDK.ClearQuoteSDKDelegate, clientAttrs: ClearQuoteSDK.CQSDKClientAttrs? = nil, inputDetails: ClearQuoteSDK.CQSDKInputDetails? = nil, userFlowParams: ClearQuoteSDK.CQSDKUserFlowParams? = nil, result: @escaping (_ inspectionStarted: Swift.Bool, _ message: Swift.String, _ code: Swift.Int) -> Swift.Void)
   public func isCQSDKInitialized() -> Swift.Bool
@@ -52,12 +65,22 @@ public protocol ClearQuoteSDKDelegate {
   public func getCurrentClientAttrsDealer() -> Swift.String?
   public func getCurrentClientAttrsDealerIdentifier() -> Swift.String?
   public func getCurrentClientAttrsClientUniqueId() -> Swift.String?
-  public func getV3VehicleDetailsByLicencePlateNumber(_ licencePlatno: Swift.String) -> [ClearQuoteSDK.CQSDKMakeModel]
-  public func startReachabilityNotifier()
+  public func getV3VehicleDetails(by field: Swift.String, value: Swift.String) -> [ClearQuoteSDK.CQSDKMakeModel]
+  public func startReachabilityNotifier(completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public func stopReachabilityNotifier()
-  public func getOverlayImageModel(bodystyle: Swift.String, index: Swift.Int) -> ClearQuoteSDK.CQSDKOverlayModel?
+  public func restartReachabilityNotifier()
   public func initiateOfflineInspectionsSync()
   public func showQuoteDetails(inspectionId: Swift.String, baseVC: UIKit.UIViewController, onClose: (() -> Swift.Void)? = nil)
+  public func getListOfPendingInspections(onCompletion: @escaping ([ClearQuoteSDK.CQSDKQuoteOfflineData]) -> Swift.Void)
+  public func deleteQuoteFromDbWithOfflineSync(byId: Swift.Int64, onCompletion: @escaping (Swift.Bool) -> Swift.Void)
+  public func checkAndStartLNDataDownload(parentVC: UIKit.UIViewController, msg: Swift.String, downloadingMessage: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func getTTScanHelperGifUrl() -> Swift.String?
+  public func isTyreTredSacnAvailble() -> Swift.Bool?
+  public func getTTScanStarted() -> Swift.String?
+  public func getTTScanvehicleMasterV3Enabled() -> Swift.Bool
+  public func getTTScanCurrentUTCString() -> Swift.String
+  public func getQuoteTotalImagesCount(_ quoteId: Swift.Int64) -> Swift.Int
+  public func isInspectionInProgress() -> Swift.Bool
   @objc deinit
 }
 extension ClearQuoteSDK.ClearQuote {
@@ -65,40 +88,144 @@ extension ClearQuoteSDK.ClearQuote {
   public func setLanguage(_ languageId: Swift.String)
   public func getLanguage() -> ClearQuoteSDK.CQLanguages
 }
-public enum CQLanguages : Swift.String {
-  case english
-  case spanish
-  case german
-  case french
-  case italian
-  case romanian
-  public var displayValue: Swift.String {
-    get
-  }
+extension ClearQuoteSDK.ClearQuote {
+  public func initiateDeeplinkInspectionSingleton(url: Foundation.URL)
+  public func isDeeplinkInitiated() -> Swift.Bool
+  public func resetDeeplinkSingleton()
+  public func callBackToDeeplinkedApp()
+  public func userNotLoggedIn()
+  public func configDownloadFailedViaDeeplink()
+}
+extension Foundation.NSNotification.Name {
+  public static let dataUploadCompletedCQSDK: Foundation.Notification.Name
+  public static let internetStatusCQSDK: Foundation.Notification.Name
+  public static let syncAppEnterForgroundCQSDK: Foundation.Notification.Name
+  public static let syncAppEnterBackgroundCQSDK: Foundation.Notification.Name
+}
+@_hasMissingDesignatedInitializers public class CQSDKDeepLinkSingleton {
+  public static let shared: ClearQuoteSDK.CQSDKDeepLinkSingleton
+  public var registrationNumber: Swift.String?
+  public var isInternalDeeplink: Swift.Bool?
+  public func resetInternalDeeplink()
+  @objc deinit
+}
+public enum CQSDKRegion : Swift.String {
+  case uat
+  case eu
+  case prod
+  case usprod
+  case jlrUat
+  public static func currentRegionWebAppUrl() -> Swift.String?
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-extension Swift.String {
-  public var CQLocalized: Swift.String {
+public enum CQSDKIcons : Swift.String {
+  case cq_sdk_error_icon
+  case cq_sdk_icon_down
+  case cq_sdk_icon_up
+  case cq_sdk_back_icon
+  case cq_sdk_camera
+  case cq_sdk_photo_icon
+  case cq_sdk_camera_mandatory
+  case cq_sdk_deactivated_camera_icon
+  case cq_sdk_deactivated_details_icon
+  case cq_sdk_fill_arrow_up
+  case cq_sdk_fill_arrow_down
+  case cq_sdk_add_more_images_icon
+  case cq_sdk_retake_button_icon
+  case cq_sdk_current_overlay_icon
+  case cq_sdk_overlay_captured_icon
+  case cq_sdk_radio_off
+  case cq_sdk_radio_on
+  case cq_sdk_radio2_off
+  case cq_sdk_radio2_on
+  case cq_sdk_search
+  case cq_sdk_ip_image_capture_mandatory_and_skipped
+  case cq_sdk_ip_image_capture_enabled
+  case cq_sdk_ip_image_capture_mandatory
+  case cq_sdk_add_vehicle_bodystyle_preview_hatch
+  case cq_sdk_add_vehicle_bodystyle_preview_pickup
+  case cq_sdk_add_vehicle_bodystyle_preview_sedan
+  case cq_sdk_add_vehicle_bodystyle_preview_suv
+  case cq_sdk_add_vehicle_bodystyle_preview_van
+  case cq_sdk_add_vehicle_bodystyle_preview_wagon
+  case cq_sdk_add_vehicle_bodystyle_preview_coupe
+  case cq_sdk_next_icon_green
+  case cq_sdk_add_icon
+  case cq_sdk_retry_icon
+  case cq_sdk_retry_image
+  case cq_sdk_error_icon_white
+  public func asUIImage() -> UIKit.UIImage?
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUIButton : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public func setText(txt: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func disable()
-  @_Concurrency.MainActor(unsafe) public func enable()
-  @_Concurrency.MainActor(unsafe) public func leftIcon()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class CQSDKUIButton : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency final public var disabledBackgroundColor: UIKit.UIColor?
+  @_Concurrency.MainActor @preconcurrency final public var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public func setText(txt: Swift.String)
+  @_Concurrency.MainActor @preconcurrency final public func setFont(font: ClearQuoteSDK.CQSDKTextStyle)
+  @_Concurrency.MainActor @preconcurrency final public func disable()
+  @_Concurrency.MainActor @preconcurrency final public func enable()
+  @_Concurrency.MainActor @preconcurrency final public func setCornerRadius(_ radius: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency final public func leftIcon()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUIOutlinedButton : UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) public func setOverlaysCounterUI()
-  @_Concurrency.MainActor(unsafe) public func setText(txt: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func disable()
-  @_Concurrency.MainActor(unsafe) public func enable()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CQSDKUIOutlinedButton : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public func setOverlaysCounterUI()
+  @_Concurrency.MainActor @preconcurrency public func setText(txt: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func disable()
+  @_Concurrency.MainActor @preconcurrency public func enable()
+  @_Concurrency.MainActor @preconcurrency public func setCornerRadius(_ radius: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func setFont(font: ClearQuoteSDK.CQSDKTextStyle)
   @objc deinit
+}
+public struct CQSDKV2Vehicle : Swift.Decodable {
+  public let make: Swift.String?
+  public let model: Swift.String?
+  public var bodystyle: Swift.String?
+  public let cqBodystyle: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CQSDKUserDealerPermissions : Swift.Codable {
+  public let vehicleMasterV3: Swift.Bool?
+  public let theebfleetflow: Swift.Bool?
+  public let estimateV2: ClearQuoteSDK.CQSDKEstimateV2?
+  public let licenseAgreementVersion: Swift.String
+  public var sendExifLocation: Swift.Bool {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CQSDKDealerMetadataOnImageConfig : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CQSDKDealerLogo : Swift.Codable {
+  public let small: Swift.String?
+  public let medium: Swift.String?
+  public let big: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CQSDKFleetAttrs : Swift.Codable {
+  public let comparisonType: Swift.String?
+  public let usFleet: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum CQSDKTextStyle {
   case h1
@@ -107,12 +234,14 @@ public enum CQSDKTextStyle {
   case h4
   case h5
   case h6
+  case hs
   case s1
   case s2
   case p1
   case p2
   case c1
   case c2
+  case l1
   case label
   case giant
   case large
@@ -126,53 +255,158 @@ public enum CQSDKTextStyle {
     get
   }
 }
-public struct CQSDKV3Vehicle : Swift.Codable {
+public struct CQSDKV3Vehicle : Swift.Decodable {
+  public let make: Swift.String?
+  public let model: Swift.String?
+  public let bodystyle: Swift.String?
+  public var licensePlateNo: Swift.String? {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CQSDKCustomerInfo : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CQSDKFleetImageType : Swift.String, Swift.Codable {
+  case before
+  case after
+  public var localizedKey: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CQSDKSegmentView : UIKit.UIView, ClearQuoteSDK.CQSDKNibLoadable {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var segment: UIKit.UISegmentedControl!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func setLabel(txt: Swift.String, isMandatory: Swift.Bool = false)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class CQSDKVehicleNumberInputViewController : ClearQuoteSDK.CQBaseViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency override final public func updateLocalizedText()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CQNetworkLogger {
+  public static let shared: ClearQuoteSDK.CQNetworkLogger
+  public func serverLog(_ msg: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CQSDKInputField : UIKit.UIView, UIKit.UITextFieldDelegate, ClearQuoteSDK.CQSDKNibLoadable {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var ipField: UIKit.UITextField!
+  @_Concurrency.MainActor @preconcurrency public var onEndEditing: ((Swift.String) -> ())?
+  @_Concurrency.MainActor @preconcurrency public var onTextChange: ((Swift.String) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func hideErrorView()
+  @_Concurrency.MainActor @preconcurrency public func removeFocusBorderFromIp()
+  @_Concurrency.MainActor @preconcurrency public func setFieldHeight(_ height: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func hidePassword()
+  @_Concurrency.MainActor @preconcurrency public func showPassword()
+  @_Concurrency.MainActor @preconcurrency public func hideLabel()
+  @_Concurrency.MainActor @preconcurrency public func setLabel(txt: Swift.String, isMandatory: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func setPlaceholder(txt: Swift.String, color: UIKit.UIColor? = nil)
+  @_Concurrency.MainActor @preconcurrency public func setFieldStyle(_ style: ClearQuoteSDK.CQSDKTextStyle, color: ClearQuoteSDK.CQSDKColors? = nil)
+  @_Concurrency.MainActor @preconcurrency public func getInputValue() -> Swift.String
+  @_Concurrency.MainActor @preconcurrency public func setValue(txt: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func disableInput(_ enableRightView: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func enableInput()
+  @_Concurrency.MainActor @preconcurrency public func setErrorMsg(msg: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setSuccessMsg(msg: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setKeyboardType(keyboardType: UIKit.UIKeyboardType)
+  @_Concurrency.MainActor @preconcurrency public func setOnBeforeTextChanges(onBeforeTextChangesTemp: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor @preconcurrency public func setAfterTextChanges(onAfterTextChangesTemp: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor @preconcurrency public func clearError(msg: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public func showError(msg: Swift.String? = nil, onlyErrorIcon: Swift.Bool = false, actionButtonTitle: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public func showTrailingButton(withText text: Swift.String, textStyle: ClearQuoteSDK.CQSDKTextStyle, textColor: ClearQuoteSDK.CQSDKColors? = nil, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func updateTrailingButtonText(withText text: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func hideTrailingButton()
+  @_Concurrency.MainActor @preconcurrency public func setAsDropdown(onSelectionChanged: @escaping (Swift.Int, Swift.String) -> (), isStrictDropdown: Swift.Bool = false, showDropdownIcon: Swift.Bool = false, isDirectionDown: Swift.Bool = true, isDropDownImageAction: Swift.Bool = false, parentView: UIKit.UIView? = nil)
+  @_Concurrency.MainActor @preconcurrency public func setDropdownItems(items: [Swift.String])
+  @_Concurrency.MainActor @preconcurrency public func showDropdown()
+  @_Concurrency.MainActor @preconcurrency public func setAddItemButtonInDropdown(onClickBtnAddItemTemp: @escaping () -> (), btnText: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setOnClick(onClick: @escaping () -> ())
+  @_Concurrency.MainActor @preconcurrency public func setLeftIcon(uiImage: UIKit.UIImage?, width: Swift.Int = 20, height: Swift.Int = 20, paddingFromLeft: Swift.Int = 10, onTap: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setRightIcon(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromRight: Swift.Int = 10)
+  @_Concurrency.MainActor @preconcurrency public func setRightIconButton(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromRight: Swift.Int = 10)
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class CQBaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency open func updateLocalizedText()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class CQSDKInputPageViewController : ClearQuoteSDK.CQBaseViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency override final public func updateLocalizedText()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class CQSDKInputPageDriverInfoViewController : ClearQuoteSDK.CQBaseViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency override final public func updateLocalizedText()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CQSwitch : UIKit.UISwitch {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@frozen public enum CQSDKUserRole : Swift.String, Swift.Codable {
+  case dealer
+  case dealerAdmin
+  case driver
+  case dealerGroupAdmin
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@frozen public enum CQSDKOnComplete : Swift.String, Swift.Codable {
+  case estimate
+  case details
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CQSDKUserPermissions : Swift.Codable {
+  public let permittedMakes: [Swift.String]?
+  public let permittedTabs: [Swift.String]?
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct CQSDKCustomerInfo : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
+public struct CQSDKEstimateV2 : Swift.Codable {
+  public let onComplete: ClearQuoteSDK.CQSDKOnComplete?
+  public let bypassRoles: [ClearQuoteSDK.CQSDKUserRole]
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CQBaseViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) open func updateLocalizedText()
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputField : UIKit.UIView, UIKit.UITextFieldDelegate, ClearQuoteSDK.CQSDKNibLoadable {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var ipField: UIKit.UITextField!
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) public func hidePassword()
-  @_Concurrency.MainActor(unsafe) public func showPassword()
-  @_Concurrency.MainActor(unsafe) public func hideLabel()
-  @_Concurrency.MainActor(unsafe) public func setLabel(txt: Swift.String, isMandatory: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func setPlaceholder(txt: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func getInputValue() -> Swift.String
-  @_Concurrency.MainActor(unsafe) public func setValue(txt: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func disableInput()
-  @_Concurrency.MainActor(unsafe) public func enableInput()
-  @_Concurrency.MainActor(unsafe) public func setErrorMsg(msg: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setSuccessMsg(msg: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setKeyboardType(keyboardType: UIKit.UIKeyboardType)
-  @_Concurrency.MainActor(unsafe) public func setOnBeforeTextChanges(onBeforeTextChangesTemp: @escaping (Swift.String) -> ())
-  @_Concurrency.MainActor(unsafe) public func setAfterTextChanges(onAfterTextChangesTemp: @escaping (Swift.String) -> ())
-  @_Concurrency.MainActor(unsafe) public func clearError(msg: Swift.String? = nil)
-  @_Concurrency.MainActor(unsafe) public func showError(msg: Swift.String? = nil, onlyErrorIcon: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func setAsDropdown(onSelectionChanged: @escaping (Swift.Int, Swift.String) -> (), isStrictDropdown: Swift.Bool = false, showDropdownIcon: Swift.Bool = false, isDirectionDown: Swift.Bool = true)
-  @_Concurrency.MainActor(unsafe) public func setDropdownItems(items: [Swift.String])
-  @_Concurrency.MainActor(unsafe) public func showDropdown()
-  @_Concurrency.MainActor(unsafe) public func setAddItemButtonInDropdown(onClickBtnAddItemTemp: @escaping () -> (), btnText: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func setOnClick(onClick: @escaping () -> ())
-  @_Concurrency.MainActor(unsafe) public func setLeftIcon(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromLeft: Swift.Int = 10)
-  @_Concurrency.MainActor(unsafe) public func setRightIcon(uiImage: UIKit.UIImage?, onTap: @escaping () -> (), width: Swift.Int = 20, height: Swift.Int = 20, paddingFromRight: Swift.Int = 10)
-  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
-  @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
-  @objc deinit
+public struct CQSDKLicenseAgreement : Swift.Codable {
+  public let acceptedVersion: Swift.String?
+  public let acceptedAt: Swift.String?
+  public let declined: Swift.Bool?
+  public let declinedAt: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol CQSDKNibLoadable {
   static var nibName: Swift.String { get }
@@ -186,21 +420,24 @@ extension ClearQuoteSDK.CQSDKNibLoadable where Self : UIKit.UIView {
   }
   public func setupFromNib()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CQSDKInputPageOneViewController : ClearQuoteSDK.CQBaseViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) override public func updateLocalizedText()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CQIconButton : UIKit.UIButton {
   @objc deinit
 }
-public enum CQSDKToastDuration : Swift.Double {
-  case short
-  case long
-  public init?(rawValue: Swift.Double)
-  public typealias RawValue = Swift.Double
-  public var rawValue: Swift.Double {
-    get
-  }
+public struct CQSDKGetOverlaysResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CQSDKOverlay : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CQSDKUserDealerData : Swift.Codable {
+  public let id: Swift.String?
+  public let code: Swift.String?
+  public let permissions: ClearQuoteSDK.CQSDKUserDealerPermissions?
+  public let dealerLogo: ClearQuoteSDK.CQSDKDealerLogo?
+  public let fleetAttrs: ClearQuoteSDK.CQSDKFleetAttrs?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum CQSDKColors : Swift.String {
   case cq_sdk_disabled_button_color
@@ -215,6 +452,17 @@ public enum CQSDKColors : Swift.String {
   case cq_sdk_overlay_red
   case cq_sdk_overlay_green
   case cq_sdk_rtd_message_background_color
+  case cq_sdk_primary_color
+  case cq_sdk_error
+  case cq_sdk_danger_red
+  case basic100
+  case basic400
+  case basic600
+  case basic800
+  case danger500
+  case neutral1000
+  case neutral600
+  case neutral700
   public func asUIColor() -> UIKit.UIColor?
   public func asCGColor() -> CoreGraphics.CGColor?
   public init?(rawValue: Swift.String)
@@ -223,36 +471,82 @@ public enum CQSDKColors : Swift.String {
     get
   }
 }
+extension Swift.String {
+  public func hasSpecialCharacters() -> Swift.Bool
+  public func isValidEmail() -> Swift.Bool
+  public func dropLastCharacter() -> Swift.String
+}
+extension Swift.String {
+  public func isValidString() -> Swift.Bool
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public func unique() -> [Element]
+}
 extension UIKit.UIActivityIndicatorView {
-  @_Concurrency.MainActor(unsafe) public func scaleIndicator(factor: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func scaleIndicator(factor: CoreFoundation.CGFloat)
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public func setDefaultDialogCornerRadius()
+  @_Concurrency.MainActor @preconcurrency public func setDefaultDialogCornerRadius()
+  @_Concurrency.MainActor @preconcurrency public func applyCustomViewStyle(cornerRadius: CoreFoundation.CGFloat = 4, borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor? = UIColor.red.cgColor)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public func applyCustomButtonStyle(cornerRadius: CoreFoundation.CGFloat = 4, borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.red.cgColor, titleColor: UIKit.UIColor? = .black)
 }
 public struct CQSDKOverlayModel {
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKUILabel : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func setText(txt: Swift.String, isMandatory: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func setStyle(_ style: ClearQuoteSDK.CQSDKTextStyle, labelColor: ClearQuoteSDK.CQSDKColors? = nil)
-  @_Concurrency.MainActor(unsafe) public func setCornerRadius(_ radius: CoreFoundation.CGFloat)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class CQSDKUILabel : UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency final public func setText(txt: Swift.String, isMandatory: Swift.Bool? = false)
+  @_Concurrency.MainActor @preconcurrency final public func setStyle(_ style: ClearQuoteSDK.CQSDKTextStyle, labelColor: ClearQuoteSDK.CQSDKColors? = nil)
+  @_Concurrency.MainActor @preconcurrency final public func setCornerRadius(_ radius: CoreFoundation.CGFloat)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQIconButton : UIKit.UIButton {
-  @objc deinit
-}
-public protocol CQSDKAppBarViewDelegate {
+public protocol CQSDKAppBarViewDelegate : AnyObject {
   func onTappedCross()
   func onTappedHamburger()
   func onTappedLanguage()
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CQSDKAppBarView : UIKit.UIView, ClearQuoteSDK.CQSDKNibLoadable {
-  @_Concurrency.MainActor(unsafe) public var delegate: (any ClearQuoteSDK.CQSDKAppBarViewDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) public func setDealerLogo(url: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func hideCrossBtn()
-  @_Concurrency.MainActor(unsafe) public func hideHamburgerBtn()
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CQSDKAppBarView : UIKit.UIView, ClearQuoteSDK.CQSDKNibLoadable {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ClearQuoteSDK.CQSDKAppBarViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func setDealerLogo(url: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func hideCrossBtn()
+  @_Concurrency.MainActor @preconcurrency public func hideHamburgerBtn()
   @objc deinit
+}
+public enum CQLanguages : Swift.String {
+  case english
+  case spanish
+  case german
+  case french
+  case italian
+  case romanian
+  case englishamerican
+  case slovenian
+  case dutch
+  case greek
+  public var displayValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Swift.String {
+  public var CQLocalized: Swift.String {
+    get
+  }
+}
+public enum CQSDKToastDuration : Swift.Double {
+  case short
+  case long
+  public init?(rawValue: Swift.Double)
+  public typealias RawValue = Swift.Double
+  public var rawValue: Swift.Double {
+    get
+  }
 }
 public struct CQSDKInputDetails {
   public init(customerDetails: ClearQuoteSDK.CQSDKCustomerDetails? = nil, vehicleDetails: ClearQuoteSDK.CQSDKVehicleDetails? = nil, quoteData: ClearQuoteSDK.CQSDKQuoteData? = nil)
@@ -267,14 +561,117 @@ public struct CQSDKVehicleDetails {
   public init(regNumber: Swift.String? = nil, make: Swift.String? = nil, model: Swift.String? = nil, bodyStyle: Swift.String? = nil, fuelType: Swift.String? = nil, variant: Swift.String? = nil)
 }
 public struct CQSDKClientAttrs : Swift.Codable, Swift.Equatable {
+  public init(from decoder: any Swift.Decoder) throws
   public init(userName: Swift.String? = nil, dealer: Swift.String? = nil, dealerIdentifier: Swift.String? = nil, client_unique_id: Swift.String? = nil)
   public static func == (a: ClearQuoteSDK.CQSDKClientAttrs, b: ClearQuoteSDK.CQSDKClientAttrs) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CQSDKUserFlowParams : Swift.Encodable {
   public init(isOffline: Swift.Bool? = nil, skipInputPage: Swift.Bool? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class CQSDKMSClarityHelper {
+  public static let shared: ClearQuoteSDK.CQSDKMSClarityHelper
+  public func setQuoteIdAndVehicleLP(quoteId: Swift.String, licensePlateNo: Swift.String)
+  public func setUserIdUserNameAndDealerCode(userId: Swift.String, userName2: Swift.String, dealerCode: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class CQSDKFileLogger {
+  public static let shared: ClearQuoteSDK.CQSDKFileLogger
+  final public func log(_ message: Swift.String)
+  final public func readLogs() -> Swift.String
+  final public func clearLogs()
+  @objc deinit
+}
+extension Swift.String {
+  public func equalsIgnoringCase(_ other: Swift.String) -> Swift.Bool
+  public func containsIgnoringCase(_ other: Swift.String) -> Swift.Bool
+  public func removeSpecialCharacters() -> Swift.String
+}
+extension CoreGraphics.CGImage {
+  public func pixelBuffer() -> CoreVideo.CVPixelBuffer?
+  public func pixelBuffer(width: Swift.Int, height: Swift.Int, orientation: ImageIO.CGImagePropertyOrientation) -> CoreVideo.CVPixelBuffer?
+  public func pixelBufferGray() -> CoreVideo.CVPixelBuffer?
+  public func pixelBufferGray(width: Swift.Int, height: Swift.Int, orientation: ImageIO.CGImagePropertyOrientation) -> CoreVideo.CVPixelBuffer?
+  public func pixelBuffer(width: Swift.Int, height: Swift.Int, pixelFormatType: Darwin.OSType, colorSpace: CoreGraphics.CGColorSpace, alphaInfo: CoreGraphics.CGImageAlphaInfo, orientation: ImageIO.CGImagePropertyOrientation) -> CoreVideo.CVPixelBuffer?
+}
+extension CoreGraphics.CGImage {
+  public static func create(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreGraphics.CGImage?
+  public static func create(pixelBuffer: CoreVideo.CVPixelBuffer, context: CoreImage.CIContext) -> CoreGraphics.CGImage?
+}
+extension Foundation.Data {
+  public static func from(pixelBuffer: CoreVideo.CVPixelBuffer) -> Foundation.Data
+}
+extension Swift.KeyedDecodingContainer {
+  public func decodeToNumeric<T>(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> T? where T : Swift.Decodable, T : Swift.LosslessStringConvertible, T : Swift.Numeric
+  public func decodeToString(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.String?
+  public func decodeToArray<T>(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> [T]? where T : Swift.Decodable
+  public func decodeToBool(forKey key: Swift.KeyedDecodingContainer<K>.Key) -> Swift.Bool?
+}
+public struct CQSDKQuoteOfflineData {
+  public let idDb: Swift.Int64?
+  public let customerEmailDb: Swift.String?
+  public let customerNameDb: Swift.String?
+  public let customerPhoneDb: Swift.String?
+  public let customerRcNumberDb: Swift.String?
+  public let customerCountryCodeDb: Swift.String?
+  public let vehicleBodystyleDb: Swift.String?
+  public let vehicleCqBodystyleDb: Swift.String?
+  public let vehicleCqMakeDb: Swift.String?
+  public let vehicleLicenseplatenoDb: Swift.String?
+  public let vehicleMakeDb: Swift.String?
+  public let vehicleModelDb: Swift.String?
+  public let vehicleModelCodeDb: Swift.String?
+  public let vehicleYearDb: Swift.String?
+  public let vehicleIdDb: Swift.String?
+  public let vehicleUnitNoDb: Swift.String?
+  public let vehicleVinDb: Swift.String?
+  public let vehicleContracttypeDb: Swift.String?
+  public let vehicleFleetNoDb: Swift.String?
+  public let vehicleTripStatusDb: Swift.String?
+  public let vehicleStatusDb: Swift.String?
+  public let vehicleNskmDb: Swift.String?
+  public let vehicleFuelLevelDb: Swift.String?
+  public let vehicleFuelInDb: Swift.String?
+  public let vehicleOdometerDb: Swift.String?
+  public let vehicleStateDb: Swift.String?
+  public let vehicleVariantDb: Swift.String?
+  public let vehicleFueltypeDb: Swift.String?
+  public let serverIdDb: Swift.String?
+  public let serverDocIdDb: Swift.String?
+  public let quoteTypeDb: Swift.String?
+  public let dealerCodeDb: Swift.String?
+  public let fleetImageTypeDb: Swift.String?
+  public let localImagesAreAddedInTheServerQuoteDb: Swift.Bool?
+  public let syncProgressDb: Swift.Int?
+  public let syncStateDb: Swift.Int?
+  public let createdOnDb: Swift.String?
+  public let additionalInputStringifyDb: Swift.String?
+  public let uniqueIdDb: Swift.String
+  public let exifDataDateTimeDb: Swift.String?
+  public let exifDataLocationLatDb: Swift.Double?
+  public let exifDataLocationLngDb: Swift.Double?
+  public let exifDataLocationAccuracyInMetersDb: Swift.Double?
+  public let exifDataOsTypeDb: Swift.String?
+  public let exifDataDeviceModelDb: Swift.String?
+  public let exifDataFirmwareVersionDb: Swift.String?
+  public let exifDataDeviceScreenResolutionWidthDb: Swift.Int?
+  public let exifDataDeviceScreenResolutionHeightDb: Swift.Int?
+  public let exifDataNetworkTypeDb: Swift.String?
+  public let checklistIdDecisionMakerMakeDb: Swift.String?
+  public let checklistIdDecisionMakerModelDb: Swift.String?
+  public let checklistIdDecisionMakerBodyStyleDb: Swift.String?
+  public let checklistIdDecisionMakerFuelTypeDb: Swift.String?
+  public let checklistIdDecisionMakerInspectionTypeDb: Swift.String?
+  public let checklistIdDecisionMakerCheckListTypeDb: Swift.String?
+  public let clientAttrsUserNameDb: Swift.String?
+  public let clientAttrsDealerDb: Swift.String?
+  public let clientAttrsDealerIdentifierDb: Swift.String?
+  public let clientAttrsClientUniqueIdDb: Swift.String?
+  public let createdByNameDb: Swift.String?
+  public let createdByUserLogoDb: Swift.Int?
+  public let createdByUserNameDb: Swift.String?
+  public let createdByUserDb: Swift.String?
 }
 public struct CQSDKMakeModel {
   public var _id: Swift.String
@@ -301,6 +698,7 @@ public struct CQSDKMakeModel {
   public var customerInfo: Swift.String?
   public var vehicleVersion: Swift.String?
   public var fueltype: Swift.String?
+  public var vehicleNo: Swift.String?
 }
 public struct SVGImgProcessor : Kingfisher.ImageProcessor {
   public var identifier: Swift.String
@@ -310,14 +708,36 @@ public let ClearQuoteIdentifier: Swift.String
 public enum CQSDKInspectionCompletionStatus {
 }
 public let buttonCornerRadius: Swift.Double
-extension ClearQuoteSDK.CQLanguages : Swift.Equatable {}
-extension ClearQuoteSDK.CQLanguages : Swift.Hashable {}
-extension ClearQuoteSDK.CQLanguages : Swift.RawRepresentable {}
+public struct CQSDKConstants {
+  public static var backgroundCompletionHandler: (() -> Swift.Void)?
+}
+extension ClearQuoteSDK.CQSDKRegion : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKRegion : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKRegion : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKIcons : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKIcons : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKIcons : Swift.RawRepresentable {}
 extension ClearQuoteSDK.CQSDKTextStyle : Swift.Equatable {}
 extension ClearQuoteSDK.CQSDKTextStyle : Swift.Hashable {}
-extension ClearQuoteSDK.CQSDKToastDuration : Swift.Equatable {}
-extension ClearQuoteSDK.CQSDKToastDuration : Swift.Hashable {}
-extension ClearQuoteSDK.CQSDKToastDuration : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKFleetImageType : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKFleetImageType : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKFleetImageType : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKUserRole : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKUserRole : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKUserRole : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKUserRole : Swift.Sendable {}
+extension ClearQuoteSDK.CQSDKUserRole : Swift.BitwiseCopyable {}
+extension ClearQuoteSDK.CQSDKOnComplete : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKOnComplete : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKOnComplete : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKOnComplete : Swift.Sendable {}
+extension ClearQuoteSDK.CQSDKOnComplete : Swift.BitwiseCopyable {}
 extension ClearQuoteSDK.CQSDKColors : Swift.Equatable {}
 extension ClearQuoteSDK.CQSDKColors : Swift.Hashable {}
 extension ClearQuoteSDK.CQSDKColors : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQLanguages : Swift.Equatable {}
+extension ClearQuoteSDK.CQLanguages : Swift.Hashable {}
+extension ClearQuoteSDK.CQLanguages : Swift.RawRepresentable {}
+extension ClearQuoteSDK.CQSDKToastDuration : Swift.Equatable {}
+extension ClearQuoteSDK.CQSDKToastDuration : Swift.Hashable {}
+extension ClearQuoteSDK.CQSDKToastDuration : Swift.RawRepresentable {}
