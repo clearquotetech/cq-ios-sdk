@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zhzPta9RoOW19BIbS+0tgo99vNM=
+		Gq1lCwAcql/E0EqI0RaoKhny2LU=
 		</data>
 		<key>AtkinsonHyperlegible-Bold.ttf</key>
 		<data>
@@ -19,6 +19,18 @@
 		<key>CQSDKAppBarView.nib</key>
 		<data>
 		KVlCev6u67lIM7Z43eegySHqFqM=
+		</data>
+		<key>CQSDKBodystyleDetectionViewController.nib</key>
+		<data>
+		EppZF5KAJ2yGW9K0AhWfGqNVDXc=
+		</data>
+		<key>CQSDKBodystyleSelectionCell.nib</key>
+		<data>
+		5+jTgphxd5oKyDMwd9Yx64fakHM=
+		</data>
+		<key>CQSDKBodystyleSelectionViewController.nib</key>
+		<data>
+		sGqYwguLxGq9Ojyw3UgCv13EIpQ=
 		</data>
 		<key>CQSDKCameraPermissionDialogViewController.nib</key>
 		<data>
@@ -204,6 +216,10 @@
 		<data>
 		mNIZ0D8UwtM9pg88M3mM6h/rIPw=
 		</data>
+		<key>CQSDKDetectedBodystyleViewController.nib</key>
+		<data>
+		EycuiOsElKyZDiZFx1LHrFs/zTE=
+		</data>
 		<key>CQSDKDropDownCollectionViewCell.nib</key>
 		<data>
 		DOy10tWGNHLYLZgdVE+YPKNjZU4=
@@ -222,7 +238,7 @@
 		</data>
 		<key>CQSDKEntityScanner.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		dweY2JrDU4Owrsf6fTgildb/ZS0=
+		IOGslEygF/fWRGhzWwt79Q6Wu+I=
 		</data>
 		<key>CQSDKFilledIconButton.nib</key>
 		<data>
@@ -230,23 +246,15 @@
 		</data>
 		<key>CQSDKGFlowCapturedOverlayView.nib</key>
 		<data>
-		uYIA+IgmVXwNaxMqo1oTvoDqHYY=
-		</data>
-		<key>CQSDKGuidedFlow.storyboardc/CQSDKGuidedFlowViewController.nib</key>
-		<data>
-		+UF9aWc+rcywW67bhJSR8Vjg8xQ=
-		</data>
-		<key>CQSDKGuidedFlow.storyboardc/Info.plist</key>
-		<data>
-		34p/yqz94iQOGlfsno1Vtuo+h18=
-		</data>
-		<key>CQSDKGuidedFlow.storyboardc/Y6W-OH-hqX-view-QVe-wV-8qP.nib</key>
-		<data>
-		izdIhOVj/sCkEuz2qBOnmHNdvJ8=
+		mGZada9Zw3ogi4/lfGLSe3iUqCk=
 		</data>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
 		<data>
 		XlR5d0thaxlOSHn/fKP+xGrXt8Y=
+		</data>
+		<key>CQSDKGuidedFlowViewController.nib</key>
+		<data>
+		Bj/7wpBr//ugm50li1FxEW9s6gc=
 		</data>
 		<key>CQSDKImageCapturedDialogViewController.nib</key>
 		<data>
@@ -474,15 +482,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gPJyyK/hksEizT9XovMvSLnpMQ8=
+		1vTOjbmh4hYM2BJLpI3RaZjaYnA=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vcXLxSJEjL8kpdAYCe99ONVcdNY=
+		3fstorTm7z1dohUn/oVTUed3dsM=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		neSxEGv4cIBNhXo4jsUqH3MU89c=
+		YwqrPmkRKleMX5+czoQ9BL+9dFY=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -490,11 +498,11 @@
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		neSxEGv4cIBNhXo4jsUqH3MU89c=
+		YwqrPmkRKleMX5+czoQ9BL+9dFY=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jhUSz4rBRRadrLvG3bk4bmk8Kko=
+		xHmZzr8LnP3d83nJTAyYOs2nQWQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -534,7 +542,7 @@
 		</data>
 		<key>TensorFlowLite.bundle/Info.plist</key>
 		<data>
-		0r315iMyBPS9MYWq0/ZRFnX7Ow0=
+		7R6aLS5Z+jsjuHbtez5rP05Bf50=
 		</data>
 		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -542,7 +550,7 @@
 		</data>
 		<key>TensorFlowLiteC.bundle/Info.plist</key>
 		<data>
-		cwrps6q58PmRrCnqRDtCSTezTLY=
+		SXwQF06el+IT0p52BrBEtKPg6ds=
 		</data>
 		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -552,49 +560,57 @@
 		<data>
 		olpogPyMY3q3OFW6/mWRAkh5T2A=
 		</data>
+		<key>circular_loading_celerity.gif</key>
+		<data>
+		WWnkRofoMvLTxuYB0wb1EKQLhrU=
+		</data>
+		<key>circular_loading_cq.gif</key>
+		<data>
+		vDVZnI4Lar5cMvZlx8xMLusL5/0=
+		</data>
+		<key>circular_loading_teg.gif</key>
+		<data>
+		oMpqdkxOoN4JnoAPMqIP2zAvYTc=
+		</data>
 		<key>de-de.json</key>
 		<data>
-		K+vxq6kgsGByEC0U0p5IjofEo6k=
+		M5xb2h69btDsbMH1oyfuDwXkTp8=
 		</data>
 		<key>el-el.json</key>
 		<data>
-		tdisMi7xlQw4VOtf5mxJ3Hby7hA=
+		Wc8/DAEaocmkhtcv/rMJDhP0jgY=
 		</data>
 		<key>en-na.json</key>
 		<data>
-		D8nlWc3VGAWPCijmvGjSS3EV40o=
+		0wGR+d5gY8+ZQmVFX2tywDnWMXQ=
 		</data>
 		<key>en-us.json</key>
 		<data>
-		vTvzGuqMiDXiSshb+sP5yk2QMLU=
+		X0Ig+u3v5xko4hwAhwuPSeSK9Zs=
 		</data>
 		<key>es-es.json</key>
 		<data>
-		wnu7KxMdY7xxDUwL9CzMIG2sA60=
+		oMjY26t7w3FjbnLcuTFvK4sNxKM=
 		</data>
 		<key>fr-mr.json</key>
 		<data>
-		3P9hw57GDAYQh/yBKhBMfOx058M=
-		</data>
-		<key>image_upload_loader.gif</key>
-		<data>
-		DooGm01T9Nl0Ffy9Ieqz4wH81Js=
+		ZfzsiFM46T47dWv9CXBDAdvS3zk=
 		</data>
 		<key>it-IT.json</key>
 		<data>
-		zFarN92YJtFrkmbATo8H2ZACAUE=
+		5VXqPSNAYOzi/HMd4h1e2Lyoyg8=
 		</data>
 		<key>nl-nl.json</key>
 		<data>
-		mqYkhCdZLxMX+/Pp9jxVtmXoidI=
+		5pLAzg3VY+4Fi9uXv3hiqBOVKTo=
 		</data>
 		<key>ro-ro.json</key>
 		<data>
-		F6aHj0iBAXdNR/VVFgqHZ/8iStU=
+		3itMoeO/Oj8fTihrYjachm2Fz+M=
 		</data>
 		<key>sl-sl.json</key>
 		<data>
-		ziktegviyBkItF4ga9oeDpsa6QM=
+		QIYeB9ct0LzQ6BsGo5huRoo6qUI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -603,7 +619,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FtbVJJ70bzJIg0FzQImqgNrDcJxgoJenU1noaw5VNQ0=
+			Gf9ekFiE6LpAQUNrz3G35Up2hbYiUFLutln4z1z/g7k=
 			</data>
 		</dict>
 		<key>AtkinsonHyperlegible-Bold.ttf</key>
@@ -625,6 +641,27 @@
 			<key>hash2</key>
 			<data>
 			8Sgdu0Z5160PYTGI1m1y89jtdWm+0NkDaYz3Soa5GYY=
+			</data>
+		</dict>
+		<key>CQSDKBodystyleDetectionViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nrOB+wi+Dp4hFkaSXvptNSY90eww1gMhF0KFKpO0b3A=
+			</data>
+		</dict>
+		<key>CQSDKBodystyleSelectionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p51QAaIzki/ycjGnyNmOAp8IgBBtNggdaSNbmCh20gk=
+			</data>
+		</dict>
+		<key>CQSDKBodystyleSelectionViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rbiYmx4oB12UXKGTd2bSPHjsvFEN60F4njj/RWTT6X0=
 			</data>
 		</dict>
 		<key>CQSDKCameraPermissionDialogViewController.nib</key>
@@ -949,6 +986,13 @@
 			4E6Zta+U2fShzSgOuz5sx0OT+yk2Tv04CiGYjt60mVQ=
 			</data>
 		</dict>
+		<key>CQSDKDetectedBodystyleViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3m+ndM7Z1CNQJzh1o533QSGFvS5xJG4NELk8qW5tFnA=
+			</data>
+		</dict>
 		<key>CQSDKDropDownCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -981,7 +1025,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kdSAlLAoKj/CagwzU2/rFo26ewZaY0If9G4hQWf4ibg=
+			rXsvhk3p9QSZIZr0qQpiavyngmgJnHmCLROO9JOosnk=
 			</data>
 		</dict>
 		<key>CQSDKFilledIconButton.nib</key>
@@ -995,28 +1039,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ZJjuEgL3k/12s6AaPT7jyQNgbeiQBjrfank8R4PvX8=
-			</data>
-		</dict>
-		<key>CQSDKGuidedFlow.storyboardc/CQSDKGuidedFlowViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LKUTPd62H4wrrYozW0Nf0lb2MymaLxqFacwUi8LEgeo=
-			</data>
-		</dict>
-		<key>CQSDKGuidedFlow.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JWRn8FEdIUn6ilM3NRXVj8fYQlVhvM0fWOcA4WWnMEw=
-			</data>
-		</dict>
-		<key>CQSDKGuidedFlow.storyboardc/Y6W-OH-hqX-view-QVe-wV-8qP.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			c78p/Rm1NVGGGsPIzq7pAPBer4RsPIjLUow5YK1vXVM=
+			Z3cY2kRFB7Eph1R2UdbZi39MqsnbgVsTxK07DqAICTM=
 			</data>
 		</dict>
 		<key>CQSDKGuidedFlowOverlayCell.nib</key>
@@ -1024,6 +1047,13 @@
 			<key>hash2</key>
 			<data>
 			gqrxZDgBF0Ul9HIBtwk1ucvv8qdlHQcrE3haK8sxnac=
+			</data>
+		</dict>
+		<key>CQSDKGuidedFlowViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8Ahf4mm74PF+7olpvLfsF8jeMDk574BGGLBSr2fc1Js=
 			</data>
 		</dict>
 		<key>CQSDKImageCapturedDialogViewController.nib</key>
@@ -1422,14 +1452,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kmRvlFOUoZTOMDqiz+VnddRn7saFTCEhyYJTTvmijO4=
+			gs1WCBnJw4yES9xTAux7ACFl8sFnlOLmfTNiZVIjpz8=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiUIQVo+fVeHR/Rvvdzx69I2GvSAn0FVeeNnD+6dUno=
+			dEHSl3zKVOmXh66fOMcIxPgw/x8c6hIdHxVTbD0H2g8=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1443,14 +1473,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiUIQVo+fVeHR/Rvvdzx69I2GvSAn0FVeeNnD+6dUno=
+			dEHSl3zKVOmXh66fOMcIxPgw/x8c6hIdHxVTbD0H2g8=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GZOLvCnvFUDbPxAUnTrIQWWJfo3Of+JD32RMJpb2W+s=
+			fxwEbkLvY8I7vADyV+Ov1WQ1EKLZRvKBQHCMEXtGut8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1520,7 +1550,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GI2qsCFiUG5amVXQTeAl0IzCGDTzml8FuvkHSYLR+Cs=
+			1hkidZKWkGh2Fn4TT41FKbJaPaiDFiyL6w5BxJfgm08=
 			</data>
 		</dict>
 		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
@@ -1534,7 +1564,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BKAtp1Xcl1EZYAy6CNsIsqsASkuzCHnDMiCphW7YsiI=
+			n5cPi3zQzynUhNcQrp3s7IvJZ9jQdukEeMPxnCNK2uk=
 			</data>
 		</dict>
 		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
@@ -1551,81 +1581,95 @@
 			s+8ZR1yNeAlozIkyL9eihHPXo1F/KTRwpCcY/1fOPD8=
 			</data>
 		</dict>
+		<key>circular_loading_celerity.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1yLLW6cXbij1q0Se80NkmfRSd21eNV6LyoNq8YJE/1g=
+			</data>
+		</dict>
+		<key>circular_loading_cq.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9OUX2QYzgkzlZ2Rw6QudHvvDt3jduTu8USKgm+kvGoY=
+			</data>
+		</dict>
+		<key>circular_loading_teg.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hh3HSCiacg2ED3KUH++5689af+7GbgjaWPdRS5z4itU=
+			</data>
+		</dict>
 		<key>de-de.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NqT+nz3yZQX3gw8Tjgn3oCFZ+y19Z0EUP+0TfCiOurs=
+			Prlz+o0mHGcYvivN8w2bk51KcJbYl2XVI0OUr799/eE=
 			</data>
 		</dict>
 		<key>el-el.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mPHZFKS7CzJe+RDc8yIwwww7fhqXU2DvZRGCV3MKNvw=
+			L19aqFK1FqLTlZaePKedVTJae/K60WQztCB2L4GPcJw=
 			</data>
 		</dict>
 		<key>en-na.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDTUveJU95JflNA9ltPM5CvnUbN5ZVUX2WFEuk/cUDA=
+			9gyKq7l/M9iECnYXzYbVqbZnXvB1Jh3zLdp55hOeUFw=
 			</data>
 		</dict>
 		<key>en-us.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mYl4wqOWy4YydLKQgAD2OUqGqUKW3uDsUkaE3HkrHJY=
+			9Mlgj2CGGyTw87Alp63luPhihPRPBOx1O2zkaaEJalo=
 			</data>
 		</dict>
 		<key>es-es.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hKk0AEAtLJp+roMudq9FG1am0mSLQOZmnk97XO61gUY=
+			rNP1CAhRVs35JCNfYusuXVBfLc0Pb09EcbZM4fntiEM=
 			</data>
 		</dict>
 		<key>fr-mr.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5CM92IXPwNNTo/rN0pGjNnV1EIgXWYLkOAR4PVuboqU=
-			</data>
-		</dict>
-		<key>image_upload_loader.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HXaKU7DB8oE+joAF6ayyG9GUGb3pkukCXzV12/g/V4c=
+			FwDA2WeUfgALPCIxh6q3PhUZC92ktnEMDkPYojUsyLQ=
 			</data>
 		</dict>
 		<key>it-IT.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1IJDs7TjZ2sAy0d04AhfH5Te0SddjU6n4v2wx+tm48=
+			YmBSfmYsj4wxBoy8nE0QF+Q3jpSXLEZcMLpV2eEmUgI=
 			</data>
 		</dict>
 		<key>nl-nl.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHrw25kVxiAbSH+SMUU0KewDUXgLM7I+UfvJKQscxuM=
+			GQ4fMApxwCmm5pK3+3aYuiPZ7Duigg1suTbhCEgjA0Q=
 			</data>
 		</dict>
 		<key>ro-ro.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+PhPq+dyVYXMZaWhaHhbJ3GP2uSaicC0Tt0Y7rxQ8ow=
+			J9sQJPuVvzvOwhD+lisQo98snIF0JCcVotXTS+3U9y0=
 			</data>
 		</dict>
 		<key>sl-sl.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NAW9DhkLRtrSY/XXQq9X0ieTyK2Ecf8aHD94oF51QKI=
+			WbM9GhA9aipiJjc8UUTjxkyTG+gfYOroBRMnNl6qkWw=
 			</data>
 		</dict>
 	</dict>

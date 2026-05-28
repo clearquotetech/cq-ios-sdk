@@ -4606,6 +4606,43 @@
             "moduleName": "ClearQuoteSDK"
           },
           {
+            "kind": "Var",
+            "name": "cq_sdk_close_guided_flow",
+            "printedName": "cq_sdk_close_guided_flow",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ClearQuoteSDK.CQSDKIcons.Type) -> ClearQuoteSDK.CQSDKIcons",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CQSDKIcons",
+                    "printedName": "ClearQuoteSDK.CQSDKIcons",
+                    "usr": "s:13ClearQuoteSDK10CQSDKIconsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ClearQuoteSDK.CQSDKIcons.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CQSDKIcons",
+                        "printedName": "ClearQuoteSDK.CQSDKIcons",
+                        "usr": "s:13ClearQuoteSDK10CQSDKIconsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13ClearQuoteSDK10CQSDKIconsO24cq_sdk_close_guided_flowyA2CmF",
+            "mangledName": "$s13ClearQuoteSDK10CQSDKIconsO24cq_sdk_close_guided_flowyA2CmF",
+            "moduleName": "ClearQuoteSDK"
+          },
+          {
             "kind": "Function",
             "name": "asUIImage",
             "printedName": "asUIImage()",
@@ -9346,6 +9383,111 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Kingfisher",
+        "printedName": "Kingfisher",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SVGKit",
+        "printedName": "SVGKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SVGKit",
+        "printedName": "SVGKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SVGKit",
+        "printedName": "SVGKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9506,6 +9648,23 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -9520,6 +9679,16 @@
         "printedName": "AnyCodable",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -10503,6 +10672,55 @@
       },
       {
         "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TensorFlowLite",
+        "printedName": "TensorFlowLite",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10515,6 +10733,26 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
@@ -12511,6 +12749,30 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12810,6 +13072,16 @@
         "kind": "Import",
         "name": "Fuse",
         "printedName": "Fuse",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
       },
@@ -13618,6 +13890,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
@@ -16535,6 +16817,26 @@
         "printedName": "AnyCodable",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -19510,27 +19812,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AVKit",
-        "printedName": "AVKit",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
         "name": "SVGKit",
         "printedName": "SVGKit",
         "declKind": "Import",
@@ -19538,6 +19819,27 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19560,6 +19862,23 @@
         "kind": "Import",
         "name": "AnyCodable",
         "printedName": "AnyCodable",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
       },
@@ -19628,23 +19947,6 @@
         "kind": "Import",
         "name": "AVKit",
         "printedName": "AVKit",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
       },
@@ -20985,6 +21287,23 @@
       },
       {
         "kind": "Import",
+        "name": "SQLite",
+        "printedName": "SQLite",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AnyCodable",
         "printedName": "AnyCodable",
         "declKind": "Import",
@@ -21343,6 +21662,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
@@ -27813,6 +28142,116 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "bodystyleConfirmed",
+            "printedName": "bodystyleConfirmed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvp",
+            "mangledName": "$s13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvp",
+            "moduleName": "ClearQuoteSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvg",
+                "mangledName": "$s13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvg",
+                "moduleName": "ClearQuoteSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvs",
+                "mangledName": "$s13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvs",
+                "moduleName": "ClearQuoteSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvM",
+                "mangledName": "$s13ClearQuoteSDK14CQSDKMakeModelV18bodystyleConfirmedSbSgvM",
+                "moduleName": "ClearQuoteSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -27871,8 +28310,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK",
         "declAttributes": [
@@ -27881,8 +28320,29 @@
       },
       {
         "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CoreImage",
         "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
       },
@@ -27902,27 +28362,6 @@
       },
       {
         "kind": "Import",
-        "name": "Accelerate",
-        "printedName": "Accelerate",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreVideo",
-        "printedName": "CoreVideo",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "ClearQuoteSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -27957,6 +28396,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "ClearQuoteSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ClearQuoteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -32578,7 +33027,7 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKAddVehicleDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2784,
+      "offset": 2798,
       "length": 5,
       "value": "false"
     },
@@ -32973,6 +33422,13 @@
       "offset": 2447,
       "length": 25,
       "value": "\"cq_sdk_error_icon_white\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKIcons.swift",
+      "kind": "StringLiteral",
+      "offset": 2509,
+      "length": 26,
+      "value": "\"cq_sdk_close_guided_flow\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Root\/CQSDKRootNavigationController.swift",
@@ -33684,7 +34140,14 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Uploads page\/CQSDKUploadsPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15068,
+      "offset": 2114,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Uploads page\/CQSDKUploadsPageViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15180,
       "length": 5,
       "value": "false"
     },
@@ -33733,49 +34196,49 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 914,
+      "offset": 948,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1007,
+      "offset": 1041,
       "length": 14,
       "value": "\"cq_bodystyle\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1052,
+      "offset": 1086,
       "length": 16,
       "value": "\"licenseplateno\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1139,
+      "offset": 1173,
       "length": 10,
       "value": "\"fueltype\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1261,
+      "offset": 1295,
       "length": 12,
       "value": "\"sequenceno\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1407,
       "length": 14,
       "value": "\"Contracttype\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKV3VehicleResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1492,
+      "offset": 1526,
       "length": 15,
       "value": "\"VehicleStatus\""
     },
@@ -34312,6 +34775,62 @@
       "value": "0.7"
     },
     {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleDetection\/CQSDKBodystyleDetectionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1192,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleDetection\/ViewModel\/CQSDKBodystyleDetectionViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 639,
+      "length": 227,
+      "value": "[(\"panel_van_swb\", \"SWB\"), (\"panel_van_mwb\", \"MWB\"), (\"panel_van_lwb\", \"LWB\"), (\"box_van\", \"Boxvan\"), (\"low_loader\", \"Lowloader\"), (\"rigid_truck\", \"HGV\"), (\"tractor\", \"Tractor\")]"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/ViewModel\/CQSDKBodystyleSelectionViewModel.swift",
+      "kind": "Array",
+      "offset": 854,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/CQSDKBodystyleSelectionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/CQSDKBodystyleSelectionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 386,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/CQSDKBodystyleSelectionViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/CQSDKBodystyleSelectionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 519,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/BodystyleSelection\/CQSDKBodystyleSelectionViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 525,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/DBHelper\/CQSDKDBManager.swift",
       "kind": "IntegerLiteral",
       "offset": 182,
@@ -34373,6 +34892,13 @@
       "offset": 8011,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/ViewModel\/CQSDKGuidedFlowViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 892,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/Cells\/CollectionViewCells\/ChecklistQuestionsType\/CQSDKBaseCustomCell\/CQSDKBaseCustomCollectionViewCell.swift",
@@ -34496,21 +35022,21 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKVehicleNumberInputViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24748,
+      "offset": 24726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKVehicleNumberInputViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 32675,
+      "offset": 32653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKVehicleNumberInputViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 41825,
+      "offset": 41803,
       "length": 5,
       "value": "false"
     },
@@ -34889,190 +35415,218 @@
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 242,
-      "length": 10,
-      "value": "\"api\/user\""
+      "length": 6,
+      "value": "\"user\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 278,
-      "length": 28,
-      "value": "\"api\/dealer\/v2\/all\/vehicles\""
+      "offset": 274,
+      "length": 24,
+      "value": "\"dealer\/v2\/all\/vehicles\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 332,
-      "length": 28,
-      "value": "\"api\/dealer\/v3\/all\/vehicles\""
+      "offset": 324,
+      "length": 24,
+      "value": "\"dealer\/v3\/all\/vehicles\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 381,
-      "length": 35,
-      "value": "\"api\/vehicle\/licenseplateno\/search\""
+      "offset": 369,
+      "length": 31,
+      "value": "\"vehicle\/licenseplateno\/search\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 446,
-      "length": 21,
-      "value": "\"api\/vehiclemasterv3\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 491,
-      "length": 27,
-      "value": "\"api\/live-detection\/config\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 544,
-      "length": 20,
-      "value": "\"api\/v3\/createquote\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 588,
+      "offset": 430,
       "length": 17,
-      "value": "\"api\/createquote\""
+      "value": "\"vehiclemasterv3\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 471,
+      "length": 23,
+      "value": "\"live-detection\/config\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
+      "length": 16,
+      "value": "\"v3\/createquote\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 560,
+      "length": 13,
+      "value": "\"createquote\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 598,
+      "length": 14,
+      "value": "\"s3\/signedurl\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 24,
+      "value": "\"analyse\/v2\/segmentbulk\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 31,
+      "value": "\"analyse\/v2\/calculateestimates\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 748,
       "length": 18,
-      "value": "\"api\/s3\/signedurl\""
+      "value": "\"images-status-ui\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 672,
-      "length": 28,
-      "value": "\"api\/analyse\/v2\/segmentbulk\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 731,
-      "length": 35,
-      "value": "\"api\/analyse\/v2\/calculateestimates\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 792,
-      "length": 22,
-      "value": "\"api\/images-status-ui\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 806,
       "length": 28,
       "value": "\"api\/analyse\/v2\/deleteimage\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 906,
-      "length": 24,
-      "value": "\"api\/analysis\/detectreg\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 955,
-      "length": 24,
-      "value": "\"api\/analysis\/detectvin\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1004,
-      "length": 24,
-      "value": "\"api\/analysis\/detectodo\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1059,
-      "length": 27,
-      "value": "\"api\/dealer\/v3\/add\/vehicle\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1116,
-      "length": 18,
-      "value": "\"api\/dvla\/details\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1162,
-      "length": 21,
-      "value": "\"api\/lookup\/tfmodels\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1219,
-      "length": 22,
-      "value": "\"api\/exportpdfformat3\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 858,
       "length": 20,
-      "value": "\"api\/vehicle\/config\""
+      "value": "\"analysis\/detectreg\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
-      "length": 29,
-      "value": "\"api\/inspections\/checklistv2\""
+      "offset": 903,
+      "length": 20,
+      "value": "\"analysis\/detectvin\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
-      "length": 26,
-      "value": "\"api\/quote\/checklist\/save\""
+      "offset": 948,
+      "length": 20,
+      "value": "\"analysis\/detectodo\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1503,
+      "offset": 999,
+      "length": 23,
+      "value": "\"dealer\/v3\/add\/vehicle\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1052,
+      "length": 14,
+      "value": "\"dvla\/details\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1094,
       "length": 17,
-      "value": "\"api\/getMappings\""
+      "value": "\"lookup\/tfmodels\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1561,
-      "length": 36,
-      "value": "\"api\/live-detection\/multiple\/config\""
+      "offset": 1147,
+      "length": 18,
+      "value": "\"exportpdfformat3\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1630,
-      "length": 24,
-      "value": "\"api\/lookup\/dev\/support\""
+      "offset": 1194,
+      "length": 16,
+      "value": "\"vehicle\/config\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
-      "length": 21,
-      "value": "\"api\/quote\/lifecycle\""
+      "offset": 1251,
+      "length": 25,
+      "value": "\"inspections\/checklistv2\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1309,
+      "length": 22,
+      "value": "\"quote\/checklist\/save\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1415,
+      "length": 13,
+      "value": "\"getMappings\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1469,
+      "length": 32,
+      "value": "\"live-detection\/multiple\/config\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1534,
+      "length": 20,
+      "value": "\"lookup\/dev\/support\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1586,
+      "length": 17,
+      "value": "\"quote\/lifecycle\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Enums\/CQSDKAPIEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 1632,
+      "length": 25,
+      "value": "\"vehicle\/updateBodystyle\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper+BodyStyleDetection.swift",
+      "kind": "FloatLiteral",
+      "offset": 4512,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper+BodyStyleDetection.swift",
+      "kind": "FloatLiteral",
+      "offset": 7569,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper+BodyStyleDetection.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7601,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKGetOverlaysPayload.swift",
@@ -35285,93 +35839,100 @@
       "value": "\"CQLanguageDidChange\""
     },
     {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Base\/CQSDKBodystyleViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 777,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1949,
+      "offset": 1952,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2042,
+      "offset": 2045,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2177,
+      "offset": 2196,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2299,
+      "offset": 2326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2435,
+      "offset": 2478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2570,
+      "offset": 2630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2857,
+      "offset": 2933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2964,
+      "offset": 3048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3783,
+      "offset": 3847,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3828,
+      "offset": 3892,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3883,
+      "offset": 3947,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4309,
+      "offset": 4361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Input Page\/CQSDKInputPageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 44062,
+      "offset": 44076,
       "length": 5,
       "value": "false"
     },
@@ -35427,7 +35988,14 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKInspectionCompletedDialogViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1028,
+      "offset": 982,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKInspectionCompletedDialogViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1122,
       "length": 5,
       "value": "false"
     },
@@ -36804,6 +37372,27 @@
       "value": "-1"
     },
     {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKUpdateBodystylePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 11,
+      "value": "\"vehicleId\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKUpdateBodystylePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 12,
+      "value": "\"dealerCode\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKUpdateBodystylePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 11,
+      "value": "\"bodystyle\""
+    },
+    {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/Payloads\/CQSDKDVLAVehicleDetailsApiPayload.swift",
       "kind": "StringLiteral",
       "offset": 312,
@@ -37373,65 +37962,107 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 915,
+      "offset": 925,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 947,
+      "offset": 957,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 976,
+      "offset": 986,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1488,
+      "offset": 1602,
       "length": 11,
       "value": "\"fuelTypes\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1889,
+      "offset": 1640,
+      "length": 12,
+      "value": "\"bodyStyles\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2205,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 2235,
       "length": 10,
       "value": "\"lookupid\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1961,
+      "offset": 2277,
       "length": 17,
       "value": "\"lookupKeyValues\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2449,
+      "offset": 2774,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2475,
+      "offset": 2800,
       "length": 7,
       "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3330,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3360,
+      "length": 11,
+      "value": "\"bodystyle\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3399,
+      "length": 14,
+      "value": "\"cq_bodystyle\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3441,
+      "length": 14,
+      "value": "\"display_name\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQInspectionDetailsResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3475,
+      "length": 5,
+      "value": "\"svg\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CustomDialogs\/CQSDKProgressDialogViewController.swift",
@@ -37443,98 +38074,98 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1695,
+      "offset": 2903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1769,
+      "offset": 2973,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1950,
+      "offset": 3146,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1979,
+      "offset": 3175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2128,
+      "offset": 3316,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2362,
+      "offset": 3546,
       "length": 36,
       "value": "\"org.tensorflow.lite.inferencequeue\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2431,
+      "offset": 3615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2681,
+      "offset": 3877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2739,
+      "offset": 3931,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2806,
+      "offset": 3994,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2843,
+      "offset": 4031,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2881,
+      "offset": 4069,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3272,
+      "offset": 4181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/GuidedFlow\/CQSDKGuidedFlowViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31584,
+      "offset": 35089,
       "length": 3,
       "value": "0.3"
     },
@@ -37558,6 +38189,55 @@
       "offset": 10553,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "Array",
+      "offset": 308,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "Array",
+      "offset": 448,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14232,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33504,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/ConfigDownload\/CQSDKLNDataDownloadHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 50071,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKInspectionSingleton.swift",
@@ -37915,55 +38595,6 @@
       "offset": 3202,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "Array",
-      "offset": 302,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 352,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 397,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "Array",
-      "offset": 442,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13179,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31812,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/Others\/CQSDKLNDataDownloadHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 48379,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Views\/Cells\/CollectionViewCells\/ToggleCollectionViewCell\/CQSDKToggleCollectionViewCell.swift",
@@ -38708,6 +39339,55 @@
       "value": "\"dd-MM-yyyy hh:mm a\""
     },
     {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 391,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 537,
+      "length": 7,
+      "value": "\"label\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 12,
+      "value": "\"overlayUrl\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 16,
+      "value": "\"tfliteModelUrl\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 659,
+      "length": 14,
+      "value": "\"tfLiteConfig\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/DealerData\/CQSDKBodystyleDetectionPanel.swift",
+      "kind": "StringLiteral",
+      "offset": 702,
+      "length": 14,
+      "value": "\"panelInfoKey\""
+    },
+    {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/CheckList\/ChecklistSummary\/CQSDKCheckListSummaryVC.swift",
       "kind": "StringLiteral",
       "offset": 525,
@@ -38773,21 +39453,21 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
       "kind": "Array",
-      "offset": 482,
+      "offset": 488,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 514,
+      "offset": 520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Helpers\/TFLite\/CQSDKTFLiteInterpreterHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1388,
+      "offset": 1394,
       "length": 1,
       "value": "1"
     },
@@ -38941,35 +39621,35 @@
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1132,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1181,
+      "offset": 1267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1512,
+      "offset": 1598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Controllers\/Parent\/CQSDKQuoteCreationParentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1865,
+      "offset": 1951,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/clearquote\/Documents\/GitHub\/cq-native-ios\/CQ-iOS-SDK\/Source\/Library\/Networking\/ResponseTypes\/CQSDKGetGuidedFlowMappingApiResponse.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 820,
       "length": 5,
       "value": "\"_id\""
     },
@@ -40621,168 +41301,168 @@
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17276,
-      "length": 16,
-      "value": "\"cq_sdk_retry_2\""
-    },
-    {
-      "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 17433,
+      "offset": 17282,
       "length": 19,
       "value": "\"cq_sdk_retry_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17586,
+      "offset": 17439,
+      "length": 20,
+      "value": "\"cq_sdk_retry_image\""
+    },
+    {
+      "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17593,
       "length": 15,
       "value": "\"cq_sdk_sample\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17740,
+      "offset": 17747,
       "length": 18,
       "value": "\"cq_sdk_save_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17892,
+      "offset": 17899,
       "length": 15,
       "value": "\"cq_sdk_search\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18048,
+      "offset": 18055,
       "length": 19,
       "value": "\"cq_sdk_star_empty\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18206,
+      "offset": 18213,
       "length": 18,
       "value": "\"cq_sdk_star_fill\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18372,
+      "offset": 18379,
       "length": 23,
       "value": "\"cq_sdk_step_done_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18540,
+      "offset": 18547,
       "length": 21,
       "value": "\"cq_sdk_summary_down\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18702,
+      "offset": 18709,
       "length": 19,
       "value": "\"cq_sdk_summary_up\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18860,
+      "offset": 18867,
       "length": 18,
       "value": "\"cq_sdk_tick_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19020,
+      "offset": 19027,
       "length": 20,
       "value": "\"cq_sdk_tick_icon_2\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19189,
+      "offset": 19196,
       "length": 23,
       "value": "\"cq_sdk_toggle_Pending\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19357,
+      "offset": 19364,
       "length": 21,
       "value": "\"cq_sdk_toggle_check\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19531,
+      "offset": 19538,
       "length": 25,
       "value": "\"cq_sdk_toggle_checklist\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19703,
+      "offset": 19710,
       "length": 22,
       "value": "\"cq_sdk_toggle_damage\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19868,
+      "offset": 19875,
       "length": 20,
       "value": "\"cq_sdk_toggle_tick\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20034,
+      "offset": 20041,
       "length": 21,
       "value": "\"cq_sdk_uncheckedbox\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20198,
+      "offset": 20205,
       "length": 20,
       "value": "\"cq_sdk_upload_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20402,
+      "offset": 20409,
       "length": 42,
       "value": "\"cq_sdk_wrong_image_captured_warning_icon\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20587,
+      "offset": 20594,
       "length": 20,
       "value": "\"cq_sdk_yellow_logo\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20767,
+      "offset": 20774,
       "length": 29,
       "value": "\"cq_sdk_yellow_logo_selected\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20922,
+      "offset": 20929,
       "length": 13,
       "value": "\"retry_image\""
     },
     {
       "filePath": "\/Users\/clearquote\/Library\/Developer\/Xcode\/DerivedData\/CQ-iOS-SDK-ghuntgpjdpbjbdfugtmodswtjlqk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ClearQuoteSDK\/IntermediateBuildFilesPath\/CQ-iOS-SDK.build\/Release-iphoneos\/ClearQuoteSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21096,
+      "offset": 21103,
       "length": 30,
       "value": "\"solar_list-arrow-down-bold-2\""
     }
