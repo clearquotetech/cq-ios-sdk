@@ -158,6 +158,7 @@ public enum CQSDKIcons : Swift.String {
   case cq_sdk_retry_icon
   case cq_sdk_retry_image
   case cq_sdk_error_icon_white
+  case cq_sdk_close_guided_flow
   public func asUIImage() -> UIKit.UIImage?
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -699,6 +700,7 @@ public struct CQSDKMakeModel {
   public var vehicleVersion: Swift.String?
   public var fueltype: Swift.String?
   public var vehicleNo: Swift.String?
+  public var bodystyleConfirmed: Swift.Bool?
 }
 public struct SVGImgProcessor : Kingfisher.ImageProcessor {
   public var identifier: Swift.String
