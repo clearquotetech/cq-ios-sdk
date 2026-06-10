@@ -2676,5 +2676,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Zajemite levi sprednji del vozila",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Zajemite levi zadnji del vozila",
   "UPDATINGBODYSTYLE": "Posodabljanje karoserije",
-  "SELECTFROMLISTTXT": "Izberi s seznama"
+  "SELECTFROMLISTTXT": "Izberi s seznama",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Vključite kontakt",
+  "IGNITIONONBEFORE": "Pred zajemom slike vključite kontakt",
+  "SELECTMAKE": "Izberite znamko",
+  "SELECTMODEL": "Izberite model",
+  "SELECTINTCONF": "Izberite konfiguracijo notranjosti",
+  "ACTIONREQUIRED": "Zahtevano dejanje!",
+  "IMAGESPOOFDETECTIONERRTXT": "Zaznana lažna slika",
+  "FRAUDDETECTEDTXT": "Odkrita goljufija",
+  "FRAUDDETECTEDTXTSUBERROR": "Prosimo, da fotografirate dejansko vozilo",
+  "ANOMALYDETECTEDHEADINGTXT": "Zaznana anomalija",
+  "IMAGEISBLURERR": "Slika je zamegljena"
 }

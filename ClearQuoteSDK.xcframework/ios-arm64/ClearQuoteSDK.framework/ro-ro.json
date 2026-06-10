@@ -2037,5 +2037,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Capturați partea stângă față a vehiculului",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Capturați partea stângă spate a vehiculului",
   "UPDATINGBODYSTYLE": "Se actualizează tipul caroseriei",
-  "SELECTFROMLISTTXT": "Selectați din listă"
+  "SELECTFROMLISTTXT": "Selectați din listă",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Porniți contactul",
+  "IGNITIONONBEFORE": "Vă rugăm să porniți contactul înainte de a captura imaginea",
+  "SELECTMAKE": "Selectați marca",
+  "SELECTMODEL": "Selectați modelul",
+  "SELECTINTCONF": "Selectați configurația interioară",
+  "ACTIONREQUIRED": "Acțiune necesară!",
+  "IMAGESPOOFDETECTIONERRTXT": "Spoofing imagine detectat",
+  "FRAUDDETECTEDTXT": "Fraudă detectată",
+  "FRAUDDETECTEDTXTSUBERROR": "Vă rugăm să faceți fotografii ale vehiculului real",
+  "ANOMALYDETECTEDHEADINGTXT": "Anomalie detectată",
+  "IMAGEISBLURERR": "Imaginea este neclară"
 }

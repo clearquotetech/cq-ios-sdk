@@ -2273,5 +2273,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Capturar parte delantera izquierda del vehículo",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Capturar parte trasera izquierda del vehículo",
   "UPDATINGBODYSTYLE": "Actualizando tipo de carrocería",
-  "SELECTFROMLISTTXT": "Seleccionar de la lista"
+  "SELECTFROMLISTTXT": "Seleccionar de la lista",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Encender el contacto",
+  "IGNITIONONBEFORE": "Encienda el contacto antes de capturar la imagen",
+  "SELECTMAKE": "Seleccionar marca",
+  "SELECTMODEL": "Seleccionar modelo",
+  "SELECTINTCONF": "Seleccionar configuración interior",
+  "ACTIONREQUIRED": "¡Acción requerida!",
+  "IMAGESPOOFDETECTIONERRTXT": "Se detectó una imagen falsa",
+  "FRAUDDETECTEDTXT": "Fraude detectado",
+  "FRAUDDETECTEDTXTSUBERROR": "Por favor, tome fotografías del vehículo real.",
+  "ANOMALYDETECTEDHEADINGTXT": "Anomalía detectada",
+  "IMAGEISBLURERR": "La imagen está borrosa"
 }

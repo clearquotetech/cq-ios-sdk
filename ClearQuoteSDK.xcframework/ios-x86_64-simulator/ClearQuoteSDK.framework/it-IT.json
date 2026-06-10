@@ -2321,5 +2321,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Acquisisci parte anteriore sinistra del veicolo",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Acquisisci parte posteriore sinistra del veicolo",
   "UPDATINGBODYSTYLE": "Aggiornamento del tipo di carrozzeria",
-  "SELECTFROMLISTTXT": "Seleziona dall'elenco"
+  "SELECTFROMLISTTXT": "Seleziona dall'elenco",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Accendi il quadro",
+  "IGNITIONONBEFORE": "Accendi il quadro prima di acquisire l'immagine",
+  "SELECTMAKE": "Seleziona marca",
+  "SELECTMODEL": "Seleziona modello",
+  "SELECTINTCONF": "Seleziona configurazione interna",
+  "ACTIONREQUIRED": "Azione richiesta!",
+  "IMAGESPOOFDETECTIONERRTXT": "Rilevato spoofing dell'immagine",
+  "FRAUDDETECTEDTXT": "Frode rilevata",
+  "FRAUDDETECTEDTXTSUBERROR": "Si prega di scattare foto del veicolo reale",
+  "ANOMALYDETECTEDHEADINGTXT": "Anomalia rilevata",
+  "IMAGEISBLURERR": "L'immagine è sfocata"
 }
