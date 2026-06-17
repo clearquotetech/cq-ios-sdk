@@ -2034,5 +2034,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Capture Left Front of vehicle",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Capture Left Rear of vehicle",
   "UPDATINGBODYSTYLE": "Updating bodystyle",
-  "SELECTFROMLISTTXT": "Select from list"
+  "SELECTFROMLISTTXT": "Select from list",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Turn on ignition",
+  "IGNITIONONBEFORE": "Please turn on the ignition before capturing the image",
+  "SELECTMAKE": "Select Make",
+  "SELECTMODEL": "Select Model",
+  "SELECTINTCONF": "Select Interior Configuration",
+  "ACTIONREQUIRED": "Action Required!",
+  "IMAGESPOOFDETECTIONERRTXT": "Image spoof detected",
+  "FRAUDDETECTEDTXT": "Fraud detected",
+  "FRAUDDETECTEDTXTSUBERROR": "Please take photos of the actual vehicle",
+  "ANOMALYDETECTEDHEADINGTXT": "Anomaly Detected",
+  "IMAGEISBLURERR": "Image is blur"
 }

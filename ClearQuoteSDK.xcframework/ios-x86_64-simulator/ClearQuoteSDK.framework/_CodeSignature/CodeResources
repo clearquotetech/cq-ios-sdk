@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		G3JEqwHo3zVakMo415Oyf3mMh3U=
+		z2/n6Lt+9nIdC7vEBDKYqWOgrmw=
 		</data>
 		<key>AtkinsonHyperlegible-Bold.ttf</key>
 		<data>
@@ -370,7 +370,7 @@
 		</data>
 		<key>CQSDKPanelCapturedDialogCollectionViewCell.nib</key>
 		<data>
-		quChwSuDFekBuSPZIoKKnwzvEco=
+		JIG3w7T/xiOj9hhLXpCNLJCu9Mk=
 		</data>
 		<key>CQSDKQuoteCreationStepperView.nib</key>
 		<data>
@@ -403,6 +403,10 @@
 		<key>CQSDKSingleRadioViewCell.nib</key>
 		<data>
 		2w4hZp48nRUV9URgKBd6qrUlqa4=
+		</data>
+		<key>CQSDKSpoofWarningDialogViewController.nib</key>
+		<data>
+		nk8tkUP91KNCZp13XU+VLZkSiqY=
 		</data>
 		<key>CQSDKStarRatingCollectionViewCell.nib</key>
 		<data>
@@ -478,31 +482,31 @@
 		</data>
 		<key>Headers/ClearQuoteSDK-Swift.h</key>
 		<data>
-		GJE5TfzK+wZOh1s1idgC+uvMK7Q=
+		zKTeiS8mnNjPse0cxXSgBPBkGpU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1vTOjbmh4hYM2BJLpI3RaZjaYnA=
+		aPnP/UGLBfreGL5RRAq65iGbbPY=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3fstorTm7z1dohUn/oVTUed3dsM=
+		btQnL3dLQAnJ2waP5j8LKuUEmW0=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YwqrPmkRKleMX5+czoQ9BL+9dFY=
+		+1NQ6Em3MuzHxpdkpUsytx1yH9w=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I/o17lvcklzqrMadlc9OyufOjxM=
+		ZiAJWdvVTG9gMe63oaYDRAxKm5w=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YwqrPmkRKleMX5+czoQ9BL+9dFY=
+		+1NQ6Em3MuzHxpdkpUsytx1yH9w=
 		</data>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xHmZzr8LnP3d83nJTAyYOs2nQWQ=
+		OgCEiNfKA4yKN5TGtcNVSzAn+wA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -542,7 +546,7 @@
 		</data>
 		<key>TensorFlowLite.bundle/Info.plist</key>
 		<data>
-		7R6aLS5Z+jsjuHbtez5rP05Bf50=
+		efbIx2eTG1QoZpUisI161xvSmRI=
 		</data>
 		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -550,7 +554,7 @@
 		</data>
 		<key>TensorFlowLiteC.bundle/Info.plist</key>
 		<data>
-		SXwQF06el+IT0p52BrBEtKPg6ds=
+		/SYR1JGmUw8+xs1Knao6nB993CQ=
 		</data>
 		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -574,43 +578,43 @@
 		</data>
 		<key>de-de.json</key>
 		<data>
-		M5xb2h69btDsbMH1oyfuDwXkTp8=
+		YzyOuJ6W0set/Ai3OjuuKuR72gE=
 		</data>
 		<key>el-el.json</key>
 		<data>
-		Wc8/DAEaocmkhtcv/rMJDhP0jgY=
+		BqmoRMUVMMA9fYUdyvZ+8dw2W/c=
 		</data>
 		<key>en-na.json</key>
 		<data>
-		0wGR+d5gY8+ZQmVFX2tywDnWMXQ=
+		qpPcDWOSvUP28x2wSQXuy8B4J/A=
 		</data>
 		<key>en-us.json</key>
 		<data>
-		X0Ig+u3v5xko4hwAhwuPSeSK9Zs=
+		u3JoYAQ5BoWQH6sH081U01d0wYg=
 		</data>
 		<key>es-es.json</key>
 		<data>
-		oMjY26t7w3FjbnLcuTFvK4sNxKM=
+		bI84vcv2NPE9+xd15AWWhx+uBQM=
 		</data>
 		<key>fr-mr.json</key>
 		<data>
-		ZfzsiFM46T47dWv9CXBDAdvS3zk=
+		N5sREllWTuChQ4C6Kdf96zF6XFw=
 		</data>
 		<key>it-IT.json</key>
 		<data>
-		5VXqPSNAYOzi/HMd4h1e2Lyoyg8=
+		HTwns1ST4tlXFMN113udWLnrQT8=
 		</data>
 		<key>nl-nl.json</key>
 		<data>
-		5pLAzg3VY+4Fi9uXv3hiqBOVKTo=
+		rgCKtXvFVHL2Ebr6whepXNYc/no=
 		</data>
 		<key>ro-ro.json</key>
 		<data>
-		3itMoeO/Oj8fTihrYjachm2Fz+M=
+		4K4ZnNsOOvhgJMdFpt3aq8XxM8w=
 		</data>
 		<key>sl-sl.json</key>
 		<data>
-		QIYeB9ct0LzQ6BsGo5huRoo6qUI=
+		5FaYAi/0yKi/r37BcocAsOJIA4o=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -619,7 +623,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			masbB7+iI50NKm579xw9Ivz9jFXNahXERemmyBdfVv0=
+			qHKxqXf1QNkOMBQTIPoNSOM+CNhXT05aDZLkWG22cBM=
 			</data>
 		</dict>
 		<key>AtkinsonHyperlegible-Bold.ttf</key>
@@ -1256,7 +1260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6VR9NT1Gem6HGEwl4OyqonxKRBDD7O+1JHiGgeUtBL0=
+			RgQaqLyjm6fcCicGy2sZ1OH59wMR84Lqktx4IOAgw3Y=
 			</data>
 		</dict>
 		<key>CQSDKQuoteCreationStepperView.nib</key>
@@ -1313,6 +1317,13 @@
 			<key>hash2</key>
 			<data>
 			FP6jD3mKIiKRDqA5WnnfxFsYHAppJEwIpx67qJfE1bA=
+			</data>
+		</dict>
+		<key>CQSDKSpoofWarningDialogViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sZTxEjINezlSjUDhuwSdY2Y6S5XxvCQlI38xiBHaDNM=
 			</data>
 		</dict>
 		<key>CQSDKStarRatingCollectionViewCell.nib</key>
@@ -1445,42 +1456,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7oBgZmE/dFVBv+ionLtpMkqGIr+MAcCjn628VMB+JGs=
+			3Xf3Bke4G7/CqUSEbPnVUAFkEnFFWWoGL/9l7jjYUJ8=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gs1WCBnJw4yES9xTAux7ACFl8sFnlOLmfTNiZVIjpz8=
+			WkgDvXDISoPYVcl7f1OiJjG2aaIkPeTTxC7fcHaRQJw=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dEHSl3zKVOmXh66fOMcIxPgw/x8c6hIdHxVTbD0H2g8=
+			lAxtuB8ZCCO8Wq8XutTH9rl7tjRNi/kHAENnZOTTH+Y=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xj0IauEEsSJ4W1b2fOznFYPzdMXx52kHt5kox+vfnLo=
+			UNJMxmaoXzhlvcANhTdxUaL3KsZrqPQHraRflzIWyLU=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dEHSl3zKVOmXh66fOMcIxPgw/x8c6hIdHxVTbD0H2g8=
+			lAxtuB8ZCCO8Wq8XutTH9rl7tjRNi/kHAENnZOTTH+Y=
 			</data>
 		</dict>
 		<key>Modules/ClearQuoteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fxwEbkLvY8I7vADyV+Ov1WQ1EKLZRvKBQHCMEXtGut8=
+			HZxRyKZOUtO3GGQurdvb9moOUm4h5agIkmlFPhA4pyE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1550,7 +1561,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1hkidZKWkGh2Fn4TT41FKbJaPaiDFiyL6w5BxJfgm08=
+			YEqLdHN1+8M+nme38Zu/yL3Mh0ga3YrZegXfkW8T/NI=
 			</data>
 		</dict>
 		<key>TensorFlowLite.bundle/PrivacyInfo.xcprivacy</key>
@@ -1564,7 +1575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n5cPi3zQzynUhNcQrp3s7IvJZ9jQdukEeMPxnCNK2uk=
+			coiehIjM/QKhPzN08YyBsAqIwwIHICwqkJtCS7HuIeM=
 			</data>
 		</dict>
 		<key>TensorFlowLiteC.bundle/PrivacyInfo.xcprivacy</key>
@@ -1606,70 +1617,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Prlz+o0mHGcYvivN8w2bk51KcJbYl2XVI0OUr799/eE=
+			vV/0LNebzpTJN598cXp3xUMbOgnWVzE9r3YNkqiC34E=
 			</data>
 		</dict>
 		<key>el-el.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L19aqFK1FqLTlZaePKedVTJae/K60WQztCB2L4GPcJw=
+			t05Go11em5yoTj2Ct/gUccqM0WUxnCreEpZd1/pRmL4=
 			</data>
 		</dict>
 		<key>en-na.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9gyKq7l/M9iECnYXzYbVqbZnXvB1Jh3zLdp55hOeUFw=
+			afhxD9W+Pi5S9bJPPglyPjmht7vMy7Dj69WvtieYTWY=
 			</data>
 		</dict>
 		<key>en-us.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Mlgj2CGGyTw87Alp63luPhihPRPBOx1O2zkaaEJalo=
+			KfX5rA+JcKz11YjGqvI3y4d1K6Fd4Voah5APpd7IVig=
 			</data>
 		</dict>
 		<key>es-es.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rNP1CAhRVs35JCNfYusuXVBfLc0Pb09EcbZM4fntiEM=
+			aKdhOjiy62flxktphE7CiBrps1do2vxXt/0+bBIttBo=
 			</data>
 		</dict>
 		<key>fr-mr.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FwDA2WeUfgALPCIxh6q3PhUZC92ktnEMDkPYojUsyLQ=
+			29kGwns6v2CuUjN2yjxJOoG/mctHk3cyJMp55xEIZ0c=
 			</data>
 		</dict>
 		<key>it-IT.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YmBSfmYsj4wxBoy8nE0QF+Q3jpSXLEZcMLpV2eEmUgI=
+			en5P9Op/pfY4EeXRjTYIOnFMa97dsf8wSpBolqRAuJU=
 			</data>
 		</dict>
 		<key>nl-nl.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQ4fMApxwCmm5pK3+3aYuiPZ7Duigg1suTbhCEgjA0Q=
+			pS1HTnVdN+DhqNfSB+sZEdXmm3osbu5EHEux7Vzf8YA=
 			</data>
 		</dict>
 		<key>ro-ro.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9sQJPuVvzvOwhD+lisQo98snIF0JCcVotXTS+3U9y0=
+			m8iaPdGfi53Vnf70DhZcpV6S0Jtw5ZvK9g4SIMQIZU4=
 			</data>
 		</dict>
 		<key>sl-sl.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WbM9GhA9aipiJjc8UUTjxkyTG+gfYOroBRMnNl6qkWw=
+			ucVFVU61q7q3dW4eMcFRJr404dCtCvQCIYA+BxVk94o=
 			</data>
 		</dict>
 	</dict>

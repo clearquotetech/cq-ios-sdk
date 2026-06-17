@@ -2682,5 +2682,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Linkervoorzijde van voertuig vastleggen",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Linkerachterzijde van voertuig vastleggen",
   "UPDATINGBODYSTYLE": "Carrosserietype bijwerken",
-  "SELECTFROMLISTTXT": "Selecteren uit lijst"
+  "SELECTFROMLISTTXT": "Selecteren uit lijst",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Zet het contact aan",
+  "IGNITIONONBEFORE": "Zet het contact aan voordat u de afbeelding vastlegt",
+  "SELECTMAKE": "Selecteer merk",
+  "SELECTMODEL": "Selecteer model",
+  "SELECTINTCONF": "Selecteer interieurconfiguratie",
+  "ACTIONREQUIRED": "Actie vereist!",
+  "IMAGESPOOFDETECTIONERRTXT": "Afbeeldingspoof gedetecteerd",
+  "FRAUDDETECTEDTXT": "Fraude gedetecteerd",
+  "FRAUDDETECTEDTXTSUBERROR": "Maak foto's van het daadwerkelijke voertuig",
+  "ANOMALYDETECTEDHEADINGTXT": "Anomalie gedetecteerd",
+  "IMAGEISBLURERR": "Afbeelding is wazig"
 }

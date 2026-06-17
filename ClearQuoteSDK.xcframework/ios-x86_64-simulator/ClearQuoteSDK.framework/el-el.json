@@ -2960,5 +2960,17 @@
   "BODYSTYLE_CAPTURE_LEFT_FRONT": "Λήψη αριστερής μπροστινής πλευράς οχήματος",
   "BODYSTYLE_CAPTURE_LEFT_REAR": "Λήψη αριστερής πίσω πλευράς οχήματος",
   "UPDATINGBODYSTYLE": "Ενημέρωση τύπου αμαξώματος",
-  "SELECTFROMLISTTXT": "Επιλογή από λίστα"
+  "SELECTFROMLISTTXT": "Επιλογή από λίστα",
+  "BODYSTYLEVERIFICATIONUNAVAILABLEOFFLINETXT": "Bodystyle is not verified for this vehicle. Bodystyle verification can only be performed in online mode.",
+  "TURNONIGNITION": "Ενεργοποιήστε την ανάφλεξη",
+  "IGNITIONONBEFORE": "Ενεργοποιήστε την ανάφλεξη πριν από τη λήψη της εικόνας",
+  "SELECTMAKE": "Επιλέξτε μάρκα",
+  "SELECTMODEL": "Επιλέξτε μοντέλο",
+  "SELECTINTCONF": "Επιλέξτε διαμόρφωση εσωτερικού",
+  "ACTIONREQUIRED": "Απαιτείται ενέργεια!",
+  "IMAGESPOOFDETECTIONERRTXT": "Εντοπίστηκε ψευδής εικόνα",
+  "FRAUDDETECTEDTXT": "Εντοπίστηκε απάτη",
+  "FRAUDDETECTEDTXTSUBERROR": "Παρακαλώ τραβήξτε φωτογραφίες του πραγματικού οχήματος",
+  "ANOMALYDETECTEDHEADINGTXT": "Εντοπίστηκε ανωμαλία",
+  "IMAGEISBLURERR": "Η εικόνα είναι θολή"
 }
