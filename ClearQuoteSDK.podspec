@@ -21,13 +21,14 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.requires_arc = true
   s.dependency 'Kingfisher', '7.12.0'
-  s.dependency 'DropDown'
-  s.dependency 'SVGKit'
-  s.dependency 'IQKeyboardManagerSwift', '6.3.0'
-  s.dependency 'Fuse'
-  s.dependency 'AnyCodable-FlightSchool'
+  s.dependency 'SVGKit', '3.0.0'
+  s.dependency 'Fuse', '1.4.0'
+  s.dependency 'AnyCodable-FlightSchool', '0.6.7'
   s.dependency 'TensorFlowLiteSwift', '2.3.0'
-  s.dependency 'Sentry', '8.38.0'
-  s.dependency 'SQLite.swift'
-  s.dependency 'ReachabilitySwift'
+  s.dependency 'SQLite.swift', '0.15.2'
+  s.dependency 'ReachabilitySwift', '5.2.4'
+  s.dependency 'DropDown', '2.3.13'
+  s.dependency 'IQKeyboardManagerSwift', '6.3.0'
+  s.dependency 'Sentry', '9.1.0'
 end
+
