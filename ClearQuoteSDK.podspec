@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => "https://github.com/clearquotetech/cq-ios-sdk.git",
-    :branch => "RN-SUPPORT"
+    :branch => "development/RN-support"
   }
 
   s.vendored_frameworks = "ClearQuoteSDK.xcframework"
