@@ -2285,5 +2285,16 @@
   "FRAUDDETECTEDTXT": "Fraude detectado",
   "FRAUDDETECTEDTXTSUBERROR": "Por favor, tome fotografías del vehículo real.",
   "ANOMALYDETECTEDHEADINGTXT": "Anomalía detectada",
-  "IMAGEISBLURERR": "La imagen está borrosa"
+  "IMAGEISBLURERR": "La imagen está borrosa",
+  "CHECKINGAPPUPDATE": "Buscando actualización de la aplicación...",
+  "DCOVERVIEWRETRY": "Go back to Overview and tap Done to retry.",
+  "INSPECTIONWAITTIMEMSG": "Espere hasta que pueda completar una inspección",
+  "LICENSE": "Licencia",
+  "APPUPDATE_OLDVERSIONWARNING": "Omitir la actualización puede causar problemas debido a la versión antigua",
+  "UPDATEAVAILABLE": "Actualización disponible",
+  "REMINDMELATER": "Recordarme más tarde",
+  "UPDATENOW": "Actualizar ahora",
+  "NEWUPDATEAVAILABLE": "Nueva actualización disponible",
+  "INSPECTIONTOTALDURATIONMSG": "Duración total de la inspección en curso",
+  "LICENSEAGREEMENT": "Acuerdo de licencia"
 }

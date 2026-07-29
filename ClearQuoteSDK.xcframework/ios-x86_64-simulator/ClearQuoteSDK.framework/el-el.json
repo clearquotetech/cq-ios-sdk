@@ -2972,5 +2972,15 @@
   "FRAUDDETECTEDTXT": "Εντοπίστηκε απάτη",
   "FRAUDDETECTEDTXTSUBERROR": "Παρακαλώ τραβήξτε φωτογραφίες του πραγματικού οχήματος",
   "ANOMALYDETECTEDHEADINGTXT": "Εντοπίστηκε ανωμαλία",
-  "IMAGEISBLURERR": "Η εικόνα είναι θολή"
+  "IMAGEISBLURERR": "Η εικόνα είναι θολή",
+  "CHECKINGAPPUPDATE": "Έλεγχος για ενημέρωση εφαρμογής...",
+  "DCOVERVIEWRETRY": "Επιστρέψτε στην Επισκόπηση και πατήστε Ολοκληρώθηκε για να δοκιμάσετε ξανά.",
+  "INSPECTIONWAITTIMEMSG": "Περιμένετε μέχρι να μπορέσετε να ολοκληρώσετε μια επιθεώρηση",
+  "LICENSE": "Άδεια",
+  "APPUPDATE_OLDVERSIONWARNING": "Η παράλειψη της ενημέρωσης μπορεί να προκαλέσει προβλήματα λόγω παλιάς έκδοσης",
+  "REMINDMELATER": "Υπενθύμιση αργότερα",
+  "UPDATENOW": "Ενημέρωση τώρα",
+  "NEWUPDATEAVAILABLE": "Νέα διαθέσιμη ενημέρωση",
+  "INSPECTIONTOTALDURATIONMSG": "Συνολική διάρκεια της επιθεώρησης που διεξάγεται",
+  "LICENSEAGREEMENT": "Συμφωνία άδειας"
 }

@@ -2694,5 +2694,15 @@
   "FRAUDDETECTEDTXT": "Fraude gedetecteerd",
   "FRAUDDETECTEDTXTSUBERROR": "Maak foto's van het daadwerkelijke voertuig",
   "ANOMALYDETECTEDHEADINGTXT": "Anomalie gedetecteerd",
-  "IMAGEISBLURERR": "Afbeelding is wazig"
+  "IMAGEISBLURERR": "Afbeelding is wazig",
+  "CHECKINGAPPUPDATE": "Controleren op app-update...",
+  "DCOVERVIEWRETRY": "Ga terug naar Overzicht en tik op Gedaan om opnieuw te proberen.",
+  "INSPECTIONWAITTIMEMSG": "Wacht tot u een inspectie kunt voltooien",
+  "LICENSE": "Licentie",
+  "APPUPDATE_OLDVERSIONWARNING": "Het overslaan van de update kan problemen veroorzaken door de oude versie",
+  "REMINDMELATER": "Herinner me later",
+  "UPDATENOW": "Nu bijwerken",
+  "NEWUPDATEAVAILABLE": "Nieuwe update beschikbaar",
+  "INSPECTIONTOTALDURATIONMSG": "Totale duur van de lopende inspectie",
+  "LICENSEAGREEMENT": "Licentieovereenkomst"
 }

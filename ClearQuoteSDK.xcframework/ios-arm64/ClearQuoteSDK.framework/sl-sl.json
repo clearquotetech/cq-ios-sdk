@@ -2688,5 +2688,15 @@
   "FRAUDDETECTEDTXT": "Odkrita goljufija",
   "FRAUDDETECTEDTXTSUBERROR": "Prosimo, da fotografirate dejansko vozilo",
   "ANOMALYDETECTEDHEADINGTXT": "Zaznana anomalija",
-  "IMAGEISBLURERR": "Slika je zamegljena"
+  "IMAGEISBLURERR": "Slika je zamegljena",
+  "CHECKINGAPPUPDATE": "Preverjanje posodobitve aplikacije...",
+  "DCOVERVIEWRETRY": "Reveniți la Prezentare generală și atingeți Făcut pentru a reîncerca.",
+  "INSPECTIONWAITTIMEMSG": "Počakajte, dokler ne boste mogli dokončati pregleda",
+  "LICENSE": "Licenca",
+  "APPUPDATE_OLDVERSIONWARNING": "Če preskočite posodobitev, lahko zaradi stare različice pride do težav",
+  "REMINDMELATER": "Opomni me pozneje",
+  "UPDATENOW": "Posodobi zdaj",
+  "NEWUPDATEAVAILABLE": "Na voljo nova posodobitev",
+  "INSPECTIONTOTALDURATIONMSG": "Skupno trajanje izvajajočega se pregleda",
+  "LICENSEAGREEMENT": "Licenčna pogodba"
 }

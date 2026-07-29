@@ -2046,5 +2046,16 @@
   "FRAUDDETECTEDTXT": "Fraud detected",
   "FRAUDDETECTEDTXTSUBERROR": "Please take photos of the actual vehicle",
   "ANOMALYDETECTEDHEADINGTXT": "Anomaly Detected",
-  "IMAGEISBLURERR": "Image is blur"
+  "IMAGEISBLURERR": "Image is blur",
+  "CHECKINGAPPUPDATE": "Checking for App update",
+  "DCOVERVIEWRETRY": "Go back to Overview and tap Done to retry.",
+  "INSPECTIONWAITTIMEMSG": "Wait until you can complete an inspection",
+  "LICENSE": "License",
+  "APPUPDATE_OLDVERSIONWARNING": "Skipping update may cause issue due to old version",
+  "UPDATEAVAILABLE": "Update Available",
+  "REMINDMELATER": "Remind me later",
+  "UPDATENOW": "Update now",
+  "NEWUPDATEAVAILABLE": "New Update Available",
+  "INSPECTIONTOTALDURATIONMSG": "Total duration of inspection being conducted",
+  "LICENSEAGREEMENT": "License Agreement"
 }

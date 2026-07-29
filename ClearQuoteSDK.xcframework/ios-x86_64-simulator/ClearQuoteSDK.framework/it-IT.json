@@ -2333,5 +2333,15 @@
   "FRAUDDETECTEDTXT": "Frode rilevata",
   "FRAUDDETECTEDTXTSUBERROR": "Si prega di scattare foto del veicolo reale",
   "ANOMALYDETECTEDHEADINGTXT": "Anomalia rilevata",
-  "IMAGEISBLURERR": "L'immagine è sfocata"
+  "IMAGEISBLURERR": "L'immagine è sfocata",
+  "CHECKINGAPPUPDATE": "Controllo aggiornamento app...",
+  "DCOVERVIEWRETRY": "Go back to Overview and tap Done to retry.",
+  "INSPECTIONWAITTIMEMSG": "Attendere fino a quando sarà possibile completare un'ispezione",
+  "LICENSE": "Licenza",
+  "APPUPDATE_OLDVERSIONWARNING": "Ignorare l'aggiornamento può causare problemi a causa della versione precedente",
+  "REMINDMELATER": "Ricordamelo più tardi",
+  "UPDATENOW": "Aggiorna ora",
+  "NEWUPDATEAVAILABLE": "Nuovo aggiornamento disponibile",
+  "INSPECTIONTOTALDURATIONMSG": "Durata totale dell'ispezione in corso",
+  "LICENSEAGREEMENT": "Accordo di licenza"
 }
