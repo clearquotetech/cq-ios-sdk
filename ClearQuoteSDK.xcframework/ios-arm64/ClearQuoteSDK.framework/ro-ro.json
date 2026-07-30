@@ -2049,5 +2049,16 @@
   "FRAUDDETECTEDTXT": "Fraudă detectată",
   "FRAUDDETECTEDTXTSUBERROR": "Vă rugăm să faceți fotografii ale vehiculului real",
   "ANOMALYDETECTEDHEADINGTXT": "Anomalie detectată",
-  "IMAGEISBLURERR": "Imaginea este neclară"
+  "IMAGEISBLURERR": "Imaginea este neclară",
+  "CHECKINGAPPUPDATE": "Se caută actualizarea aplicației...",
+  "DCOVERVIEWRETRY": "Reveniți la Prezentare generală și atingeți Făcut pentru a reîncerca.",
+  "INSPECTIONWAITTIMEMSG": "Așteptați până când puteți finaliza o inspecție",
+  "LICENSE": "Licență",
+  "APPUPDATE_OLDVERSIONWARNING": "Omiterea actualizării poate cauza probleme din cauza versiunii vechi",
+  "UPDATEAVAILABLE": "Actualizare disponibilă",
+  "REMINDMELATER": "Amintește-mi mai târziu",
+  "UPDATENOW": "Actualizează acum",
+  "NEWUPDATEAVAILABLE": "Actualizare nouă disponibilă",
+  "INSPECTIONTOTALDURATIONMSG": "Durata totală a inspecției în desfășurare",
+  "LICENSEAGREEMENT": "Acord de licență"
 }

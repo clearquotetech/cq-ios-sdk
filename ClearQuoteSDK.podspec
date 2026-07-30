@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "ClearQuoteSDK"
-  s.version      = "0.1.3"
+  s.version      = "0.1.5"
   s.summary      = "ClearQuoteSDK: ClearQuoteSDK"
   s.description  = "A more detailed description of ClearQuoteSDK"
   s.homepage     = "https://github.com/clearquotetech/cq-ios-sdk.git"
-  s.license = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Bhanu Singh" => "bhanusingh@clearquote.io" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "Bhanu Singh" => "bhanusingh@clearquote.io" }
   s.source       = { :git => "https://github.com/clearquotetech/cq-ios-sdk.git", :branch => "main" }
   s.vendored_frameworks = "ClearQuoteSDK.xcframework"
   s.platform = :ios
@@ -22,4 +22,6 @@ Pod::Spec.new do |s|
   s.dependency 'SQLite.swift'
   s.dependency 'ReachabilitySwift'
   s.dependency 'Clarity'
+  s.dependency 'EasyTipView', '2.1.0'
+  s.dependency 'ZIPFoundation'
 end

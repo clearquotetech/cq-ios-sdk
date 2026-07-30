@@ -2703,5 +2703,15 @@
   "FRAUDDETECTEDTXT": "Betrug erkannt",
   "FRAUDDETECTEDTXTSUBERROR": "Bitte machen Sie Fotos vom tatsächlichen Fahrzeug",
   "ANOMALYDETECTEDHEADINGTXT": "Anomalie erkannt",
-  "IMAGEISBLURERR": "Das Bild ist unscharf"
+  "IMAGEISBLURERR": "Das Bild ist unscharf",
+  "CHECKINGAPPUPDATE": "Suche nach App-Update...",
+  "DCOVERVIEWRETRY": "Gehen Sie zurück zur Übersicht und tippen Sie auf Erledigt, um es erneut zu versuchen.",
+  "INSPECTIONWAITTIMEMSG": "Warten Sie, bis Sie eine Inspektion abschließen können",
+  "LICENSE": "Lizenz",
+  "APPUPDATE_OLDVERSIONWARNING": "Das Überspringen des Updates kann aufgrund der alten Version zu Problemen führen",
+  "REMINDMELATER": "Später erinnern",
+  "UPDATENOW": "Jetzt aktualisieren",
+  "NEWUPDATEAVAILABLE": "Neues Update verfügbar",
+  "INSPECTIONTOTALDURATIONMSG": "Gesamtdauer der durchgeführten Inspektion",
+  "LICENSEAGREEMENT": "Lizenzvereinbarung"
 }
