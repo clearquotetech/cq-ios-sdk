@@ -20,7 +20,7 @@ let package = Package(
         .package(url: "https://github.com/krisk/fuse-swift.git", exact: "1.4.0"),
         .package(url: "https://github.com/Flight-School/AnyCodable.git", exact: "0.6.7"),
         .package(url: "https://github.com/kewlbear/TensorFlowLiteSwift.git", revision: "bb9bd9c7c86e882f17aaf8bac35e96c77264eee2"),
-        .package(url: "https://github.com/getsentry/sentry-cocoa.git", exact: "8.58.4"),
+        .package(url: "https://github.com/getsentry/sentry-cocoa.git", exact: "9.19.1"),
         .package(url: "https://github.com/stephencelis/SQLite.swift.git", exact: "0.16.0"),
         .package(url: "https://github.com/ashleymills/Reachability.swift.git", exact: "5.2.4"),
         .package(url: "https://github.com/microsoft/clarity-apps.git", exact: "3.5.4"),
@@ -30,8 +30,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ClearQuoteSDK",
-            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/spm-test-0.1.6/ClearQuoteSDK.xcframework.zip",
-            checksum: "689f304ea47116cd0661506846540b48cc4e0ebe66f8a06fa2fd75d7fc9681eb"
+            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/v0.1.6.alpha.1/ClearQuoteSDK.xcframework.zip",
+            checksum: "a7956f164d32bc4dabf20097df528630c75803d24d0e2a26da6995cceb6b7f39"
         ),
         .target(
             name: "ClearQuoteSDKDeps",
