@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -30,8 +30,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ClearQuoteSDK",
-            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/v0.1.6-alpha.3/ClearQuoteSDK.xcframework.zip",
-            checksum: "5a81cc9fc7d83cb086ef22e3db4d73e3914632c78a0c7d8771382ebcfad8a91c"
+            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/v0.1.6-beta.1/ClearQuoteSDK.xcframework.zip",
+            checksum: "530c611ec873697f0814d237f2e7c9930401b8818d3cbcc51c7f9e12b2d888a7"
         ),
         .target(
             name: "ClearQuoteSDKDeps",
