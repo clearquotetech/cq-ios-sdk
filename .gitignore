@@ -1,1 +1,7 @@
 /.vscode
+ClearQuoteSDK.xcframework/
+*.xcframework.zip
+.DS_Store
+.build/
+.swiftpm/
+Package.resolved
