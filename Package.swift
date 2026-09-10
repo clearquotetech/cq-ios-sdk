@@ -30,7 +30,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ClearQuoteSDK",
-            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/v0.1.6-beta.4/ClearQuoteSDK.xcframework.zip",
+            url: "https://github.com/clearquotetech/cq-ios-sdk/releases/download/v0.1.6/ClearQuoteSDK.xcframework.zip",
             checksum: "c81b2ece334f0d04fef6c7a6e1f249df1e4733483be197468229a61036219057"
         ),
         .target(
