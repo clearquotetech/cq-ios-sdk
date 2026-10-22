@@ -17,15 +17,23 @@ Or in your app’s `Package.swift`:
 ```swift
 .package(
     url: "https://github.com/clearquotetech/cq-ios-sdk.git",
-    from: "0.1.6"
+    from: "X.X.X"
 )
 ```
 
 Then add the `ClearQuoteSDK` product to your target.
 
-The binary XCFramework is downloaded from the GitHub Release for tag `v0.1.6`. Runtime dependencies (Kingfisher, Sentry, TensorFlow Lite, and others) are pulled in automatically via the package.
+The binary XCFramework is downloaded from the GitHub Release for tag `vX.X.X`. Runtime dependencies (Kingfisher, Sentry, TensorFlow Lite, and others) are pulled in automatically via the package.
 
-For integration details, see the [integration guide](https://docs.google.com/document/d/1eqHUg3L7mqA4E8vqslzpLoqoC_8qxv7wTUn_JneKQmY/edit?usp=sharing) (may still mention CocoaPods until updated).
+In `X.X.X`, each `X` represents a number in the semantic version (for example, `0.1.6`).
+
+For more integration details, please reach out to ClearQuote team.
+
+## Demo apps with SDK integrated
+
+- [Native iOS](https://github.com/clearquotetech/ClearQuote-iOS-SDK-Demo-app)
+- [React Native](https://github.com/clearquotetech/react-native-sample-project)
+- [Flutter](https://github.com/clearquotetech/flutter-sample-project)
 
 ## Support
 
