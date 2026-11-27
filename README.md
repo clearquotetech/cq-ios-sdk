@@ -23,7 +23,7 @@ Or in your app’s `Package.swift`:
 
 Then add the `ClearQuoteSDK` product to your target.
 
-The binary XCFramework is downloaded from the GitHub Release for tag `vX.X.X`. Runtime dependencies (Kingfisher, Sentry, TensorFlow Lite, and others) are pulled in automatically via the package.
+The binary XCFramework is downloaded from the GitHub Release for tag `vX.X.X`.
 
 In `X.X.X`, each `X` represents a number in the semantic version (for example, `0.1.6`).
 
